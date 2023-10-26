@@ -3,10 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 :root {
-  --primary-color: #f9f9f9;
+  --primary-color: #0a0a15;
   --secondary-color: #fff;
   --border-color: #e8dede;
-  --text-primary-color: #292323;
+  --text-primary-color: #fff;
   --text-secondary-color: #ccc;
   --text-selection-color: #b3d4fc;
   --ff-heading: "Roboto", sans-serif;
@@ -46,6 +46,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--primary-color);
+  color: var(--text-primary-color);
 }
 
 img {
@@ -97,6 +98,17 @@ a:active,
 a:visited {
   outline: none;
   text-decoration: none;
+}
+
+button {
+  background: url("/img/btn bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 0;
+  padding: 15px 50px;
+  color: var(--text-primary-color);
+  cursor: pointer;
 }
 
 .btn:focus,
@@ -237,6 +249,70 @@ h6,
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh 3vw;
+  & > img {
+    inline-size: 10vmax;
+  }
+  & > nav {
+  	flex-basis: 70vw;
+  	flex-shrink: 1;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	align-self: start;
+  	& > a {
+  	  position: relative;
+  	  padding: 3rem 1rem 1rem 1rem;
+  	  &:last-of-type {
+  	  	padding-block-start: 2rem;
+  	  	&:hover {
+  	  	  background: transparent;
+  	  	}
+  	  }
+  	  &:hover {
+  	  	background: url("/img/nav bg.svg");
+  	  	background-size: cover;
+  	  	background-repeat: no-repeat;
+  	  	background-position: center;
+  	  	& > span {
+  	  	  visibility: visible;
+  	  	  animation: expand 0.2s linear forwards;
+  	  	}
+  	  }
+  	  & > span {
+  	  	position: absolute;
+  	  	inset-block-end: 0;
+  	  	inset-inline-start: 0;
+  	  	width: 0;
+  	  	height: 5px;
+  	  	background: linear-gradient(
+  	  	  89.8deg,
+  	  	  #9a67ff 9.01%,
+  	  	  #ffffff 152.95%
+  	  	);
+  	  	visibility: hidden;
+  	  	border-radius: 10px;
+  	  }
+	}
+  }
+}
+
+@keyframes expand {
+  0% {
+  	width: 0;
+  	transform: translateX(70%);
+  }
+  50% {
+  	width: 50%;
+  	transform: translateX(20%);
+  }
+  100% {
+  	width: 100%;
+  	transform: translateX(0);
+  }
 }
 
 main {
