@@ -1,39 +1,689 @@
-<!DOCTYPE html>
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ACM | Home</title>
+    <!-- google fonts -->
 
-	<!-- Site Meta content -->
-	<meta name="theme-color" content="#fff">
-	<meta name="description" content="">
-	<meta property="og:title" content="">
-	<meta property="og:type" content="">
-	<meta property="og:url" content="">
-	<meta property="og:description" content="">
-	<meta property="og:image" content="">
+    <link href="//fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <link rel="stylesheet" href="assets/css/car.css">
+    <link rel="stylesheet" href="assets/css/caraousel.css">
+    <link rel="stylesheet" href="assets/css/initiatives.css">
+    <link rel="stylesheet" href="assets/css/testimonials.css">
 
-	<title>CASC - CCET ACM Student Chapter</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-	<link rel="manifest" href="img/site.webmanifest">
+    <!--Slider-->
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet" />
 
-	<!-- Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Ysabeau+Infant:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet" />
+
+    <!--PLUGIN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 
 <body>
-	<header></header>
-	
-	<main>
-		<h1 class="text-center">Wingardium Leviosa</h1>
-	</main>
-	
-	<footer></footer>
-	
-	<script src="js/main.js"></script>
+    <!--/Header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+                <h1><a class="navbar-brand" href="index.html">
+                        <img src="ccet-photos/ccet-acm-logo-website-white (1).png" alt="">
+                    </a></h1>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Teams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Acheivments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Magazines</a>
+                        </li>
+                    </ul>
+                    <!--/search-->
+                    <button id="trigger-overlay" class="searchw3-icon mx-xl-4 mx-lg-3" type="button"><i class="fas fa-search"></i></button>
+                    <!-- open/close -->
+                    <div class="overlay overlay-slidedown">
+                        <button type="button" class="overlay-close"><i class="fas fa-times"></i></button>
+                        <nav class="w3l-formhny">
+                            <h5 class="mb-3">Search here</h5>
+                            <form action="#" method="GET" class="d-sm-flex search-header">
+                                <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search" required>
+                                <button class="btn btn-style btn-primary" type="submit">Search</button>
+                            </form>
+                        </nav>
+                    </div>
+                    <!--//search-->
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--//Header-->
+    <!--/Banner-Start-->
+    <!-- main-slider -->
+    <section class="slider">
+        <ul>
+            <li>
+                <article class="center-y padding_2x">
+                    <h3 class="big title"><em>CCET ACM STUDENT CHAPTER</em></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>	
+                    <a href="#about" class="btn btn_3">More about us</a>
+                </article>
+            </li>
+            <li>
+                <article class="center-y padding_2x">
+                    <h3 class="big title"><em>ACM-W</em></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>	
+                    <a href="#" class="btn btn_3">View Issues</a>
+                </article>
+            </li>
+            <aside>
+                <a href="#"></a>
+                <a href="#"></a>
+            </aside>
+        </ul>
+    </section>
+
+        
+    <!--/grids-->
+    <section class="w3l-grids-3 py-5" id="about">
+        <div class="container py-md-5 py-3">
+            <div class="row w3home-ab-grids">
+                <div class="w3ab-right-top col-lg-6 ">
+                    <div class="hover"><img src="ccet-photos/acm-w-logo.png" alt="" class="logo-acm radius-image"></div>
+                </div>
+                <div class="w3ab-left-top col-lg-6 mt-lg-0 mt-4 pt-lg-0 pt-2">
+                    <div class="give-margin">
+                        <h3 class="title-w3l mb-2">ACM-W</h3>
+                        <p class="my-3"> Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.Lorem ipsum dolor sit, amet consectetur ante ipsum elit. faucibus orci luctus et ultrices posuere cubilia Curae;
+                            Nulla mollis dapibus nunc. </p>
+                        <a href="about.html" class="btn btn-style btn-primary mt-4">Learn More</a>
+                    </div>    
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--//grids-->
+
+    <section class="game-section">
+        <h2 class="line-title">Checkout Our Acheivments</h2>
+        <div class="owl-carousel custom-carousel owl-theme">
+          <div class="item active" style="background-image: url(ccet-photos/Outlets/2022\ Coding\ Raijin.jpeg);">
+            <div class="item-desc">
+              <h3 style="color:white;">Google Summer of Code</h3>
+              <p>Google summer of code blah blah blah blah blah blah blah blah blah blah blah blah</p>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(ccet-photos/Outlets/code\ piece.jpeg);">
+            <div class="item-desc">
+              <h3 style="color:white;">Digital Outlet</h3>
+              <p>Digital Outlet blah blah blah blah blah</p>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(ccet-photos/Outlets/codequest.jpeg);">
+            <div class="item-desc">
+                <h3 style="color:white;">Google Summer of Code</h3>
+                <p>Google summer of code blah blah blah blah blah blah blah blah blah blah blah blah</p>
+              </div>
+          </div>
+          <div class="item" style="background-image: url(ccet-photos/Outlets/2022\ Coding\ Raijin.jpeg);">
+            <div class="item-desc">
+              <h3 style="color:white;">Digital Outlet</h3>
+              <p>Digital Outlet blah blah blah blah blah</p>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(ccet-photos/Outlets/feature.jpeg);">
+            <div class="item-desc">
+                <h3 style="color:white;">Google Summer of Code</h3>
+                <p>Google summer of code blah blah blah blah blah blah blah blah blah blah blah blah</p>
+              </div>
+          </div>
+          <div class="item" style="background-image: url(ccet-photos/Outlets/feature.jpeg);">
+            <div class="item-desc">
+              <h3 style="color:white;">Digital Outlet</h3>
+              <p>Digital Outlet blah blah blah blah blah</p>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(ccet-photos/Outlets/hackoracy.jpeg);">
+            <div class="item-desc">
+              <h3 style="color:white;">Digital Outlet</h3>
+              <p>Digital Outlet blah blah blah blah blah</p>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(ccet-photos/Outlets/Hacktober\ Fest2019.jpeg);">
+            <div class="item-desc">
+              <h3 style="color:white;">Digital Outlet</h3>
+              <p>Digital Outlet blah blah blah blah blah</p>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(ccet-photos/Outlets/hf-2021.jpeg);">
+            <div class="item-desc">
+              <h3 style="color:white;">Digital Outlet</h3>
+              <p>Digital Outlet blah blah blah blah blah</p>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(ccet-photos/Outlets/Hacktober\ Fest2019.jpeg);">
+            <div class="item-desc">
+              <h3 style="color:white;">Digital Outlet</h3>
+              <p>Digital Outlet blah blah blah blah blah</p>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(ccet-photos/Outlets/linux.jpeg);">
+            <div class="item-desc">
+              <h3 style="color:white;">Digital Outlet</h3>
+              <p>Digital Outlet blah blah blah blah blah</p>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(ccet-photos/Outlets/logo_comp.jpeg);">
+            <div class="item-desc">
+              <h3 style="color:white;">Digital Outlet</h3>
+              <p>Digital Outlet blah blah blah blah blah</p>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(ccet-photos/Outlets/sunil_k_singh.png);">
+            <div class="item-desc">
+              <h3 style="color:white;">Digital Outlet</h3>
+              <p>Digital Outlet blah blah blah blah blah</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    <!-- //main-slider -->
+
+    <!--/w3-grids-->
+
+    <!--//w3-grids-->
+    <!-- features section -->
+    <section class="w3l-features py-5" id="features">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="title-content text-center mb-lg-3 mb-4">
+                <h3 class="title-w3l">Our Mentors</h3>
+            </div>
+            <div class="witemshny-grids row">
+                <div class="col-md-3 col-6 product-incfhny mt-4">
+                    <div class="weitemshny-grid oposition-relative">
+                        <a href="#img" class="d-block zoom"><img src="ccet-photos/mentors/msgujral-01 copy.png" alt="" class="img-fluid news-image"></a>
+                        <div class="witemshny-inf">
+                        </div>
+                    </div>
+                    <h4 class="gdnhy-1 mt-lg-4 mt-3"><a href="#img">Dr. Manpreet Singh</a>
+                    </h4>
+                    <p class="make-it-black">Principal CCET
+                        Degree Wing</p>
+                        <p class="make-it-black">Our mission at CCET is not only to produce engineering graduates but to produce engineering minds.</p>
+                </div>
+                <div class="col-md-3 col-6 product-incfhny mt-4">
+                    <div class="weitemshny-grid oposition-relative">
+                        <a href="#img" class="d-block zoom"><img src="ccet-photos/mentors/sk_singh-01 copy.png" alt="" class="img-fluid news-image"></a>
+                        <div class="witemshny-inf">
+                        </div>
+                    </div>
+                    <h4 class="gdnhy-1 mt-lg-4 mt-3"><a href="#img">Dr. Sunil K. Singh</a>
+                    </h4>
+                    <p class="make-it-black">Professor and HOD, CSE
+                        Faculty Mentor</p>
+                        <p class="make-it-black">ACM CCET provides student a great opportunity to learn scientific and practical approach of computer science.</p>
+                </div>
+                <div class="col-md-3 col-6 product-incfhny mt-4">
+                    <div class="weitemshny-grid oposition-relative">
+                        <a href="#img" class="d-block zoom"><img src="ccet-photos/mentors/sudhakar_kumar-01 copy.png" alt="" class="img-fluid news-image"></a>
+                        <div class="witemshny-inf">
+                        </div>
+                    </div>
+                    <h4 class="gdnhy-1 mt-lg-4 mt-3"><a href="#img">Sudhakar Kumar</a>
+                    </h4>
+                    <p class="make-it-black">Assistant Professor, CSE
+                        Faculty Sponsor</p>
+                        <p class="make-it-black">ACM CCET provides every person with an opportunity to learn, heighten and explore the field of computer science.</p>
+                </div>
+                <div class="col-md-3 col-6 product-incfhny mt-4">
+                    <div class="weitemshny-grid oposition-relative">
+                        <a href="#img" class="d-block zoom"><img src="ccet-photos/mentors/saurabh.png" alt="" class="img-fluid news-image"></a>
+                        <div class="witemshny-inf">
+                        </div>
+                    </div>
+                    <h4 class="gdnhy-1 mt-lg-4 mt-3"><a href="#img">Saurabh Pratap Singh</a>
+                    </h4>
+                    <p class="make-it-black">Mentor & Innovator illustrator</p>
+                    <p class="make-it-black">The ACM CCET offers students a fantastic opportunity to master computer science using a scientific and practical approach.</p>
+                </div>
+
+            </div>
+            <!--//row-1-->
+        </div>
+    </section>
+    <div class=" w3l-3-grids py-5" id="grids-3">
+        <div class="container py-md-4">
+            <div class="row">
+                <div class="col-md-6 mt-md-0">
+                    <div class="grids3-info position-relative">
+                        <a href="#img" class="d-block zoom"><img src="assets/images/banner1.jpg" alt="" class="img-fluid news-image"></a>
+                        <div class="w3-grids3-info">
+                            <h4 class="gdnhy-1"><a href="#img">Upcoming</a>
+                                <a class="w3item-link btn btn-style mt-4" href="#">
+                                    Explore
+                                </a>
+
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-4 grids3-info2">
+                    <div class="grids3-info position-relative">
+                        <a href="#img" class="d-block zoom"><img src="assets/images/banner2.jpg" alt="" class="img-fluid news-image"></a>
+                        <div class="w3-grids3-info second">
+                            <h4 class="gdnhy-1"><a href="#img">Acheivments</a>
+                                <a class="w3item-link btn btn-style mt-4" href="#">
+                                    Explore
+                                </a>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//features section -->
+    <!--/w3l-grids-->
+    <!--//w3l-grids-->
+
+    <!--/testimonials-->
+    <section class="w3l-clients py-5" id="testimonials">
+        <div class="container pt-md-5 pt-4">
+            <div class="w3-testimonial-grids align-items-center py-lg-5">
+                <div class="w3-testimonial-content-top">
+                    <div class="mb-4">
+                        <div class="item">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        <q><i class="fas fa-quote-left me-2"></i>CCET ACM Student Chapter is an opportunity for like minded people to evolve and turn
+                                            their ideas into reality. It works for the betterment of its members and helps them to
+                                            excel in the field of computer science. It encourages people to increase their skill sets
+                                            by evaluating their skills on real life examples.</q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="test-img"><img src="ccet-photos/Saket.jpg" class="img-fluid-x" alt="client-img">
+                                        </div>
+                                        <div class="peopl align-self">
+                                            <h3>Saket Sarin</h3>
+                                            <p class="indentity">Chairperson</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--//testimonials-->
+
+
+    <section class="init">
+        <p class="head-int">Our Initiatives</p>
+
+        <div class="row-x">
+            <div class="container-init">
+                <div class="content-init">
+                  <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                    <div class="content-overlay-init"></div>
+                    <img class="content-image-init" src="ccet-photos/Vectors/coding_copy.png" alt="">
+                    <div class="content-details-init fadeIn-bottom-init">
+                      <h3 class="content-title-init">This is a title</h3>
+                      <p class="content-text-init">This is a short description</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="container-init">
+                <div class="content-init">
+                  <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                    <div class="content-overlay-init"></div>
+                    <img class="content-image-init" src="ccet-photos/Vectors/design_copy.png" alt="">
+                    <div class="content-details-init fadeIn-bottom-init">
+                      <h3 class="content-title-init">This is a title</h3>
+                      <p class="content-text-init">This is a short description</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="container-init">
+                <div class="content-init">
+                  <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                    <div class="content-overlay-init"></div>
+                    <img class="content-image-init" src="ccet-photos/Vectors/project_copy.png" alt="">
+                    <div class="content-details-init fadeIn-bottom-init">
+                      <h3 class="content-title-init">This is a title</h3>
+                      <p class="content-text-init">This is a short description</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="container-init">
+                <div class="content-init">
+                  <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                    <div class="content-overlay-init"></div>
+                    <img class="content-image-init" src="ccet-photos/Vectors/website_copy.png" alt="">
+                    <div class="content-details-init fadeIn-bottom-init">
+                      <h3 class="content-title-init">This is a title</h3>
+                      <p class="content-text-init">This is a short description</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+        </div>
+        <div class="row-2">
+            <div class="container-init-2">
+                <div class="content-init-2">
+                  <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                    <div class="content-overlay-init-2"></div>
+                    <img class="content-image-init-2" src="ccet-photos/Vectors/student speaker-02.png" alt="">
+                    <div class="content-details-init-2 fadeIn-bottom-init-2">
+                      <h3 class="content-title-init-2">This is a title</h3>
+                      <p class="content-text-init-2">This is a short description</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="container-init-2">
+                <div class="content-init-2">
+                  <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                    <div class="content-overlay-init-2"></div>
+                    <img class="content-image-init-2" src="ccet-photos/Vectors/career.png" alt="">
+                    <div class="content-details-init-2 fadeIn-bottom-init-2">
+                      <h3 class="content-title-init-2">This is a title</h3>
+                      <p class="content-text-init-2">This is a short description</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+        </div>
+
+    </section>
+    <section class="w3l-grids-3 py-5" id="about">
+        <div class="container py-md-5 py-3">
+            <div class="row w3home-ab-grids">
+                <div class="w3ab-left-top col-lg-6 mt-lg-0 mt-4 pt-lg-0 pt-2">
+                    <div class="give-margin">
+                        <h3 class="title-w3l mb-2">Membership Benefits</h3>
+                        <p class="my-3"> A vast network of nearly 100,000 highly dedicated student and professional peers. A full year subscription to ACM magazines and news letters.(Communications of the ACM, XRDS: Crossroads, MemberNet etc.). The option to subscribe to the full ACM Digital Library, which includes over 2 million pages of text. Become a member of computing community through one of hundreds of Professional and Student Chapters worldwide. Participation in ACM Distinguished Speakers Program (DSP).Renowned International Thought Leaders Speaking on the Most Important Topics in Computing Today. Unique volunteering opportunities to gain hands-on experience and knowledge of the marketplace </p>
+                        <a href="about.html" class="btn btn-style btn-primary mt-4">Learn More</a>
+                    </div>    
+                </div>
+                <div class="w3ab-right-top col-lg-6 ">
+                    <div class="hover"><img src="ccet-photos/about11-01 copy.png" alt="" class="logo-acm-member"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--/w3l-newsletter-->
+    <section class="w3l-newsletter py-5">
+        <div class="container py-sm-5">
+            <div class="uphny-w3l-newsletter-inf">
+                <div class="row uphny-w3l-newsletter align-items-center">
+                    <div class="col-lg-6 w3l-newsletter-left text-left">
+                        <h3 class="titlehny">Subscribe to Our Digital Outlets Today!</h3>
+                    </div>
+                    <div class="col-lg-6 w3l-newsletter-form ps-lg-5 mt-lg-0 mt-md-5 mt-4">
+                        <form action="#" method="post" class="subscribe-wthree">
+                            <div class="flex-wrap subscribe-wthree-field">
+                                <input class="form-control" type="email" placeholder="Type Your Email Address" name="email" required="">
+                                <button class="btn btn-style btn-primary" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//w3l-newsletter-->
+    <!--/footer-9-->
+
+    <div class="container-stats">
+        <h1 class="heading-stats">This Year in Numbers</h1>
+        <div class="counter-stats ">
+            <div class="item">
+                <i class="fas fa-laptop"></i>
+                <p id="number1" class="number">0</p>
+                <p class="label">Hours coding</p>
+              </div>
+              <div class="item">
+                <i class="fas fa-camera"></i>
+                <p id="number2" class="number">0</p>
+                <p class="label">Photos taken</p>
+              </div>
+              <div class="item">
+                <i class="fas fa-car"></i>
+                <p id="number3" class="number">0</p>
+                <p class="label">Hours commuting</p>
+              </div>
+              <div class="item">
+                <i class="fas fa-briefcase"></i>
+                <p id="number4" class="number">0</p>
+                <p class="label">Projects done</p>
+              </div>
+              <div class="item">
+                <i class="fab fa-twitter"></i>
+                <p id="number5" class="number">0</p>
+                <p class="label">Tweets sent</p>
+              </div>
+              <div class="item">
+                <i class="fas fa-coffee"></i>
+                <p id="number6" class="number">0</p>
+                <p class="label">Cups of coffee</p>
+              </div>
+        </div>
+      </div>
+    <footer class="w3l-footer9">
+        <section class="footer-inner-main py-5">
+            <div class="container py-md-4">
+                <div class="right-side">
+                    <div class="row footer-hny-grids sub-columns">
+                        <div class="col-lg-4 sub-one-left pe-lg-5">
+                            <h2><a class="navbar-brand" href="index.html">
+                                    <img class="logo-acm" src="ccet-photos/ccet-acm-logo-website-white (1).png" alt="">
+                                </a></h2>
+                            <p class="footer-phny mt-3">ACM boosts up the potential and talent, supporting the overall development needs of our students to facilitate a structured path from education to employment by providing a safe and supported space where creative talent and imagination can flourish in a caring environment.</p>
+                            <div class="columns-2 mt-4 pt-lg-2">
+                                <ul class="social">
+                                    <li><a href="#facebook"><span class="fab fa-facebook-f"></span></a>
+                                    </li>
+                                    <li><a href="#linkedin"><span class="fab fa-linkedin-in"></span></a>
+                                    </li>
+                                    <li><a href="#twitter"><span class="fab fa-twitter"></span></a>
+                                    </li>
+                                    <li><a href="#google"><span class="fab fa-google-plus-g"></span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 sub-two-right">
+                            <div class="row">
+                                <div class="col-lg-3 sub-two-right">
+                                    <h6>Explore</h6>
+                                    <ul>
+                                        <li><a href="about.html">ACM-W</a>
+                                        </li>
+                                        <li><a href="about.html"> Home</a>
+                                        </li>
+                                        <li><a href="#news">About</a>
+                                        </li>
+                                        <li><a href="#case">Team</a>
+                                        </li>
+                                        <li><a href="contact.html">Acheivments</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 sub-four-right">
+                                    <h6>Contact Us</h6>
+                                    <ul>
+                                        <li><a href="#request">Chandigarh College of Engineering and Technology Degree Wing Sector - 26, Chandigarh</a>
+                                        </li>
+                                        <li><a href="#track">Track & Trace</a>
+                                        </li>
+                                        <li><a href="#job"> Job Application</a>
+                                        </li>
+                                        <li><a href="#posts">News</a>
+                                        </li>
+                                        <li><a href="#support"> Support 24/7</a>
+                                        </li>
+                                        <li><a href="#story"> User Stories</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="below-section mt-lg-5 pt-lg-4">
+                    <div class="copyright-footer">
+                        <p class="copyright-column">Copyright © 2023     All rights reserved | Designed and Developed by CCET ACM Website Team</a></p>
+
+                        <ul class="footer-w3list text-right">
+                            <li><a href="#url">Privacy Policy</a>
+                            </li>
+                            <li><a href="#url">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Js scripts -->
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+        </button>
+
+        <!-- //move top -->
+    </footer>
+    <!--//footer-9 -->
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+    <!-- Template JavaScript -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/theme-change.js"></script>
+    <!--/search-->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/demo1.js"></script>
+    <!--//search-->
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function() {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function() {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function() {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function() {
+            $('.navbar-toggler').click(function() {
+                $('body').toggleClass('noscroll');
+            })
+        });
+
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+    <!-- //bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
