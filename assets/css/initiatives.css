@@ -1,0 +1,410 @@
+.init {
+    height: auto;
+    background-color: white;
+}
+
+.head-int {
+    color: black;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 70px;
+}
+
+.hover{
+    transition: 0.2s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.hover:hover{
+    scale: 1.02;
+    transition: 0.2s;
+}
+
+.logo-acm-member{
+    width: 80%;
+    align-items: center;
+}
+
+.row-x {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.box-x {
+    height: 300px;
+    width: 20%; /* You can adjust this value for spacing */
+    margin: 1%;   /* You can adjust this value for spacing */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    transition: 0.5s;
+    background-color: #f9f9f9;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.box-x:hover{
+    transition: 0.5s;
+    scale: 1.1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.box-x:nth-child(1) {
+    background-image: url('/ccet-photos/Vectors/coding_copy.png');
+}
+
+.box-x:nth-child(2) {
+    background-image: url('/ccet-photos/Vectors/design_copy.png');
+}
+
+.box-x:nth-child(3) {
+    background-image: url('/ccet-photos/Vectors/project_copy.png');
+}
+
+.box-x:nth-child(4) {
+    background-image: url('/ccet-photos/Vectors/website_copy.png');
+}
+
+@media (max-width: 768px) {
+    .box-x {
+        width: 48%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .box-x {
+        width: 100%; /* On even smaller screens, use full width */
+    }
+}
+
+.text-x {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+    color: black;
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.box-x:hover .text-x {
+    opacity: 1; /* Display text on hover */
+}
+
+.row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-2 {
+    height: 300px;
+    width: 40%; /* You can adjust this value for spacing */
+    margin: 1%;   /* You can adjust this value for spacing */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    transition: 0.5s;
+    background-color: #f9f9f9;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.box-2:hover{
+    transition: 0.5s;
+    scale: 1.01;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.box-2:nth-child(1) {
+    background-image: url('/ccet-photos/Vectors/student\ speaker-02.png');
+}
+
+.box-2:nth-child(2) {
+    background-image: url('/ccet-photos/Vectors/career.png');
+}
+
+@media (max-width: 768px) {
+    .box-2 {
+        width: 88%; /* Adjust for smaller screens */
+    }
+    .box-x:hover{
+        transition: 0.5s;
+        scale: 1.01;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (max-width: 480px) {
+    .box-2 {
+        width: 100%; /* On even smaller screens, use full width */
+    }
+}
+
+.text-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+    color: black;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.box-2:hover .text-2 {
+    opacity: 1; /* Display text on hover */
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-self: center;
+    text-align: center;
+}
+
+.membership-logo {
+    width: 70%;
+}
+
+.text-box{
+    width: 50%;
+}
+
+/* asdsadsda */
+
+.container-init{
+  padding: 1em 0;
+  float: left;
+  width: 80%;
+}
+@media screen and (max-width: 640px){
+  .container-init{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container-init{
+    width: 23.33333%;
+  }
+}
+
+.container-init .title-init{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content-init {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content-init .content-overlay-init {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content-init:hover .content-overlay-init{
+  opacity: 1;
+}
+
+.content-image-init{
+  width: 100%;
+}
+
+.content-details-init {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content-init:hover .content-details-init{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details-init h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details-init p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}
+
+/* width x2 */
+
+.container-init-2{
+  padding: 1em 0;
+  float: left;
+  width: 80%;
+}
+@media screen and (max-width: 640px){
+  .container-init-2{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container-init-2{
+    width: 43.33333%;
+  }
+}
+
+.container-init-2 .title-init-2{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content-init-2 {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content-init-2 .content-overlay-init-2 {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content-init-2:hover .content-overlay-init-2{
+  opacity: 1;
+}
+
+.content-image-init-2{
+  height: 240px;
+  width: 90%; /* You can adjust this value for spacing */
+}
+
+.content-details-init-2 {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content-init-2:hover .content-details-init-2{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details-init-2 h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details-init-2 p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}
