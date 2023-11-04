@@ -139,7 +139,7 @@
       line-height: 32px;
     }
     .line-title {
-      width: 330px;
+      width: 60%;
     }
   
     /* -------- Landing page ------- */
@@ -174,7 +174,7 @@
     }
     .line-title {
         color: black;
-      width: 350px;
+      width: 70%;
       margin-bottom: 30px;
     }
   
