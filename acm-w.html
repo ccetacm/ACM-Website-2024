@@ -15,19 +15,38 @@ Author URL: http://w3layouts.com
 
     <link href="//fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
     <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/acm-w.css">
     <link rel="stylesheet" href="assets/css/style-starter.css">
     <link rel="stylesheet" href="assets/css/car.css">
     <link rel="stylesheet" href="assets/css/caraousel.css">
     <link rel="stylesheet" href="assets/css/initiatives.css">
     <link rel="stylesheet" href="assets/css/testimonials.css">
-    <link rel="stylesheet" href="assets/css/acm-w.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <style>
+        .heading {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        @media(min-width:992px) {
+            .team-cardsize {
+                height: 400px;
+                width: 300px;
+                margin-top: -100px;
+                margin-bottom: -50px;
+            }
+
+            .team-firstrow {
+                margin-left: 125px;
+            }
+        }
+
+    </style>
 
     <!--Slider-->
     
@@ -109,6 +128,7 @@ Author URL: http://w3layouts.com
         </div>
     </header>
  <!-------------------------------------------Header---------------------------------------->
+ <main class="home-2 main">
  <section class="slider">
     <ul>
         <li>
@@ -164,56 +184,753 @@ Author URL: http://w3layouts.com
         </div>
     </div>
 </section>
+<!---------------------------------------ABOUT US END--------------------------------------------->
 
+<!---------------------------------------TEAM START------------------------------------------------>
+
+
+    <div class="heading align-items-center">
+        <h2 class="site-title ">MEET OUR <span>TEAM</span></h2>
+        <div class="heading-divider test"></div>
+    </div>
+    <br><br><br><br>
+
+    <!-- <div class="case-area py-120">
+
+        <div class="container"> -->
+
+            <!----------------------BUTTONS------------------------->
+            <!-- <div class="filter-controls">
+                <ul class="filter-btns">
+                    <li class="active" data-filter=".cat1">YEAR 2023-2024</li>
+                    <li data-filter=".cat2">YEAR 2022-2023</li>
+                    <li data-filter=".cat3">YEAR 2021-2022</li>
+                </ul>
+            </div> -->
+            <!--------------------------TEAM---------------------------->
+            <!-- <div class="row filter-box popup-gallery">
+
+                <div class="team-area py-120">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3 col-xl-4 filter-item cat1 team-cardsize team-firstrow">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/Akash82228"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/akash-sharma-0619461b8"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-5879-7353"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Akash Sharma</a></h5>
+                                            <span>CHAIRPERSON</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 col-xl-4 filter-item cat1 team-cardsize">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/tarun1807"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/tarun-36ba11214"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-1030-8784"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Tarun</a></h5>
+                                            <span>VICE CHAIRPERSON</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 col-xl-4 filter-item cat1 team-cardsize">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/UMwarrior"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/uday-madan-14753820b/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0003-4354-166X"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Uday Madan</a></h5>
+                                            <span>SECRETARY</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/Mehak-Preet18"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/mehak-preet-133a03233"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0001-8166-8210"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Mehak Preet</a></h5>
+                                            <span>MEMBERSHIP CHAIRPERSON</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/aishita2022"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/aishita-sharma-30b277232"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-8649-3437"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Aishita</a></h5>
+                                            <span>TREASURER</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/devashish-gupta09/"><i
+                                                class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/devashish-gupta-066a16200/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/my-orcid?orcid=0000-0001-5288-6577"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Devashish Gupta</a></h5>
+                                            <span>WEBMASTER</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/hd2342-dubey"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/harshit-dubey-bb07311b9/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0001-5475-9838"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Harshit Dubey</a></h5>
+                                            <span>EDITORIAL HEAD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/Nirbhik16"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/nirbhik-kakkar-526059234"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0001-8187-6108"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Nirbhik Kakkar</a></h5>
+                                            <span>DESIGN HEAD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/Manraj-Mann"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/manraj-singh-5a4418209"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-3077-490X"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Manraj Singh</a></h5>
+                                            <span>EXECUTIVE MEMBER HEAD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/SiDiZEN"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/sidharth-sharma-90670820a/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-0931-8176"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Sidharth Sharma</a></h5>
+                                            <span>EXTERNAL PR HEAD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/arjungupta72/cs_452"><i
+                                                class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/arjungupta165/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-0433-6965"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Arjun Gupta</a></h5>
+                                            <span>SOCIAL MEDIA MANAGER</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/shivam2003-dev"><i
+                                                class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/shivam-kumar2003/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="">https://orcid.org/0000-0001-6747-7952<i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Shivam Kumar</a></h5>
+                                            <span>EVENT MANAGER</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/Pushkar4440"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/pushkar-kaushik-63b330210"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-7856-5736"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Pushkar Kaushik</a></h5>
+                                            <span>CREATIVE HEAD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat2 team-cardsize team-firstrow">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/muskaan712"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/muskaanchopra712/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-7672-9186"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Muskaan Chopra</a></h5>
+                                            <span>CHAIRPERSON</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat2 team-cardsize">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/kri14"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/kriti-aggarwal-b372721a2/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-7415-0103"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Kriti Aggarwal</a></h5>
+                                            <span>VICE CHAIRPERSON</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat2 team-cardsize">
+                                <div class="team-item">
+                                    <img src="#" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/anureetchhabra"><i
+                                                class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/anureet-chhabra-bb86271bb/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0001-8123-4359"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Anureet Chhabra</a></h5>
+                                            <span>SECRETARY</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat2">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2021_team/4membershipchair.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/tarun1807"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/tarun-36ba11214"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-1030-8784"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Tarun</a></h5>
+                                            <span>MEMBERSHIP CHAIRPERSON</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat2">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2021_team/navjot.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/imnjangra"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/njangra"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-5012-2482"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Navjot Jangra</a></h5>
+                                            <span>TREASURER</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat2">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2021_team/parnit.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/Parnit-Kaur"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/parnit-kaur-3972811aa/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0001-6034-5316"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Parnit Kaur</a></h5>
+                                            <span>WEBMASTER</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat2">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2021_team/Dipesh_Singla_1.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/dipesh88"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/dipesh-singla-5b92601a9"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-3762-1228"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Dipesh Singla</a></h5>
+                                            <span>EDITORIAL HEAD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat2">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2021_team/7designhead.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/Ashuthetosh"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/ashuthetosh"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-0998-3467"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Ashutosh Thakur</a></h5>
+                                            <span>DESIGN HEAD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat2">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2021_team/akash.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/Akash82228"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/akash-sharma-0619461b8"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-5879-7353"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Akash Sharma</a></h5>
+                                            <span>APP MASTER</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat2">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2021_team/taruna.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/Taruna06"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/taruna-saini-3a6497202/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-1327-9835"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Taruna Saini</a></h5>
+                                            <span>EXECUTIVE MEMBER HEAD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat2">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2021_team/devashish_gupta.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/devashish-gupta09"><i
+                                                class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/devashish-gupta-066a16200/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0001-5288-6577"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Devashish Gupta</a></h5>
+                                            <span>EXTERNAL PR HEAD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat2">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2021_team/karan.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/KARAN-23"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/karan-singh-b7466317a/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0003-0271-1845"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Karan Singh</a></h5>
+                                            <span>SOCIAL MEDIA MANAGER</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat2">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2021_team/13eventmanager.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/Manraj-Mann"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/manraj-singh-5a4418209"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://orcid.org/0000-0002-3077-490X"><i
+                                                class="fab fa-orcid"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Manraj Singh</a></h5>
+                                            <span>EVENT MANAGER</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat3 team-cardsize team-firstrow">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2020_team/anshul-01.png.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/anshulg954"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/anshulg954/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Anshul Gupta</a></h5>
+                                            <span>CHAIRPERSON</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat3 team-cardsize">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2020_team/inderpreet-01.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/CO18325"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/inderpreet-singh-a32816169/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Inderpreet Singh</a></h5>
+                                            <span>VICE CHAIRPERSON</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat3 team-cardsize">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2020_team/uday-01.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/udaykumarjangra"><i
+                                                class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/udaykumarjangra/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Uday Kumar</a></h5>
+                                            <span>SECRETARY</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat3">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2020_team/muskaan-01.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/muskaan712"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/muskaanchopra712"><i
+                                                class="fab fa-linkedin"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Muskaan Chopra</a></h5>
+                                            <span>MEMBERSHIP CHAIRPERSON</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat3">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2020_team/kriti-01.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/kri14"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/kriti-aggarwal-b372721a2/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Kriti Aggarwal</a></h5>
+                                            <span>TREASURER</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat3">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2020_team/aayushi-01.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/aayushi1499"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/aayushi14/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Aayushi Bansal</a></h5>
+                                            <span>WEBMASTER</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat3">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2020_team/maninder-01.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/co18332"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/maninder-singh-8a62a21b6/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Maninder Singh</a></h5>
+                                            <span>DESIGN HEAD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat3">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2020_team/mukesh-01.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com//MkshSahani"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/mukesh-sahani-27297318b"><i
+                                                class="fab fa-linkedin"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Mukesh Sahani</a></h5>
+                                            <span>EXECUTIVE MEMBER HEAD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat3">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2020_team/tanveer-01.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/CO18353"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/tanveer-singh-kochhar-81393518b/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Tanveer Singh</a></h5>
+                                            <span>EXTERNAL PR HEAD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat3">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2020_team/shriya-01.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/CO18347"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/shriya-verma/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Shriya Verma</a></h5>
+                                            <span>EDITORIAL HEAD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat3">
+                                <div class="team-item">
+                                    <img src="assets/img/Team_Images/2020_team/sonam-01.svg" alt="thumb">
+                                    <div class="team-social">
+                                        <a href="https://github.com/CO18350"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/sonam-garg-4b4a0619a/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="team-bio">
+                                            <h5><a href="#">Sonam Garg</a></h5>
+                                            <span>EVENT MANAGER</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> -->
+
+<!-- TEAM END -->
+
+<!-- INAUGURATION START -->
 
         <div class=" bg py-120" style="margin: 1%, 1%, 1%, 1% ;">
 
             <div class="site-heading text-center" style=" padding: 0; margin-left: 1%; margin-right: 1%; ">
                 <h2 class="site-title">Inauguration of CCET <span>ACM-W</span> Student Chapter</h2>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <!-- <div class="about-left"> -->
-                        <div class="about-img">
-                            <img src="ccet-photos/Team_Images/2023_teamKartik.jpg" alt="">
+            <section class="w3l-grids-3 py-0" id="about"> 
+                <div class="container py-md-5 py-3">
+                    <div class="row w3home-ab-grids align-items-center">
+                        <div class="w3ab-left-top col-lg-6 mt-0 pt-2">
+                            <p class="my-3" style="text-align: justify;">The CCET ACM-W was founded in October 2021 with an
+                                aim to empower
+                                women in the field of
+                                computing and increase the global visibility of women in the field of research
+                                as
+                                well as development.
+                                We provide a platform for like-minded people so that they can grow together and
+                                contribute to the community
+                                in a way that shapes a better world. Our chapter was founded to encourage
+                                students,
+                                especially women, to work
+                                in the field of computing. The chapter’s main goal is to create even
+                                opportunities
+                                and a positive environment for
+                                students, where they can work to develop themselves professionally. We at the
+                                ACM
+                                Student chapter aim to build a
+                                globally visible platform where like-minded people can collaborate and develop
+                                in
+                                their field of interest.
+                            </p>
                         </div>
-                        <!-- </div> -->
+                        <div class="w3ab-right-top col-lg-6 pe-lg-6"> <!-- Adjusted the margin class -->
+                            <img src="ccet-photos\ACMW Group.jpg" alt="" class="img-fluid radius-image">
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <!-- <div class="about-right"> -->
-                        <br> <br> <br>
-                        <p class="about-text"
-                            style="text-align: justify; font-size: large; color: rgb(37, 15, 131) ; ">
-                            The CCET ACM-W student chapter was founded in November 2021 with an aim to
-                            encourage
-                            students, especially women, to work in the field of computing.
-                            It was established in accordance with ACM's global initiative to support,
-                            celebrate and
-                            advocate for engagement of women in computing.
-                            The chapter's main goal is provide a global platform for students where they can
-                            learn
-                            and
-                            showcase their skills.</p>
-                        <br>
-                        <br>
-                        <br>
-
-                    </div>
-                    <!-- </div> -->
-
                 </div>
-            </div>
+            </section>
+            
+            
+            
+            
+                </div>
+          
             <br>
 
         </div>
-
-        <!-- --------------------------------------------------------------------------------------------------------------------
-END OF INAUGURATION SECTION 
------------------------------------------------------------------------------------------------------------------- -->
-
-
-<br>
+<!-- -------------------------------END OF INAUGURATION----------------------------------->
+<div class="site-heading text-center">
+<div class="case-area py-120">
+              <div class="row filter-box popup-gallery">
                     <div class="row">
                         <div class="col-lg-6 mx-auto">
                             <div class="site-heading text-center">
@@ -233,17 +950,17 @@ END OF INAUGURATION SECTION
                                     <div class="acmw-text-box">
 
                                         <div class="acmw-text-image">
-                                            <img src="ccet-photos\Team_Images\2023_team\Palvasha.jpg" height="75px"
+                                            <img src="ccet-photos/ACM-W/2023_team/Aishita.jpg" height="75px"
                                                 width="75px" alt="" style="border-radius: 99%;">
                                         </div>
-                                        <p>ACM-W Student Chapter of CCET aims to promote women in technology. It offers
+                                        <p class="acmw-testquote-colour">ACM-W Student Chapter of CCET aims to promote women in technology. It offers
                                             you support and opportunities to enhance your skills. The chapter is an
                                             excellent opportunity to explore different areas of computing.
                                             <!-- As a member of this community, you will have the opportunity to collaborate with others who share similar interests and explore different areas of computing in order to  advance in them. -->
                                         </p>
                                         <div class="content">
                                             <div class="info">
-                                                <div class="name">ANUREET CHHABRA</div>
+                                                <div class="name">AISHITA</div>
                                                 <div class="job">CHAIRPERSON</div>
                                             </div>
                                         </div>
@@ -258,17 +975,17 @@ END OF INAUGURATION SECTION
                                     <div class="acmw-text-box">
 
                                         <div class="acmw-text-image">
-                                            <img src="ccet-photos/Team_Images/2023_teamKartik.jpg" height="75px"
+                                            <img src="ccet-photos/ACM-W/2023_team/Mehak.jpg" height="75px"
                                                 width="75px" alt="" style="border-radius: 99%;">
                                         </div>
-                                        <p>The CCET ACM-W Student Chapter supports, celebrates, advocates for the full
+                                        <p class="acmw-testquote-colour">The CCET ACM-W Student Chapter supports, celebrates, advocates for the full
                                             engagement of women in all aspects of the computing field and working in the
                                             larger community to advance the contributions of technical women.
                                             <!-- As the vice-chair of CCET ACM-W Student Chapter 2022-23, I'm gonna stand with the mission of ACM-W, that is to celebrate women in computing, being informed and informing more people out there about educational and career opportunities available to them so as to make a difference in the global computing community! -->
                                         </p>
                                         <div class="content">
                                             <div class="info">
-                                                <div class="name">SOUMYA SHARMA</div>
+                                                <div class="name">MEHAKPREET</div>
                                                 <div class="job">VICE-CHAIRPERSON</div>
                                             </div>
                                         </div>
@@ -283,17 +1000,17 @@ END OF INAUGURATION SECTION
                                     <div class="acmw-text-box">
 
                                         <div class="acmw-text-image">
-                                            <img src="ccet-photos/Team_Images/2023_teamKartik.jpg" height="75px"
+                                            <img src="ccet-photos/ACM-W/2023_team/Vanshika.jpg" height="75px"
                                                 width="75px" alt="" style="border-radius: 99%;">
                                         </div>
-                                        <p>The CCET ACM-W Student Chapter helps students to do their best and be
+                                        <p class="acmw-testquote-colour">The CCET ACM-W Student Chapter helps students to do their best and be
                                             creative. This chapter brings out the best by letting students turn their
                                             ideas into reality and to do great in the field of social work with the help
                                             of computing.
                                         </p>
                                         <div class="content">
                                             <div class="info">
-                                                <div class="name">YADVI NANDA</div>
+                                                <div class="name">VANSHIKA BHARDWAJ</div>
                                                 <div class="job">SECRETARY</div>
                                             </div>
                                         </div>
@@ -308,17 +1025,17 @@ END OF INAUGURATION SECTION
                                     <div class="acmw-text-box">
 
                                         <div class="acmw-text-image">
-                                            <img src="ccet-photos/Team_Images/2023_teamKartik.jpg" height="75px"
+                                            <img src="ccet-photos/ACM-W/2023_team/Sahil.jpg" height="75px"
                                                 width="75px" alt="" style="border-radius: 99%;">
                                         </div>
-                                        <p>CCET ACM-W student chapter focuses on the growth and development towards
+                                        <p class="acmw-testquote-colour">CCET ACM-W student chapter focuses on the growth and development towards
                                             computer technologies and helps students to enhance their skills. It
                                             promotes women's involvement in the field of computer science.
                                             <!-- The ACM-W student chapter promotes women's involvement in the field of computer science and offers students equal chances and a supportive atmosphere where they may collaborate to advance their skills. -->
                                         </p>
                                         <div class="content">
                                             <div class="info">
-                                                <div class="name">RINKA</div>
+                                                <div class="name">SAHIL GARG</div>
                                                 <div class="job">MEMBERSHIP-CHAIR</div>
                                             </div>
                                         </div>
@@ -333,17 +1050,17 @@ END OF INAUGURATION SECTION
                                     <div class="acmw-text-box">
 
                                         <div class="acmw-text-image">
-                                            <img src="ccet-photos/Team_Images/2023_teamKartik.jpg" height="75px"
+                                            <img src="ccet-photos/ACM-W/2023_team/Harkiran.jpg" height="75px"
                                                 width="75px" alt="" style="border-radius: 99%;">
                                         </div>
-                                        <p>ACM-W Student Chapter of CCET is powering innovation by supporting women to
-                                            pursue their passion in technology. CCET ACM-W Student Chapter is here to
+                                        <p class="acmw-testquote-colour">CCET ACM-W Student Chapter is powering innovation by supporting women to
+                                            pursue their passion in technology. CASC ACM-W is here to
                                             serve limitless opportunities to women to learn, collaborate and showcase
                                             their skills.
                                         </p>
                                         <div class="content">
                                             <div class="info">
-                                                <div class="name">SMRITI KUMARI</div>
+                                                <div class="name">HARKIRAN KAUR</div>
                                                 <div class="job">TREASURER</div>
                                             </div>
                                         </div>
@@ -358,10 +1075,10 @@ END OF INAUGURATION SECTION
                                     <div class="acmw-text-box">
 
                                         <div class="acmw-text-image">
-                                            <img src="ccet-photos/Team_Images/2023_teamKartik.jpg" height="75px"
+                                            <img src="ccet-photos/ACM-W/2023_team/Ruchika.jpg" height="75px"
                                                 width="75px" alt="" style="border-radius: 99%;">
                                         </div>
-                                        <p>
+                                        <p class="acmw-testquote-colour">
                                             <!-- The CCET ACM-W Student Chapter focuses on the diversity and celebrates women in the field of computing. -->
                                             The ACM-W student chapter promotes women's involvement in the field of
                                             computer science and offers students equal chances and a supportive
@@ -370,7 +1087,7 @@ END OF INAUGURATION SECTION
                                         </p>
                                         <div class="content">
                                             <div class="info">
-                                                <div class="name">SIDDHARTH KHATI</div>
+                                                <div class="name">RUCHIKA THAKUR</div>
                                                 <div class="job">WEBMASTER</div>
                                             </div>
                                         </div>
@@ -385,16 +1102,15 @@ END OF INAUGURATION SECTION
                                     <div class="acmw-text-box">
 
                                         <div class="acmw-text-image">
-                                            <img src="ccet-photos/Team_Images/2023_teamKartik.jpg" height="75px"
+                                            <img src="ccet-photos/ACM-W/2023_team/Ayushi.jpg" height="75px"
                                                 width="75px" alt="" style="border-radius: 99%;">
                                         </div>
-                                        <p>This chapter lays its main focus on the empowerment and encouragement of
-                                            women in the tech sector with numerous helpful services on the go. This not
-                                            only helps in academic development but carves out a personality and bond
+                                        <p class="acmw-testquote-colour">This chapter lays its main focus on the empowerment and encouragement of
+                                            women in the tech sector with numerous helpful services on the go which helps in academic development but carves out a personality and bond
                                             among peers.</p>
                                         <div class="content">
                                             <div class="info">
-                                                <div class="name">KRISH KATHURIA</div>
+                                                <div class="name">AYUSHI</div>
                                                 <div class="job">EDITORIAL HEAD</div>
                                             </div>
                                         </div>
@@ -413,235 +1129,10 @@ END OF INAUGURATION SECTION
                         <div class="swiper-pagination"></div>
 
                     </div>
-        
-        <!-- ------------------------------------------------------------------ -->
-        <!-- Carousel wrapper -->
-<div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
-    <!-- Controls -->
-    <div class="d-flex justify-content-center mb-4">
-      <button class="carousel-control-prev position-relative" type="button"
-        data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next position-relative" type="button"
-        data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!-- Inner -->
-    <div class="carousel-inner py-4">
-      <!-- Single item -->
-      <div class="carousel-item active">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <img class="rounded-circle shadow-1-strong mb-4"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
-                style="width: 150px;" />
-              <h5 class="mb-3">Anna Deynah</h5>
-              <p>UX Designer</p>
-              <p class="text-muted">
-                <i class="fas fa-quote-left pe-2"></i>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
-                officiis hic tenetur quae quaerat ad velit ab hic tenetur.
-              </p>
-              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-              </ul>
-            </div>
-  
-            <div class="col-lg-4 d-none d-lg-block">
-              <img class="rounded-circle shadow-1-strong mb-4"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
-                style="width: 150px;" />
-              <h5 class="mb-3">John Doe</h5>
-              <p>Web Developer</p>
-              <p class="text-muted">
-                <i class="fas fa-quote-left pe-2"></i>
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                suscipit laboriosam, nisi ut aliquid commodi.
-              </p>
-              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li>
-                  <i class="fas fa-star-half-alt fa-sm"></i>
-                </li>
-              </ul>
-            </div>
-  
-            <div class="col-lg-4 d-none d-lg-block">
-              <img class="rounded-circle shadow-1-strong mb-4"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
-                style="width: 150px;" />
-              <h5 class="mb-3">Maria Kate</h5>
-              <p>Photographer</p>
-              <p class="text-muted">
-                <i class="fas fa-quote-left pe-2"></i>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                praesentium voluptatum deleniti atque corrupti.
-              </p>
-              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="far fa-star fa-sm"></i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Single item -->
-      <div class="carousel-item">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <img class="rounded-circle shadow-1-strong mb-4"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp" alt="avatar"
-                style="width: 150px;" />
-              <h5 class="mb-3">John Doe</h5>
-              <p>UX Designer</p>
-              <p class="text-muted">
-                <i class="fas fa-quote-left pe-2"></i>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
-                officiis hic tenetur quae quaerat ad velit ab hic tenetur.
-              </p>
-              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-              </ul>
-            </div>
-  
-            <div class="col-lg-4 d-none d-lg-block">
-              <img class="rounded-circle shadow-1-strong mb-4"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar"
-                style="width: 150px;" />
-              <h5 class="mb-3">Alex Rey</h5>
-              <p>Web Developer</p>
-              <p class="text-muted">
-                <i class="fas fa-quote-left pe-2"></i>
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                suscipit laboriosam, nisi ut aliquid commodi.
-              </p>
-              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li>
-                  <i class="fas fa-star-half-alt fa-sm"></i>
-                </li>
-              </ul>
-            </div>
-  
-            <div class="col-lg-4 d-none d-lg-block">
-              <img class="rounded-circle shadow-1-strong mb-4"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar"
-                style="width: 150px;" />
-              <h5 class="mb-3">Maria Kate</h5>
-              <p>Photographer</p>
-              <p class="text-muted">
-                <i class="fas fa-quote-left pe-2"></i>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                praesentium voluptatum deleniti atque corrupti.
-              </p>
-              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="far fa-star fa-sm"></i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Single item -->
-      <div class="carousel-item">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <img class="rounded-circle shadow-1-strong mb-4"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp" alt="avatar"
-                style="width: 150px;" />
-              <h5 class="mb-3">Anna Deynah</h5>
-              <p>UX Designer</p>
-              <p class="text-muted">
-                <i class="fas fa-quote-left pe-2"></i>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
-                officiis hic tenetur quae quaerat ad velit ab hic tenetur.
-              </p>
-              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-              </ul>
-            </div>
-  
-            <div class="col-lg-4 d-none d-lg-block">
-              <img class="rounded-circle shadow-1-strong mb-4"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp" alt="avatar"
-                style="width: 150px;" />
-              <h5 class="mb-3">John Doe</h5>
-              <p>Web Developer</p>
-              <p class="text-muted">
-                <i class="fas fa-quote-left pe-2"></i>
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                suscipit laboriosam, nisi ut aliquid commodi.
-              </p>
-              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li>
-                  <i class="fas fa-star-half-alt fa-sm"></i>
-                </li>
-              </ul>
-            </div>
-  
-            <div class="col-lg-4 d-none d-lg-block">
-              <img class="rounded-circle shadow-1-strong mb-4"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp" alt="avatar"
-                style="width: 150px;" />
-              <h5 class="mb-3">Maria Kate</h5>
-              <p>Photographer</p>
-              <p class="text-muted">
-                <i class="fas fa-quote-left pe-2"></i>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                praesentium voluptatum deleniti atque corrupti.
-              </p>
-              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="fas fa-star fa-sm"></i></li>
-                <li><i class="far fa-star fa-sm"></i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Inner -->
-  </div>
+
+        </div></div></div>
   <!-- Carousel wrapper -->
+</main>
 
     
 <!------------------------------------------Footer------------------------------------------->
@@ -732,6 +1223,70 @@ END OF INAUGURATION SECTION
 
         <!-- //move top -->
     </footer>
+     <!-- Template JavaScript -->
+     <script src="assets/js/script.js"></script>
+     <script src="assets/js/jquery-3.3.1.min.js"></script>
+     <!--/search-->
+     <script src="assets/js/modernizr.custom.js"></script>
+     <script src="assets/js/classie.js"></script>
+     <script src="assets/js/demo1.js"></script>
+     <script src="assets/js/jquery-3.6.0.min.js"></script>
+     
+     <!--//search-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+<!---------------------------------team------------------------------------------>
+<!-- <script>
+    $(document).ready(function () {
+
+        $(window).on("load", function () {
+            if ($(".filter-box").children().length > 0) {
+                $(".filter-box").isotope({
+                    itemSelector: ".filter-item",
+                    masonry: { columnWidth: 1 },
+                    filter: '.cat1',
+                });
+            });
+
+
+            }
+        });
+    });
+</script> -->
+<!----------------------------Testimonials--------------------------------------------------->
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            breakpoints: {
+                '@1.00': {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    
+<!--------------------------------------------------------------------------------------------------->
 
     <script>
         // When the user scrolls down 20px from the top of the document, show the button
@@ -754,14 +1309,7 @@ END OF INAUGURATION SECTION
         }
 
     </script>
-    <!-- Template JavaScript -->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <!--/search-->
-    <script src="assets/js/modernizr.custom.js"></script>
-    <script src="assets/js/classie.js"></script>
-    <script src="assets/js/demo1.js"></script>
-    <!--//search-->
+   
     <!-- MENU-JS -->
     <script>
         $(window).on("scroll", function() {
@@ -803,69 +1351,9 @@ END OF INAUGURATION SECTION
     </script>
     <!-- //disable body scroll which navbar is in active -->
     <!-- //bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
+   
 
-            $(window).on("load", function () {
-                if ($(".filter-box").children().length > 0) {
-                    $(".filter-box").isotope({
-                        itemSelector: ".filter-item",
-                        masonry: { columnWidth: 1 },
-                        filter: '.cat1',
-                    });
 
-                }
-            });
-
-        });
-
-    </script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            slidesPerGroup: 1,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            breakpoints: {
-                '@1.00': {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-
-            $(window).on("load", function () {
-                if ($(".filter-box").children().length > 0) {
-                    $(".filter-box").isotope({
-                        itemSelector: ".filter-item",
-                        masonry: { columnWidth: 1 },
-                        filter: '.cat1',
-                    });
-
-                }
-            });
-
-        });
-
-    </script>
 
 </body>
 
