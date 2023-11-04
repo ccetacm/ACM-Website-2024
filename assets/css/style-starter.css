@@ -18655,6 +18655,7 @@ a.dropdown-item.active {
     .navbar-toggler {
         padding: 0rem !important;
         border: none;
+        margin-right: 15px;
     }
 
     .navbar-toggler:focus {
