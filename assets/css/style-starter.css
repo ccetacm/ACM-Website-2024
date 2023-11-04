@@ -4236,6 +4236,7 @@ fieldset:disabled .btn {
     color: #adb5bd
 }
 
+
 .btn-group,
 .btn-group-vertical {
     position: relative;
@@ -18267,6 +18268,10 @@ a.read:hover span.fas {
     box-sizing: border-box;
     border-radius: 50%;
     color: #fff;
+}
+
+header.nav-fixed img {
+    filter: invert();
 }
 
 .gg-moon:after {

@@ -15,9 +15,7 @@
 .w3l-team-main .team-title {
     display: inline-block;
 }
-header.nav-fixed img {
-    filter: invert();
-}
+
 
 .about_ACM p{
     font-size: 1rem;
