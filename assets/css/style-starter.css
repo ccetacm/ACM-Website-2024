@@ -4236,6 +4236,7 @@ fieldset:disabled .btn {
     color: #adb5bd
 }
 
+
 .btn-group,
 .btn-group-vertical {
     position: relative;
@@ -18269,6 +18270,10 @@ a.read:hover span.fas {
     color: #fff;
 }
 
+header.nav-fixed img {
+    filter: invert();
+}
+
 .gg-moon:after {
     content: "";
     position: absolute;
@@ -18655,6 +18660,7 @@ a.dropdown-item.active {
     .navbar-toggler {
         padding: 0rem !important;
         border: none;
+        margin-right: 15px;
     }
 
     .navbar-toggler:focus {
@@ -20278,7 +20284,7 @@ p.para-counter {
 /*--//inner-banner--*/
 /*--/testimonials--*/
 .w3l-clients {
-    background: url(/ACM-Website-2023/ccet-photos/ACMW\ Group\ home.jpg) no-repeat center;
+    background: url(../images/ACMW\ Group\ home.jpg) no-repeat center;
     position: relative;
     background-size: cover;
     margin-top: 100px;
