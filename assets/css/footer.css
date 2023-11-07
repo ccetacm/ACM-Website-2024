@@ -193,6 +193,16 @@ float:left;
 padding:15px 0px;
 }
 
+.social-links img {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .main-footer .info-widget .social-links li{
 position:relative;
 margin-right:8px;
