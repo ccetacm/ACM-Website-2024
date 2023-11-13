@@ -18348,7 +18348,7 @@ header.nav-fixed {
     height: 80px;
     border-bottom: none;
     box-shadow: 0 25px 98px 0 rgb(7 6 8 / 7%);
-    z-index: 10 !important;
+    z-index: 10000 !important;
     /* for z-index:10 to display gallery popup */
 }
 
