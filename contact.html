@@ -36,6 +36,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="assets/about/styles.css">
     <link rel="icon" type="image/png" href="ccet-photos/acm_plain_logo.png">
+    <style>
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-right:40%;
+            height: 0;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -137,10 +155,10 @@
     <section class="w3l-grids-3 py-5" id="about">
         <div class="container py-md-5 py-3">
             <div class="row w3home-ab-grids">
-                <div class="w3ab-right-top col-lg-6 ">
+                <div class="map-container w3ab-right-top col-lg-6 ">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.670852204572!2d76.80631047605084!3d30.727652374586746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed212e27c319%3A0x491b3277baba3581!2sChandigarh%20College%20Of%20Engineering%20and%20Technology%20Degree%20Wing!5e0!3m2!1sen!2sin!4v1698911875412!5m2!1sen!2sin"
-                        width="500" height="500" style="border:10;" allowfullscreen="" loading="lazy"
+                        width="400" height="300" style="border:10;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="w3ab-left-top col-lg-6 mt-lg-0 mt-4 pt-lg-0 pt-2">
@@ -150,7 +168,18 @@
                             CCET (Degree Wing) campus is midway
                             between the Chandigarh Railway station and ISBT. It is approximately 4 km from the
                             Chandigarh Railway station and ISBT
-                            on Madhya Marg in Sector-26, Chandigarh. </p>
+                            on Madhya Marg in Sector-26, Chandigarh.</p>
+                        <p class="my-3">
+                            Chandigarh College of Engineering and Technology (CCET) Degree Wing, Chandigarh, a government institute under UT
+                            Administration, Chandigarh, was established in 2002. CCET (Degree Wing) has the reputation of being one of the premier
+                            engineering college for imparting quality education in Engineering & Technology. CCET (Degree Wing), Chandigarh, is affiliated to Panjab University (PU), Sector 14, Chandigarh
+                            and approved by All India Council for Technical Education (AICTE), Ministry of HRD, Government, of India, New Delhi.
+                        </p>
+                        <p class="my-3">
+                            The college campus extends over an area of 46 acres (190,000 m2) of land situated close to the Shivalik ranges and
+                            Sukhna Lake.In addition to lecture halls, tutorial rooms and drawing halls, the college
+                            has an auditorium, library, computer centers, workshops, laboratories and playgrounds. 
+                        </p>
                         <a href="https://ccet.ac.in/" class="btn btn-style btn-primary mt-4">Learn More</a>
                     </div>
                 </div>
@@ -162,13 +191,13 @@
     <!--//grids-->
     
         <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-        <section class="w3l-team-main team " id="myForm" style="background-color: #f7f7f9;">
-            <div class="container py-lg-5" class="outerDiv">
-                <div class="title-content text-center mb-2">
+        <section class="w3l-grids-3 py-5 " id="myForm" style="background-color: #f7f7f9;">
+            <div class="container py-md-5 py-3" class="outerDiv" >
+                <div class="title-content text-center ">
                     <h3 class="title-w3l" id="msg">Contact Us form</h3>
                 </div>
-                <div class="innerDiv">
-                    <form action="https://script.google.com/macros/s/AKfycbzz8aYdmmcX62SD2DI8DYIgwI7WW6UKfZiEvfSG0Eviwe_FdgOZtoXtIOu5QgLPT44Yag/exec" method="post">
+                <div class="row w3home-ab-grids innerDiv" >
+                    <form action="https://script.google.com/macros/s/AKfycbzz8aYdmmcX62SD2DI8DYIgwI7WW6UKfZiEvfSG0Eviwe_FdgOZtoXtIOu5QgLPT44Yag/exec" method="post" class="w3ab-right-top col-lg-6">
                         <div class="mb-3">
                             <label for="email" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="mail1" aria-describedby="emailHelp" name="email">
@@ -201,6 +230,9 @@
                         
                         <button type="submit" class="btn btn-primary" id="sub">Submit</button>
                     </form>
+                    <div class="w3ab-left-top col-lg-6 mt-lg-0 mt-4 pt-lg-0 pt-2" >
+                        <img src="ccet-photos/about11-01 copy.png" alt="" class="logo-acm-member">
+                    </div>
 
 
                         
