@@ -1,0 +1,81 @@
+/* Font Import */
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #2b2c48;
+    font-family: "Jost", sans-serif;
+}
+
+/* Header Styles */
+.teams-container {
+    height: 32rem;
+    background: url(../images/team_images/team_bg.png) right no-repeat;
+    background-size: cover;
+}
+
+.teams-head-container {
+    height: 10%;
+    position: relative;
+    border: black;
+}
+
+/* Team Showcase Styles */
+.showcase {
+    display: flex;
+    border: black;
+    flex-direction: row;
+}
+
+/* Individual Team Member Styles */
+.hor-card {
+    position: absolute;
+    height: 32rem;
+    width: calc(100% / 5);
+    border: black;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* Individual Team Member Backgrounds */
+.palvasha { margin-left: calc(.2 * 100% / 14); background-image: url(../images/team_images/palvasha.png); z-index: 13; }
+.vchil { margin-left: calc(1 * 100% / 14); background-image: url(../images/team_images/vchil.png); z-index: 11; }
+.kartik { margin-left: calc(2 * 100% / 14); background-image: url(../images/team_images/Kartik.png); z-index: 12; }
+.saksham { margin-left: calc(3 * 100% / 14); background-image: url(../images/team_images/saksham.png); z-index: 11; }
+.kanishk { margin-left: calc(4 * 100% / 14); background-image: url(../images/team_images/kanishk.png); z-index: 13; }
+.japan { margin-left: calc(5 * 100% / 14); background-image: url(../images/team_images/japan.png); z-index: 11; }
+.saket { margin-left: calc(6 * 100% / 14); background-image: url(../images/team_images/Saket.png); z-index: 14; }
+.utkarsh { margin-left: calc(7 * 100% / 14); background-image: url(../images/team_images/utkarsh.png); z-index: 11; }
+.shivam { margin-left: calc(8 * 100% / 14); background-image: url(../images/team_images/shivam.png); z-index: 13; }
+.Eshita { margin-left: calc(9 * 100% / 14); background-image: url(../images/team_images/Eshita.png); z-index: 12; }
+.Tushar { margin-left: calc(10 * 100% / 14); background-image: url(../images/team_images/tushar.png); z-index: 11; }
+.Briti { margin-left: calc(11 * 100% / 14); background-image: url(../images/team_images/briti.png); z-index: 12; }
+
+/* Common Styles for Team Member Images */
+.hor-card img {
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    display: block;
+    filter: brightness(0.80);
+    transition: width 1s ease-in-out;
+}
+
+/* Hover Effect */
+.hor-card:hover {
+    z-index: 100;
+    width: calc(100% / 4.5);
+    /* transition: width 0.5s ease-in-out; */
+}
+
+/* Responsive Transition for Other Team Members */
+.hor-card:hover ~ .hor-card {
+    display: none;
+    width: calc(100% / 5.5);
+    /* transition: width 0.5s ease-in-out; */
+}
