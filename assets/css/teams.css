@@ -11,7 +11,11 @@ img {
 
 .team-page-section {
     position: relative;
-    padding-top: 70px;
+    padding-top: 40px;
+}
+
+.container .row {
+    flex-wrap: wrap;
 }
 
 .team-page-section .team-block {
@@ -58,9 +62,10 @@ img {
     position: relative;
     margin: 28px !important;
     display: none;
-    width: 1200px;
+    width: 100%;
     justify-content: space-evenly;
     align-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .sec-title .show-menu {
@@ -226,6 +231,8 @@ img {
 .team-block {
     position: relative;
     display: none;
+    /* width: 100%; */
+    justify-content: center;
 }
 
 .show {
@@ -235,6 +242,7 @@ img {
 .team-block .inner-box {
     position: relative;
     padding: 40px 70px 28px 0px;
+    align-self: center;
 }
 
 .team-block .inner-box:before {
@@ -381,7 +389,24 @@ img {
     background-image: linear-gradient(to bottom, #FFEB3C 0%, #ff9600 100%);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
+    .sec-title .menu {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .menu-btn {
+        flex: 1 0 30%;
+        margin: 1%;
+    }
+
+    .team-block {
+        flex: 1 0 48%;
+        margin: 1%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     .sec-title .menu {
         width: 100%;
         flex-wrap: wrap;
@@ -391,10 +416,10 @@ img {
         flex: 1 0 48%;
         margin: 1%;
     }
+
 }
 
-/* Media Query for Mobile Phones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     .sec-title .menu {
         flex-direction: column;
         align-items: center;
