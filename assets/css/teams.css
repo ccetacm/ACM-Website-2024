@@ -303,7 +303,7 @@ img {
 .team-block .inner-box:hover .lower-content h3 a,
 .team-block .inner-box:hover .lower-content .designation {
     color: #ffffff;
-    font-size: large;
+    /* font-size: small; */
 }
 
 .team-block .inner-box:hover .social-icons li a {
@@ -358,7 +358,7 @@ img {
     position: relative;
     margin-top: 5px;
     color: #777777;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .team-block.style-two .inner-box .lower-content h3 a,
