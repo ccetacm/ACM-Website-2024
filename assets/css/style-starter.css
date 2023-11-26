@@ -2518,7 +2518,7 @@ textarea.form-control-lg {
     -moz-appearance: none;
     appearance: none;
     -webkit-print-color-adjust: exact;
-    color-adjust: exact
+    color-adjust: exact;
 }
 
 .form-check-input[type=checkbox] {
@@ -19670,7 +19670,7 @@ p.w3ban-para {
 /*--//video--*/
 /*--/inner-banner--*/
 .inner-banner {
-    background: url(../images/banner2.jpg) no-repeat center;
+    background: url(../images/ACMG0.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
