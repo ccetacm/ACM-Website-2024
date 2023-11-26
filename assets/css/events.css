@@ -2,6 +2,9 @@
   --textshadow-1: 3px 3px 1px rgb(37, 15, 131);
 }
 
+.inner-banner{
+  background-image: url(../../ccet-photos/team_banner.jpg)
+}
 
 .animate {
   animation-duration: 0.5s;
@@ -265,5 +268,4 @@
     margin-right: 27%;
   }
 }
-
 
