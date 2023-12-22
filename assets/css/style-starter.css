@@ -2518,7 +2518,7 @@ textarea.form-control-lg {
     -moz-appearance: none;
     appearance: none;
     -webkit-print-color-adjust: exact;
-    color-adjust: exact
+    color-adjust: exact;
 }
 
 .form-check-input[type=checkbox] {
@@ -19670,7 +19670,7 @@ p.w3ban-para {
 /*--//video--*/
 /*--/inner-banner--*/
 .inner-banner {
-    background: url(../images/banner2.jpg) no-repeat center;
+    background: url(../images/ACMG0.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -20284,7 +20284,8 @@ p.para-counter {
 /*--//inner-banner--*/
 /*--/testimonials--*/
 .w3l-clients {
-    background: url(../images/ACMW\ Group\ home.jpg) no-repeat center;
+    /* C:\Users\ShivamG\OneDrive\Desktop-t\Desktop\new event pull\ACM-Website-2024\assets\images\ACM-M.jpg */
+    background: url(../images/ACM-M.jpg) no-repeat center;
     position: relative;
     background-size: cover;
     margin-top: 100px;

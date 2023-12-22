@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link href="http://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,600&amp;display=swap"
+        rel="stylesheet">
+    <!-- Template CSS -->
+    <link href="http://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,600&amp;display=swap"
+        rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/caraousel.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="icon" type="image/png" href="ccet-photos/acm_plain_logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style-liberty.css">
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+
+
+
+</head>
+<style>
+    /* Slider container */
+    #rs-slider {
+        position: relative;
+        width: 70%;
+        height: 23vw;
+        margin: 50px auto;
+        perspective: 1401px;
+        transform-style: preserve-3d;
+        border-radius: 12px;
+        /* Rounded corners */
+    }
+
+    /* Radio buttons for slide control */
+    #rs-slider input[type=radio] {
+        position: relative;
+        top: 130%;
+        left: 60%;
+        width: 20px;
+        /* Slightly larger */
+        height: 20px;
+        /* Slightly larger */
+        margin: 0 15px 0 0;
+        background: #ccc;
+        /* Light gray */
+        border: 2px solid #ccc;
+        /* Light gray */
+        border-radius: 50%;
+        /* Rounded corners */
+        cursor: pointer;
+        transform: translateX(-83px);
+        transition: background 300ms ease, border 300ms ease;
+        /* Smooth transition */
+    }
+
+    #rs-slider input[type=radio]:checked {
+        background: #FF5A5F;
+        /* Airbnb's coral red */
+        border: 2px solid #FF5A5F;
+        /* Airbnb's coral red */
+    }
+
+    /* Labels and images */
+    #rs-slider label,
+    #rs-slider label img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 12px;
+        /* Rounded corners */
+        transition: transform 400ms ease, opacity 400ms ease;
+        /* Added opacity transition */
+    }
+
+    /* New addition for Zoom Effect */
+    .rs-zoom-container {
+        overflow: hidden;
+        /* Hide the part of the image that extends outside the div */
+    }
+
+    /* Zoom effect */
+    .rs-zoom-container:hover {
+        cursor: pointer;
+        /* Change cursor to zoom-in icon */
+    }
+
+    .rs-zoom-container:hover img {
+        transform: scale(1.1);
+        /* Zoom level */
+        transition: transform .5s ease-in-out;
+    }
+
+
+    /* Existing transition rules */
+    #rs-s1:checked~#rs-slide1,
+    #rs-s2:checked~#rs-slide2,
+    #rs-s3:checked~#rs-slide3 {
+        box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+        transform: translate3d(0%, 0, 0px);
+    }
+
+    #rs-s1:checked~#rs-slide2,
+    #rs-s2:checked~#rs-slide3,
+    #rs-s3:checked~#rs-slide1 {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+        transform: translate3d(15%, 0, -100px);
+    }
+
+    #rs-s1:checked~#rs-slide3,
+    #rs-s2:checked~#rs-slide1,
+    #rs-s3:checked~#rs-slide2 {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+        transform: translate3d(-15%, 0, -100px);
+    }
+
+
+    .tile {
+        position: relative;
+        display: inline-block;
+        width: 300px;
+        height: fit-content;
+        margin-right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 450ms all;
+        transform-origin: center left;
+    }
+
+    .tile_details {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        font-size: 10px;
+        opacity: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        transition: 450ms opacity;
+    }
+
+    .tile_details:after,
+    .tile_details:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .tile:hover .tile_details {
+        opacity: 1;
+    }
+
+    .tile_title {
+        position: absolute;
+        bottom: 12px;
+        padding: 10px;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .row_inner:hover {
+        transform: translate3d(-62.5px, 0, 0);
+        animation-play-state: paused;
+    }
+
+    .row_inner:hover .tile {
+        opacity: 0.3;
+    }
+
+    .row_inner:hover .tile:hover {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+
+    .tile:hover~.tile {
+        transform: translate3d(125px, 0, 0);
+    }
+
+    .rs-blog-item {
+        background: var(--bg-color);
+        border-radius: var(--border-radius);
+        box-shadow: 0 25px 98px 0 rgb(0 0 0 / 4%);
+        border: 1px solid var(--border-color);
+        margin-bottom: 20px;
+    }
+
+    .rs-blog-item:hover {
+        transition: transform 0.5s ease;
+        transform: scale(1) translateY(-0.5rem);
+    }
+
+    .rs-blog-title {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        text-transform: capitalize;
+    }
+
+    .rs-blog-item-info a {
+        color: var(--font-color);
+    }
+
+    .rs-blog-item-info a:hover {
+        color: var(--primary-color);
+        text-decoration: none;
+    }
+
+    .rs-blog-item-author {
+        font-size: 0.785rem;
+        margin-bottom: 10px;
+    }
+
+    .rs-blog-item-info {
+        padding: 15px 13px;
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rs-blog-item-img {
+        height: 11rem;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .rs-blog-item img {
+        object-fit: cover;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    #rs_topics_container {
+        position: sticky;
+        float: left;
+        top: 10%;
+        z-index: 1;
+        height: fit-content;
+    }
+
+    .rs-theme-btn {
+        font-weight: normal;
+        background-color: #FF5A5F;
+        padding: 10px;
+        border-radius: 5px;
+        border: 0px;
+        background-image: linear-gradient(to right, #FF5A5F 0%, var(--primary-color) 100%);
+        background-size: 200% 100%;
+        transition: background-position 0.5s;
+    }
+
+    .rs-theme-btn a {
+        color: white !important;
+    }
+
+    .rs-theme-btn:hover {
+        background-position: -100% 0;
+
+    }
+
+    .rs-author-img {
+        width: 155px;
+        height: 60px;
+        border-radius: 100%;
+        padding: 2px;
+        margin-right: 10px;
+    }
+
+    .rs-author-img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    .rs-topics:hover {
+        transition: transform 0.5s ease;
+        transform: scale(1) translateX(0.5rem);
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+                <h1><a class="navbar-brand" href="index.html">
+                        <img src="ccet-photos/ccet-acm-logo-website-white (1).png" alt="">
+                    </a></h1>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="teams.html">Teams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="contact.html">Acheivments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Magazines</a>
+                        </li>
+                    </ul>
+                    <!--/search-->
+                    <button id="trigger-overlay" class="searchw3-icon mx-xl-4 mx-lg-3" type="button"><i
+                            class="fas fa-search"></i></button>
+                    <!-- open/close -->
+                    <div class="overlay overlay-slidedown">
+                        <button type="button" class="overlay-close"><i class="fas fa-times"></i></button>
+                        <nav class="w3l-formhny">
+                            <h5 class="mb-3">Search here</h5>
+                            <form action="#" method="GET" class="d-sm-flex search-header">
+                                <input class="form-control me-2" type="search" placeholder="Search here..."
+                                    aria-label="Search" required>
+                                <button class="btn btn-style btn-primary" type="submit">Search</button>
+                            </form>
+                        </nav>
+                    </div>
+                    <!--//search-->
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="inner-banner py-5">
+        <section class="w3l-breadcrumb text-left py-sm-5 ">
+            <div class="container w-100 p-3">
+                <div class="w3breadcrumb-gids">
+                    <div class="w3breadcrumb-left text-left">
+                        <h2 class="inner-w3-title mt-lg-5 mt-4">
+                        </h2>
+                    </div>
+                    <div class="w3breadcrumb-right">
+                        <ul class="breadcrumbs-custom-path">
+                            <li><a href="../index.html">Home</a></li>
+                            <li class="active"><span class="fas fa-angle-double-right mx-2"></span> Resources</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <section class="w3l-blog blog-single-post">
+        <div class="blog py-5">
+            <div class="container" style="max-width: 80%;">
+                <div class="row justify-content-center bloghny-page">
+                    <div class="col-lg-8 blopagew3-left">
+                        <div class="blog-area">
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="line-title" style="width: 100%;">Publications</h2>
+                                    <div class="col-md-4">
+                                        <div class="blog-item rs-blog-item">
+                                            <div class="rs-blog-item-img">
+                                                <img src="assets/images/resources/publications/BCI_copy.jpg"
+                                                    alt="Thumb">
+                                            </div>
+                                            <div class="blog-item-info rs-blog-item-info">
+                                                <h4 class="rs-blog-title">
+                                                    <a href="#">Brain Computer
+                                                        Interaction (BCI): A
+                                                        Way to Interact with Brain
+                                                        Waves</a>
+                                                </h4>
+                                                <div class="blog-item-meta rs-blog-item-meta">
+                                                    <ul class="pb-2">
+                                                        <li class="rs-blog-item-author">
+                                                            <a href="#">
+                                                                <i class="fas fa-user-alt"></i>
+                                                                Sudhakar Kumar, Sunil K.
+                                                                Singh
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <button class="theme-btn rs-theme-btn">
+                                                        <a href="https://insights2techinfo.com/brain-computer-interaction-bci-a-way-to-interact-with-brain-waves/"
+                                                            target="_blan" target="_blank">Read
+                                                            More</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="blog-item rs-blog-item">
+                                            <div class="rs-blog-item-img">
+                                                <img src="assets/images/resources/publications/dlt1.png" alt="Thumb">
+                                            </div>
+                                            <div class="blog-item-info rs-blog-item-info">
+                                                <h4 class="rs-blog-title">
+                                                    <a href="#">Distributed Ledger
+                                                        Technology</a>
+                                                </h4>
+                                                <div class="blog-item-meta rs-blog-item-meta">
+                                                    <ul class="pb-2">
+                                                        <li class="rs-blog-item-author">
+                                                            <a href="#">
+                                                                <i class="fas fa-user-alt"></i>
+                                                                Manraj Singh, Sudhakar
+                                                                Kumar
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <button class="theme-btn rs-theme-btn">
+                                                        <a href="https://insights2techinfo.com/distributed-ledger-technology/"
+                                                        target="_blank">Read
+                                                        More</a></button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="blog-item rs-blog-item">
+                                            <div class="rs-blog-item-img">
+                                                <img src="assets/images/resources/publications/digital-twin.png"
+                                                    alt="Thumb">
+                                            </div>
+                                            <div class="blog-item-info rs-blog-item-info">
+                                                <h4 class="rs-blog-title">
+                                                    <a href="#">Digital Twins</a>
+                                                </h4>
+                                                <div class="blog-item-meta rs-blog-item-meta">
+                                                    <ul class="pb-2">
+                                                        <li class="rs-blog-item-author">
+                                                            <a href="#">
+                                                                <i class="fas fa-user-alt"></i>
+                                                                Tarun Vats, Sudhakar
+                                                                Kumar
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <button class="theme-btn rs-theme-btn">
+                                                        <a href="https://insights2techinfo.com/digital-twins/"
+                                                        target="_blank">Read
+                                                        More</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="blog-item rs-blog-item">
+                                            <div class="rs-blog-item-img">
+                                                <img src="assets/images/resources/publications/MLOP_copy.png"
+                                                    alt="Thumb">
+                                            </div>
+                                            <div class="blog-item-info rs-blog-item-info">
+                                                <h4 class="rs-blog-title">
+                                                    <a href="#">MLOps: A New Era of
+                                                        DevOps, Powered
+                                                        by Machine Learning</a>
+                                                </h4>
+                                                <div class="blog-item-meta rs-blog-item-meta">
+                                                    <ul class="pb-2">
+                                                        <li class="rs-blog-item-author">
+                                                            <a href="#">
+                                                                <i class="fas fa-user-alt"></i>
+                                                                Muskaan Chopra, Sunil K.
+                                                                Singh
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <button class="theme-btn rs-theme-btn">
+                                                        <a href="https://insights2techinfo.com/mlops-a-new-era-of-devops-powered-by-machine-learning/"
+                                                            target="_blank">Read
+                                                            More</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="blog-item rs-blog-item">
+                                            <div class="rs-blog-item-img">
+                                                <img src="assets/images/resources/publications/metaverse-technology.png"
+                                                    alt="Thumb">
+                                            </div>
+                                            <div class="blog-item-info rs-blog-item-info">
+                                                <h4 class="rs-blog-title">
+                                                    <a href="#">Metaverse Technologies
+                                                        and Its
+                                                        Applications</a>
+                                                </h4>
+                                                <div class="blog-item-meta rs-blog-item-meta">
+                                                    <ul class="pb-2">
+                                                        <li class="rs-blog-item-author">
+                                                            <a href="#">
+                                                                <i class="fas fa-user-alt"></i>
+                                                                Mavneet Kaur, B. Gupta
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <button class="theme-btn rs-theme-btn">
+                                                        <a href="https://insights2techinfo.com/metaverse-technologies-and-their-applications/"
+                                                        target="_blank">Read
+                                                        More</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="blog-item rs-blog-item">
+                                            <div class="rs-blog-item-img">
+                                                <img src="assets/images/resources/publications/edge-intelligence.jpg"
+                                                    alt="Thumb">
+                                            </div>
+                                            <div class="blog-item-info rs-blog-item-info">
+                                                <h4 class="rs-blog-title">
+                                                    <a href="#">Edge Intelligence: A New
+                                                        Emerging
+                                                        Era</a>
+                                                </h4>
+                                                <div class="blog-item-meta rs-blog-item-meta">
+                                                    <ul class="pb-2">
+                                                        <li class="rs-blog-item-author">
+                                                            <a href="#">
+                                                                <i class="fas fa-user-alt"></i>
+                                                                A Dahiya, B. Gupta
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <button class="theme-btn rs-theme-btn">
+                                                        <a href="https://insights2techinfo.com/edge-intelligence-a-new-emerging-era/"
+                                                        target="_blank">Read
+                                                        More</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="blog-item rs-blog-item">
+                                            <div class="rs-blog-item-img">
+                                                <img src="assets/images/resources/publications/Blockchain copy.png"
+                                                    alt="Thumb">
+                                            </div>
+                                            <div class="blog-item-info rs-blog-item-info">
+                                                <h4 class="rs-blog-title">
+                                                    <a href="#">Blockchain for Data
+                                                        Science</a>
+                                                </h4>
+                                                <div class="blog-item-meta rs-blog-item-meta">
+                                                    <ul class="pb-2">
+                                                        <li class="rs-blog-item-author">
+                                                            <a href="#">
+                                                                <i class="fas fa-user-alt"></i>
+                                                                Dipesh Singla, Sudhakar
+                                                                Kumar
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <button class="theme-btn rs-theme-btn">
+                                                        <a href="https://insights2techinfo.com/blockchain-for-data-science/"
+                                                        target="_blank">Read
+                                                        More</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="blog-item rs-blog-item">
+                                            <div class="rs-blog-item-img">
+                                                <img src="assets/images/resources/publications/Virtual-Personal-Assistant.png"
+                                                    alt="Thumb">
+                                            </div>
+                                            <div class="blog-item-info rs-blog-item-info">
+                                                <h4 class="rs-blog-title">
+                                                    <a href="#">Virtual Personal
+                                                        Assistant</a>
+                                                </h4>
+                                                <div class="blog-item-meta rs-blog-item-meta">
+                                                    <ul class="pb-2">
+                                                        <li class="rs-blog-item-author">
+                                                            <a href="#">
+                                                                <i class="fas fa-user-alt"></i>
+                                                                Deepak Mahto
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <button class="theme-btn rs-theme-btn">
+                                                       <a href="https://insights2techinfo.com/virtual-personal-assistant/"
+                                                        target="_blank">Read
+                                                        More</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-side col-lg-4 col-md-12 col-sm-12 mt-lg-0 mt-5 order-lg-first order-last">
+                        <aside class="sidebar pe-lg-4">
+                            <div class="sidebar-blog-category">
+                                <div class="sidebar-widget sidebar-blog-category">
+                                    <div class="sidebar-title">
+                                        <h4>Topics</h4>
+                                    </div>
+                                    <ul class="blog-cat">
+                                        <li><a href="https://insights2techinfo.com/category/artificial-intelligence/"
+                                                target="_blank" class="rs-topics"><i
+                                                    class="fas fa-angle-double-right me-2"></i>
+                                                Artificial Intelligence </a></li>
+                                        <li><a href="https://insights2techinfo.com/category/blockchain/" target="_blank"
+                                                class="rs-topics"><i class="fas fa-angle-double-right me-2"></i>
+                                                BlockChain </a></li>
+                                        <li><a href="https://insights2techinfo.com/category/books/" target="_blank"
+                                                class="rs-topics"><i class="fas fa-angle-double-right me-2"></i> Books &
+                                                Quiz </a></li>
+                                        <li><a href="https://insights2techinfo.com/category/cyber-security-network-forensics/"
+                                                target="_blank" class="rs-topics"><i
+                                                    class="fas fa-angle-double-right me-2"></i>Cyber
+                                                Security & Network Forensics </a></li>
+                                        <li><a href="https://insights2techinfo.com/category/artificial-intelligence/deep-learning/"
+                                                target="_blank" class="rs-topics"><i
+                                                    class="fas fa-angle-double-right me-2"></i> Deep
+                                                Learning</a></li>
+                                        <li><a href="https://insights2techinfo.com/category/artificial-intelligence/federated-learning/"
+                                                target="_blank" class="rs-topics"><i
+                                                    class="fas fa-angle-double-right me-2"></i> Federated
+                                                Learning</a></li>
+                                        <li><a href="https://insights2techinfo.com/category/healthcare/" target="_blank"
+                                                class="rs-topics"><i class="fas fa-angle-double-right me-2"></i>
+                                                Healthcare</a></li>
+                                        <li><a href="https://insights2techinfo.com/category/it-management/"
+                                                target="_blank" class="rs-topics"><i
+                                                    class="fas fa-angle-double-right me-2"></i> IT &
+                                                Management </a></li>
+                                        <li><a href="https://insights2techinfo.com/category/artificial-intelligence/machine-learning/"
+                                                target="_blank" class="rs-topics"><i
+                                                    class="fas fa-angle-double-right me-2"></i>Machine
+                                                Learning </a></li>
+                                        <li><a href="https://insights2techinfo.com/category/research/" target="_blank"
+                                                class="rs-topics"><i class="fas fa-angle-double-right me-2"></i>
+                                                Research</a></li>
+                                        <li><a href="https://insights2techinfo.com/category/smart-vehicles/"
+                                                target="_blank" class="rs-topics"><i
+                                                    class="fas fa-angle-double-right me-2"></i> Smart
+                                                Vehicles</a></li>
+                                    </ul>
+                                </div>
+                                <h2 class="line-title" style="width: 100%;">Industry Partners</h2>
+
+                                <section id="rs-slider">
+                                    <input type="radio" name="slider" id="rs-s1" data-slide="1" checked>
+                                    <input type="radio" name="slider" id="rs-s2" data-slide="2">
+                                    <input type="radio" name="slider" id="rs-s3" data-slide="3">
+                                    <label for="rs-s1" id="rs-slide1">
+                                        <div class="rs-zoom-container" data-slide="1">
+                                            <a href="https://cyber-conf.com/icspn2022/" target="_blank"><img
+                                                    src="assets/images/resources/industry-partners/conf_ccet.jpeg"
+                                                    alt="Image 1"></a>
+                                        </div>
+                                    </label>
+                                    <label for="rs-s2" id="rs-slide2">
+                                        <div class="rs-zoom-container" data-slide="2">
+                                            <a href="https://insights2techinfo.com/2021-technical-paper-writing-contest/"
+                                                target="_blank"><img
+                                                    src="assets/images/resources/industry-partners/technical_writing.jpeg"
+                                                    alt="Image 2"></a>
+                                        </div>
+                                    </label>
+                                    <label for="rs-s3" id="rs-slide3">
+                                        <div class="rs-zoom-container" data-slide="3">
+                                            <a href="https://insights2techinfo.com/international-video-contest/"
+                                                target="_blank"><img
+                                                    src="assets/images/resources/industry-partners/video_con.jpeg"
+                                                    alt="Image 3"></a>
+                                        </div>
+                                    </label>
+                                </section>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div style="margin: 8px auto; display: block; text-align:center;">
+
+        <!---728x90--->
+
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <!--Widgets Section-->
+            <div class="widgets-section">
+                <div class="row clearfix">
+
+                    <!--Column-->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                <div class="footer-widget about-widget">
+                                    <div class="logo">
+                                        <a href="#"><img src="ccet-photos/ccet-acm-logo-website-white (1).png"
+                                                alt="" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <p>ACM boosts up the potential and talent, supporting the overall
+                                            development
+                                            needs of our students to facilitate a structured path from education to
+                                            employment by providing a safe and supported space where creative talent
+                                            and
+                                            imagination can flourish in a caring environment.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+                                    <h2 style="color: white;">Explore</h2>
+                                    <ul class="footer-list">
+                                        <li><a href="#">ACM-W</a></li>
+                                        <li><a href="../index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="#">Team</a></li>
+                                        <li><a href="#">Acheivments</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--Column-->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                    <div class="footer-widget links-widget">
+                                        <h2 style="color: white;">Quick Links</h2>
+                                        <ul class="footer-list">
+                                            <li><a href="#">Gallery</a></li>
+                                            <li><a href="#">Events</a></li>
+                                            <li><a href="#">Resources</a></li>
+                                            <li><a href="#">Magazine</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget info-widget">
+                                    <h2 style="color: white;">Contact Info</h2>
+                                    <ul class="info-list">
+                                        <li>Chandigarh College of Engineering and Technology Degree Wing Sector -
+                                            26,
+                                            Chandigarh</li>
+                                        <li>Website: www.ccet.ac.in</li>
+                                    </ul>
+                                    <!-- Social Links -->
+                                    <ul class="social-links">
+                                        <img class="social-logo" src="ccet-photos/socials/X.svg" alt="">
+                                        <img class="social-logo" src="ccet-photos/socials/facebook.svg" alt="">
+                                        <img class="social-logo" src="ccet-photos/socials/linkedin.svg" alt="">
+                                        <img class="social-logo" src="ccet-photos/socials/instagram.svg" alt="">
+                                        <img class="social-logo" src="ccet-photos/socials/X.svg" alt="">
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row clearfix">
+
+                    <div class="column col-lg-9 col-md-12 col-sm-12">
+                        <div class="copyright"><span class="theme_color">Copyright © 2021 All rights reserved |
+                                Designed
+                                and Developed by CCET ACM Website Team</div>
+                    </div>
+                    <div class="column col-lg-3 col-md-12 col-sm-12">
+                        <ul class="footer-nav">
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <!-- move top -->
+
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+
+    <!-- Template JavaScript -->
+    <script src="assets/js/monetization.js" type="text/javascript"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=G-98H8KRKT85'></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/theme-change.js"></script>
+    <!--/search-->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/demo1.js"></script>
+    <!--//search-->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- start-smoth-scrolling -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Carousal  -->
+    <script>
+        let currentSlide = 1;
+        let isPaused = false;
+
+        const changeSlide = () => {
+            if (!isPaused) {
+                document.querySelectorAll('.rs-zoom-container').forEach((container) => {
+                    container.classList.remove('can-zoom');
+                });
+
+                const activeSlide = document.getElementById(`rs-s${currentSlide}`);
+                activeSlide.checked = true;
+
+                const activeContainer = document.querySelector(`.rs-zoom-container[data-slide="${currentSlide}"]`);
+                if (activeContainer) {
+                    activeContainer.classList.add('can-zoom');
+                }
+
+                currentSlide++;
+                if (currentSlide > 3) {
+                    currentSlide = 1;
+                }
+            }
+        };
+
+        let slideInterval = setInterval(changeSlide, 3000);
+
+        const pauseSlide = () => {
+            isPaused = true;
+        };
+
+        const resumeSlide = () => {
+            isPaused = false;
+        };
+
+        document.querySelectorAll('.rs-zoom-container').forEach((container) => {
+            container.addEventListener('mouseover', () => {
+                if (!container.classList.contains('can-zoom')) {
+                    return;
+                }
+                pauseSlide();
+            });
+            container.addEventListener('mouseout', () => {
+                resumeSlide();
+            });
+        });
+    </script>
+    <!-- //Carousal  -->
+
+</body>
+
+</html>

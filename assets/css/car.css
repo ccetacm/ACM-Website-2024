@@ -236,7 +236,7 @@ ul{
 }
 
 .slider li:nth-child(1){
-    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("https://i.postimg.cc/VNgvq45t/slider-1.jpg");
+    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("../images/ACM-M.jpg");
     background-size: cover;
     background-position:top left;
 }
@@ -271,13 +271,13 @@ ul{
 }
 
 .slider li:nth-child(2){
-    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("https://i.postimg.cc/gchVRX3K/slider-2.jpg");
+    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("../images/ACMW\ Group\ home.jpg");
     background-size: cover;
     background-position:top left;
 }
 
 .slider li:nth-child(3){
-    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("https://i.postimg.cc/gchVRX3K/slider-2.jpg");
+    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("../images/ACMW\ Group\ home.jpg");
     background-size: cover;
     background-position:top left;
 }
