@@ -362,7 +362,6 @@
     padding-bottom: 10px;
     margin: 50px auto 50px auto;
     min-height: 650px;
-    background: linear-gradient(45deg, #dc3545 0, #dc3545 51%, #dc3545);
     /* border: solid 2px #5f3bff; */
   }
   
@@ -390,7 +389,6 @@
     position: relative;
     right: 50px;
     overflow: hidden;
-    border-radius: 18px;
   }
   
   .mag-card:not(:first-child) {
@@ -401,8 +399,7 @@
     transform: translateY(-30px);
     transition: 0.4s ease-in-out;
     z-index: 50;
-    border-width: 5px;
-    border-style: solid;
+    border: none;
     border-color: whitesmoke;
     box-shadow: -3px 0px 20px 5px rgba(38, 31, 66, 0.8);
   }
@@ -410,7 +407,7 @@
   .mag-card:hover img {
     /* opacity: 50%; */
     overflow: hidden;
-    filter: blur(3px);
+    filter: blur(1px);
     transform: scale(1.01);
     transition: 0.4s ease-in-out;
   }
