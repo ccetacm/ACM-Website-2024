@@ -344,6 +344,7 @@ li.prev {
     background-color: var(--white);
     margin: 0 0.2rem;
     transition: transform .3s;
+    border-radius: 50%;
 }
 
 .slider em{
