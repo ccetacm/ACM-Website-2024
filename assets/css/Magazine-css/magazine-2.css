@@ -1,10 +1,11 @@
-.mag-1 {
+.main-1 {
   position: relative;
   width: calc(min(90rem, 90%));
   margin: 0 auto;
-  min-height: 65vh;
+  min-height: 100vh;
   column-gap: 3rem;
   padding-block: min(20vh, 3rem);
+  overflow-x: hidden;
 }
 
 .bg {
@@ -24,21 +25,21 @@
   opacity: 0;
 }
 
-.mag-1 > div span {
+.main-1 > div span {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-size: 1rem;
   color: #717171;
 }
 
-.mag-1 > div h1 {
+.main-1 > div h1 {
   text-transform: capitalize;
   letter-spacing: 0.8px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
-  background-color: #005baaba;
-  background-image: linear-gradient(45deg, #ff4545, #b72a2a);
+  background-color: #005baa;
+  background-image: linear-gradient(45deg, #fd3838, #000000);
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -47,20 +48,20 @@
   -moz-text-fill-color: transparent;
 }
 
-.mag-1 > div hr {
+.main-1 > div hr {
   display: block;
-  background: #d81010;
+  background: #fd3838;
   height: 0.25rem;
   width: 6.25rem;
   border: none;
   margin: 1.125rem 0 1.875rem 0;
 }
 
-.mag-1 > div p {
+.main-1 > div p {
   line-height: 1.6;
 }
 
-.mag-1 a {
+.main-1 a {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -71,13 +72,13 @@
   transition: 0.3s ease-in-out;
 }
 
-.mag-1 > div > a {
+.main-1 > div > a {
   border: 2px solid #c2c2c2;
   margin-top: 2.188rem;
   padding: 0.625rem 1.875rem;
 }
 
-.mag-1 > div > a:hover {
+.main-1 > div > a:hover {
   border: 0.125rem solid #005baa;
   color: #005baa;
 }
@@ -152,38 +153,32 @@
 
 .swiper-slide--one {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/assets/img/magazine/magazine-thumbnails/vol1.png")
+    url("/assets/img/magazine/magazine-thumbnails/vol3issue1.png")
       no-repeat 50% 50% / cover;
-  background-size: contain;
 }
 
 .swiper-slide--two {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/assets/img/magazine/magazine-thumbnails/vol1issue2.png")
+    url("https://images.unsplash.com/photo-1515309025403-4b0184873cef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80")
       no-repeat 50% 50% / cover;
-      background-size: contain;
-      
 }
 
 .swiper-slide--three {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/assets/img/magazine/magazine-thumbnails/vol1issue3.jpeg")
+    url("https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
       no-repeat 50% 50% / cover;
-      background-size: contain;
 }
 
 .swiper-slide--four {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/assets/img/magazine/magazine-thumbnails/vol2issue1.png")
+    url("/assets/img/magazine/magazine-thumbnails/vol3issue1.png")
       no-repeat 50% 50% / cover;
-      background-size: contain;
 }
 
 .swiper-slide--five {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
     url("/assets/img/magazine/magazine-thumbnails/vol2issue4.jpg")
       no-repeat 50% 50% / cover;
-      background-size: contain;
 }
 
 .swiper-3d .swiper-slide-shadow-left,
@@ -192,7 +187,7 @@
 }
 
 @media screen and (min-width: 48rem) {
-  .mag-1 {
+  .main-1 {
     display: flex;
     align-items: center;
   }
@@ -209,9 +204,10 @@
 }
 
 .center-2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
   font-size: 50px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  margin-bottom: 50px;
   color: black;
-  padding-bottom: 60px;
+  line-height: 5rem;
 }

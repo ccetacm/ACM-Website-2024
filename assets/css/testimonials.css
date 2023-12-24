@@ -82,6 +82,11 @@
 	right: 40px;
 }
 
+#testimonials{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .testimonial {
 	line-height: 28px;
 	text-align: justify;
