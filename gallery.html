@@ -1,561 +1,1006 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>ACM | Gallery</title>
-    <!-- google fonts -->
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>ACM | Gallery</title>
+		<!-- google fonts -->
 
-    <link href="//fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,200;0,400;0,600;0,700;1,600&display=swap"
-        rel="stylesheet">
-    <!-- Template CSS -->
-    <link rel="stylesheet" href="assets/css/style-starter.css">
-    <!--Slider-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-        rel="stylesheet" />
+		<link
+			href="//fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,200;0,400;0,600;0,700;1,600&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Template CSS -->
+		<link rel="stylesheet" href="assets/css/style-starter.css" />
+		<!--Slider-->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+			rel="stylesheet"
+		/>
 
-    <!--FONT AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--FONT AWESOME-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 
-    <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Ysabeau+Infant:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap"
-        rel="stylesheet" />
+		<!--GOOGLE FONTS-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Ysabeau+Infant:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap"
+			rel="stylesheet"
+		/>
 
-    <!--PLUGIN-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- STYLES -->
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/gallery.css">
-    <link rel="icon" type="image/png" href="ccet-photos/acm_plain_logo.png">
-</head>
+		<!--PLUGIN-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<!-- STYLES -->
+		<link rel="stylesheet" href="assets/css/footer.css" />
+		<link rel="stylesheet" href="assets/css/gallery.css" />
+		<link
+			rel="icon"
+			type="image/png"
+			href="ccet-photos/acm_plain_logo.png"
+		/>
+	</head>
 
-<body>
-       <!--/Header-->
-       <header id="site-header" class="fixed-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
-                <h1><a class="navbar-brand" href="index.html">
-                        <img src="ccet-photos/ccet-acm-logo-website-white (1).png" alt="">
-                    </a></h1>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="events.html">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="teams.html">Teams</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="achievements.html">Achievments</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="resources.html">Resources</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="magzine.html">Magazines</a>
-                        </li>
-                    </ul>
-                    <!--/search-->
-                    <button id="trigger-overlay" class="searchw3-icon mx-xl-4 mx-lg-3" type="button"><i
-                            class="fas fa-search"></i></button>
-                    <!-- open/close -->
-                    <div class="overlay overlay-slidedown">
-                        <button type="button" class="overlay-close"><i class="fas fa-times"></i></button>
-                        <nav class="w3l-formhny">
-                            <h5 class="mb-3">Search here</h5>
-                            <form action="#" method="GET" class="d-sm-flex search-header">
-                                <input class="form-control me-2" type="search" placeholder="Search here..."
-                                    aria-label="Search" required>
-                                <button class="btn btn-style btn-primary" type="submit">Search</button>
-                            </form>
-                        </nav>
-                    </div>
-                    <!--//search-->
-                </div>
-            </nav>
-        </div>
-    </header>
+	<body>
+		<!--/Header-->
+		<header id="site-header" class="fixed-top">
+			<div class="container">
+				<nav
+					class="navbar navbar-expand-lg navbar-light stroke py-lg-0"
+				>
+					<h1>
+						<a class="navbar-brand" href="index.html">
+							<img
+								loading="lazy"
+								src="ccet-photos/ccet-acm-logo-website-white (1).png"
+								alt=""
+							/>
+						</a>
+					</h1>
+					<button
+						class="navbar-toggler collapsed"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarScroll"
+						aria-controls="navbarScroll"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span
+							class="navbar-toggler-icon fa icon-expand fa-bars"
+						></span>
+						<span
+							class="navbar-toggler-icon fa icon-close fa-times"
+						></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarScroll">
+						<ul
+							class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+						>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									aria-current="page"
+									href="index.html"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="gallery.html"
+									>Gallery</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="events.html"
+									>Events</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="teams.html">Teams</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="achievements.html"
+									>Achievements</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="resources.html"
+									>Resources</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html"
+									>Contact</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="magazine.html"
+									>Magazines</a
+								>
+							</li>
+						</ul>
+						<!--/search-->
+						<button
+							id="trigger-overlay"
+							class="searchw3-icon mx-xl-4 mx-lg-3"
+							type="button"
+						>
+							<i class="fas fa-search"></i>
+						</button>
+						<!-- open/close -->
+						<div class="overlay overlay-slidedown">
+							<button type="button" class="overlay-close">
+								<i class="fas fa-times"></i>
+							</button>
+							<nav class="w3l-formhny">
+								<h5 class="mb-3">Search here</h5>
+								<form
+									action="#"
+									method="GET"
+									class="d-sm-flex search-header"
+								>
+									<input
+										class="form-control me-2"
+										type="search"
+										placeholder="Search here..."
+										aria-label="Search"
+										required
+									/>
+									<button
+										class="btn btn-style btn-primary"
+										type="submit"
+									>
+										Search
+									</button>
+								</form>
+							</nav>
+						</div>
+						<!--//search-->
+					</div>
+				</nav>
+			</div>
+		</header>
 
-    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <!-- Change the CSS in order to change the Banner photo..... -->
-    <div class="inner-banner py-5">
-        <section class="w3l-breadcrumb text-left py-sm-5 ">
-            <div class="container">
-                <div class="w3breadcrumb-gids">
-                    <div class="w3breadcrumb-left text-left">
-                        <h2 class="inner-w3-title mt-lg-5 mt-4">
-                        </h2>
-                    </div>
-                    <div class="w3breadcrumb-right">
-                        <ul class="breadcrumbs-custom-path">
-                            <li><a href="/">Home</a></li>
-                            <li class="active"><span class="fas fa-angle-double-right mx-2"></span> Gallery</li>
-                        </ul>
-                    </div>
-                </div>
+		<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<!-- Change the CSS in order to change the Banner photo..... -->
+		<div class="inner-banner py-5">
+			<section class="w3l-breadcrumb text-left py-sm-5">
+				<div class="container">
+					<div class="w3breadcrumb-gids">
+						<div class="w3breadcrumb-left text-left">
+							<h2 class="inner-w3-title mt-lg-5 mt-4"></h2>
+						</div>
+						<div class="w3breadcrumb-right">
+							<ul class="breadcrumbs-custom-path">
+								<li><a href="/">Home</a></li>
+								<li class="active">
+									<span
+										class="fas fa-angle-double-right mx-2"
+									></span>
+									Gallery
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 
-            </div>
-        </section>
-    </div>
+		<!-- Gallery section starts here -->
+		<main class="gallery">
+			<section class="event">
+				<!-- Images are organized according to the events -->
+				<h2 class="event-heading">Orientation & Code Jam</h2>
+				<h3 class="date">18 September 2023</h3>
+				<div>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Aishita addressing students</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/orientation/orientation 1-min.JPG"
+							alt="Aishita addressing students"
+						/>
+					</article>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Utkarsh addressing students</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/orientation/orientation 2-min.JPG"
+							alt="Utkarsh addressing students"
+						/>
+					</article>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Audience participating</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/orientation/orientation 3-min.JPG"
+							alt="Audience participating"
+						/>
+					</article>
+				</div>
+			</section>
+			<section class="more">
+				<h2 class="event-heading">
+					Bidding farewell to outgoing Executive Board
+				</h2>
+				<h3 class="date">29 August 2023</h3>
+				<!-- Miscellaneous images will come here -->
+				<div>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>HOD sir addressing students</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2024 farewell/farewell 1-min.jpg"
+							alt="Image"
+						/>
+					</article>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Sudhakar sir addressing students</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2024 farewell/farewell 2-min.jpg"
+							alt="Image"
+						/>
+					</article>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Outgoing EB</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2024 farewell/farewell 3-min.jpg"
+							alt="Image"
+						/>
+					</article>
+				</div>
+			</section>
+			<section class="more">
+				<h2 class="event-heading">C++ STL</h2>
+				<h3 class="date">7 January 2023</h3>
+				<!-- Miscellaneous images will come here -->
+				<div>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Students teaching</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 c++ stl/one-min.png"
+							alt="students addressing"
+						/>
+					</article>
+				</div>
+			</section>
+			<section class="more">
+				<h2 class="event-heading">Let us C</h2>
+				<h3 class="date">5 January 2023</h3>
+				<!-- Miscellaneous images will come here -->
+				<div>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Students addressing</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/let us c/let us c 1-min.jpg"
+							alt="students addressing"
+						/>
+					</article>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Students listening</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/let us c/let us c 2-min.jpg"
+							alt="students addressing"
+						/>
+					</article>
+				</div>
+			</section>
+			<section class="more">
+				<h2 class="event-heading">
+					Talk Regarding Google Summer of Code
+				</h2>
+				<h3 class="date">28 December 2022</h3>
+				<!-- Miscellaneous images will come here -->
+				<div>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Students addressing</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 gsoc talk/one-min.png"
+							alt="students addressing"
+						/>
+					</article>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Students interacting</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 gsoc talk/two-min.png"
+							alt="students addressing"
+						/>
+					</article>
+				</div>
+			</section>
+			<section class="more">
+				<h2 class="event-heading">Alumini Meet</h2>
+				<h3 class="date">27 December 2022</h3>
+				<!-- Miscellaneous images will come here -->
+				<div>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Alumini Interacting</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 alumi meet/one-min.jpeg"
+							alt="students addressing"
+						/>
+					</article>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Alumini Interacting</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 alumi meet/two-min.jpeg"
+							alt="students addressing"
+						/>
+					</article>
+				</div>
+			</section>
+			<section class="more">
+				<h2 class="event-heading">Hour of Code</h2>
+				<h3 class="date">10 December 2022</h3>
+				<!-- Miscellaneous images will come here -->
+				<div>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Students interacting</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 hour of code/one-min.png"
+							alt="students addressing"
+						/>
+					</article>
+				</div>
+			</section>
+			<section class="more">
+				<h2 class="event-heading">
+					Unlocking the Blocks of Blockchain
+				</h2>
+				<h3 class="date">7 September 2022</h3>
+				<!-- Miscellaneous images will come here -->
+				<div>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Audience listening</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 ACM ESP/one-min.png"
+							alt="students addressing"
+						/>
+					</article>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Gust speaker</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 ACM ESP/two-min.jpg"
+							alt="students addressing"
+						/>
+					</article>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Principal addressing</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 ACM ESP/three-min.jpg"
+							alt="students addressing"
+						/>
+					</article>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Giving a momento to guest speaker</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 ACM ESP/four-min.jpg"
+							alt="students addressing"
+						/>
+					</article>
+				</div>
+			</section>
+			<section class="more">
+				<h2 class="event-heading">Azadi ke Rang</h2>
+				<h3 class="date">14 August 2022</h3>
+				<!-- Miscellaneous images will come here -->
+				<div>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Prize distribution</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 azadi ke rang/one-min.jpeg"
+							alt="students addressing"
+						/>
+					</article>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Prize distribution</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 azadi ke rang/two-min.jpeg"
+							alt="students addressing"
+						/>
+					</article>
+				</div>
+			</section>
+			<section class="more">
+				<h2 class="event-heading">
+					2023 Farewell and New core committee introduction
+				</h2>
+				<h3 class="date">10 August 2022</h3>
+				<!-- Miscellaneous images will come here -->
+				<div>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Introduction meet</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 farewell/one-min.png"
+							alt="students addressing"
+						/>
+					</article>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Outgoing committee</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 farewell/two-min.png"
+							alt="students addressing"
+						/>
+					</article>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>New committee</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2023 farewell/three-min.png"
+							alt="students addressing"
+						/>
+					</article>
+				</div>
+			</section>
+			<section class="more">
+				<h2 class="event-heading">Nodejs</h2>
+				<h3 class="date">7 November 2021</h3>
+				<!-- Miscellaneous images will come here -->
+				<div>
+					<article class="gallery_img_container">
+						<span class="gallery_img_content">
+							<h4>Prize distribution</h4>
+							<img
+								loading="lazy"
+								class="right-arrow"
+								src="assets/images/gallery/top right arrow.svg"
+								alt="Top Right Arrow"
+							/>
+						</span>
+						<img
+							loading="lazy"
+							class="gallery_img lazy"
+							src="assets/images/gallery/placeholder.webp"
+							data-src="assets/images/gallery/2022 nodejs/2022 nodejs.jpg"
+							alt="students addressing"
+						/>
+					</article>
+				</div>
+			</section>
+			<dialog class="gallery_modal">
+				<span class="close" onclick="closeModal()">
+					<span></span>
+					<span></span>
+				</span>
+				<img loading="lazy" class="gallery_modal_img" src="" />
+			</dialog>
+		</main>
+		<!-- Gallery section ends here -->
 
-    <!-- Gallery section starts here -->
-    <main class="gallery">
-        <section class="event">
-            <!-- Images are organized according to the events -->
-            <h2 class="event-heading">Orientation & Code Jam</h2>
-            <h3 class="date">18 September 2023</h3>
-            <div>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Aishita addressing students</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/orientation/orientation 1.JPG" alt="Aishita addressing students">
-                </article>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Utkarsh addressing students</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/orientation/orientation 2.JPG" alt="Utkarsh addressing students">
-                </article>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Audience participating</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/orientation/orientation 3.JPG" alt="Audience participating">
-                </article>
-            </div>
-        </section>
-        <section class="more">
-            <h2 class="event-heading">Bidding farewell to outgoing Executive Board</h2>
-            <h3 class="date">29 August 2023</h3>
-            <!-- Miscellaneous images will come here -->
-            <div>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>HOD sir addressing students</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2024 farewell/farewell 1.jpg" alt="Image">
-                </article>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Sudhakar sir addressing students</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2024 farewell/farewell 2.jpg" alt="Image">
-                </article>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Outgoing EB</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2024 farewell/farewell 3.jpg" alt="Image">
-                </article>
-            </div>
-        </section>
-        <section class="more">
-            <h2 class="event-heading">C++ STL</h2>
-            <h3 class="date">7 January 2023</h3>
-            <!-- Miscellaneous images will come here -->
-            <div>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Students teaching</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 c++ stl/one.png" alt="students addressing">
-                </article>
-            </div>
-        </section>
-        <section class="more">
-            <h2 class="event-heading">Let us C</h2>
-            <h3 class="date">5 January 2023</h3>
-            <!-- Miscellaneous images will come here -->
-            <div>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Students addressing</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/let us c/let us c 1.jpg" alt="students addressing">
-                </article>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Students listening</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/let us c/let us c 2.jpg" alt="students addressing">
-                </article>
-            </div>
-        </section>
-        <section class="more">
-            <h2 class="event-heading">Talk Regarding Google Summer of Code</h2>
-            <h3 class="date">28 December 2022</h3>
-            <!-- Miscellaneous images will come here -->
-            <div>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Students addressing</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 gsoc talk/one.png" alt="students addressing">
-                </article>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Students interacting</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 gsoc talk/two.png" alt="students addressing">
-                </article>
-            </div>
-        </section>
-        <section class="more">
-            <h2 class="event-heading">Alumini Meet</h2>
-            <h3 class="date">27 December 2022</h3>
-            <!-- Miscellaneous images will come here -->
-            <div>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Alumini Interacting</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 alumi meet/one.jpeg" alt="students addressing">
-                </article>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Alumini Interacting</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 alumi meet/two.jpeg" alt="students addressing">
-                </article>
-            </div>
-        </section>
-        <section class="more">
-            <h2 class="event-heading">Hour of Code</h2>
-            <h3 class="date">10 December 2022</h3>
-            <!-- Miscellaneous images will come here -->
-            <div>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Students interacting</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 hour of code/one.png" alt="students addressing">
-                </article>
-            </div>
-        </section>
-        <section class="more">
-            <h2 class="event-heading">Unlocking the Blocks of Blockchain</h2>
-            <h3 class="date">7 September 2022</h3>
-            <!-- Miscellaneous images will come here -->
-            <div>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Audience listening</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 ACM ESP/one.png" alt="students addressing">
-                </article>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Gust speaker</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 ACM ESP/two.jpg" alt="students addressing">
-                </article>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Principal addressing</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 ACM ESP/three.jpg" alt="students addressing">
-                </article>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Giving a momento to guest speaker</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 ACM ESP/four.jpg" alt="students addressing">
-                </article>
-            </div>
-        </section>
-        <section class="more">
-            <h2 class="event-heading">Azadi ke Rang</h2>
-            <h3 class="date">14 August 2022</h3>
-            <!-- Miscellaneous images will come here -->
-            <div>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Prize distribution</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 azadi ke rang/one.jpeg" alt="students addressing">
-                </article>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Prize distribution</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 azadi ke rang/two.jpeg" alt="students addressing">
-                </article>
-            </div>
-        </section>
-        <section class="more">
-            <h2 class="event-heading">2023 Farewell and New core committee introduction</h2>
-            <h3 class="date">10 August 2022</h3>
-            <!-- Miscellaneous images will come here -->
-            <div>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Introduction meet</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 farewell/one.png" alt="students addressing">
-                </article>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Outgoing committee</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 farewell/two.png" alt="students addressing">
-                </article>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>New committee</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2023 farewell/three.png" alt="students addressing">
-                </article>
-            </div>
-        </section>
-        <section class="more">
-            <h2 class="event-heading">Nodejs</h2>
-            <h3 class="date">7 November 2021</h3>
-            <!-- Miscellaneous images will come here -->
-            <div>
-                <article class="gallery_img_container">
-                    <span class="gallery_img_content">
-                        <h4>Prize distribution</h4>
-                        <img class="right-arrow" src="/assets/images/gallery/top right arrow.svg" alt="Top Right Arrow">
-                    </span>
-                    <img class="gallery_img" src="/assets/images/gallery/2022 nodejs/2022 nodejs.jpg" alt="students addressing">
-                </article>
-            </div>
-        </section>
-        <dialog class="gallery_modal">
-            <span class="close" onclick="closeModal()">
-                <span></span>
-                <span></span>
-            </span>
-            <img class="gallery_modal_img" src="">
-        </dialog>
-    </main>
-    <!-- Gallery section ends here -->
+		<footer class="main-footer">
+			<div class="container">
+				<!--Widgets Section-->
+				<div class="widgets-section">
+					<div class="row clearfix">
+						<!--Column-->
+						<div class="big-column col-lg-6 col-md-12 col-sm-12">
+							<div class="row clearfix">
+								<!--Footer Column-->
+								<div
+									class="footer-column col-lg-7 col-md-6 col-sm-12"
+								>
+									<div class="footer-widget about-widget">
+										<div class="logo">
+											<a href="#"
+												><img
+													loading="lazy"
+													src="ccet-photos/ccet-acm-logo-website-white (1).png"
+													alt=""
+											/></a>
+										</div>
+										<div class="text">
+											<p>
+												ACM boosts up the potential and
+												talent, supporting the overall
+												development needs of our
+												students to facilitate a
+												structured path from education
+												to employment by providing a
+												safe and supported space where
+												creative talent and imagination
+												can flourish in a caring
+												environment.
+											</p>
+										</div>
+									</div>
+								</div>
 
-    <footer class="main-footer">
-        <div class="container">
-            <!--Widgets Section-->
-            <div class="widgets-section">
-                <div class="row clearfix">
-                    <!--Column-->
-                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
-                        <div class="row clearfix">
-                            <!--Footer Column-->
-                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
-                                <div class="footer-widget about-widget">
-                                    <div class="logo">
-                                        <a href="#"><img src="ccet-photos/ccet-acm-logo-website-white (1).png"
-                                                alt="" /></a>
-                                    </div>
-                                    <div class="text">
-                                        <p>ACM boosts up the potential and talent, supporting the overall
-                                            development
-                                            needs of our students to facilitate a structured path from education to
-                                            employment by providing a safe and supported space where creative talent
-                                            and
-                                            imagination can flourish in a caring environment.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Footer Column-->
-                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
-                                <div class="footer-widget links-widget">
-                                    <h2 style="color: white;">Explore</h2>
-                                    <ul class="footer-list">
-                                        <li><a href="#">ACM-W</a></li>
-                                        <li><a href="../index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="#">Team</a></li>
-                                        <li><a href="#">Achievments</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Column-->
-                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
-                        <div class="row clearfix">
-                            <!--Footer Column-->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-column col-lg-5 col-md-6 col-sm-12">
-                                    <div class="footer-widget links-widget">
-                                        <h2 style="color: white;">Quick Links</h2>
-                                        <ul class="footer-list">
-                                            <li><a href="#">Gallery</a></li>
-                                            <li><a href="#">Events</a></li>
-                                            <li><a href="#">Resources</a></li>
-                                            <li><a href="#">Magazine</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Footer Column-->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget info-widget">
-                                    <h2 style="color: white;">Contact Info</h2>
-                                    <ul class="info-list">
-                                        <li>Chandigarh College of Engineering and Technology Degree Wing Sector -
-                                            26,
-                                            Chandigarh</li>
-                                        <li>Website: www.ccet.ac.in</li>
-                                    </ul>
-                                    <!-- Social Links -->
-                                    <ul class="social-links">
-                                        <img class="social-logo" src="ccet-photos/socials/X.svg" alt="">
-                                        <img class="social-logo" src="ccet-photos/socials/facebook.svg" alt="">
-                                        <img class="social-logo" src="ccet-photos/socials/linkedin.svg" alt="">
-                                        <img class="social-logo" src="ccet-photos/socials/instagram.svg" alt="">
-                                        <img class="social-logo" src="ccet-photos/socials/X.svg" alt="">
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row clearfix">
-                    <div class="column col-lg-9 col-md-12 col-sm-12">
-                        <div class="copyright"><span class="theme_color">Copyright © 2021 All rights reserved |
-                                Designed
-                                and Developed by CCET ACM Website Team</div>
-                    </div>
-                    <div class="column col-lg-3 col-md-12 col-sm-12">
-                        <ul class="footer-nav">
-                            <li><a href="#">Terms of Service</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
-            scrollFunction()
-        };
+								<!--Footer Column-->
+								<div
+									class="footer-column col-lg-5 col-md-6 col-sm-12"
+								>
+									<div class="footer-widget links-widget">
+										<h2 style="color: white">Explore</h2>
+										<ul class="footer-list">
+											<li><a href="#">ACM-W</a></li>
+											<li>
+												<a href="index.html">Home</a>
+											</li>
+											<li>
+												<a href="about.html">About</a>
+											</li>
+											<li>
+												<a href="teams.html">Team</a>
+											</li>
+											<li>
+												<a href="#">Achievements</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("movetop").style.display = "block";
-            } else {
-                document.getElementById("movetop").style.display = "none";
-            }
-        }
+						<!--Column-->
+						<div class="big-column col-lg-6 col-md-12 col-sm-12">
+							<div class="row clearfix">
+								<!--Footer Column-->
+								<div
+									class="footer-column col-lg-6 col-md-6 col-sm-12"
+								>
+									<div
+										class="footer-column col-lg-5 col-md-6 col-sm-12"
+									>
+										<div class="footer-widget links-widget">
+											<h2 style="color: white">
+												Quick Links
+											</h2>
+											<ul class="footer-list">
+												<li>
+													<a href="gallery.html"
+														>Gallery</a
+													>
+												</li>
+												<li>
+													<a href="events.html"
+														>Events</a
+													>
+												</li>
+												<li>
+													<a href="resources.html"
+														>Resources</a
+													>
+												</li>
+												<li>
+													<a href="magazine.html"
+														>Magazine</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+								<!--Footer Column-->
+								<div
+									class="footer-column col-lg-6 col-md-6 col-sm-12"
+								>
+									<div class="footer-widget info-widget">
+										<h2 style="color: white">
+											Contact Info
+										</h2>
+										<ul class="info-list">
+											<li>
+												Chandigarh College of
+												Engineering and Technology
+												Degree Wing Sector - 26,
+												Chandigarh
+											</li>
+											<li>
+												<a
+													href="https://www.ccet.ac.in"
+													target="_blank"
+													>www.ccet.ac.in</a
+												>
+											</li>
+										</ul>
+										<!-- Social Links -->
+										<ul class="social-links">
+											<a
+												href="https://www.facebook.com/acmccet"
+												><img
+													loading="lazy"
+													class="social-logo"
+													src="ccet-photos/socials/facebook.svg"
+													alt=""
+											/></a>
+											<a
+												href="https://www.linkedin.com/in/ccet-acm-student-chapter"
+												><img
+													loading="lazy"
+													class="social-logo"
+													src="ccet-photos/socials/linkedin.svg"
+													alt=""
+											/></a>
+											<a
+												href="https://www.instagram.com/acmccet/?igshid=1f75geliybfix"
+												><img
+													loading="lazy"
+													class="social-logo"
+													src="ccet-photos/socials/instagram.svg"
+													alt=""
+											/></a>
+											<a
+												href="https://www.twitter.com/acmccet"
+												><img
+													loading="lazy"
+													class="social-logo"
+													src="ccet-photos/socials/X.svg"
+													alt=""
+											/></a>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    </script>
-    <!-- Template JavaScript -->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/theme-change.js"></script>
-    <!--/search-->
-    <script src="assets/js/modernizr.custom.js"></script>
-    <script src="assets/js/classie.js"></script>
-    <script src="assets/js/demo1.js"></script>
-    <!--//search-->
-    <!-- MENU-JS -->
-    <script>
-        $(window).on("scroll", function() {
-            var scroll = $(window).scrollTop();
+			<!-- Footer Bottom -->
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row clearfix">
+						<div class="column col-lg-9 col-md-12 col-sm-12">
+							<div class="copyright">
+								<span class="theme_color"
+									>Copyright © 2024 All rights reserved |
+									Designed and Developed by
+									<a
+										class="footer__link"
+										href="teams.html"
+										target="_blank"
+										>CCET ACM Website Team</a
+									>
+								</span>
+							</div>
+						</div>
+						<div class="column col-lg-3 col-md-12 col-sm-12">
+							<ul class="footer-nav">
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script>
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function () {
+				scrollFunction();
+			};
 
-            if (scroll >= 80) {
-                $("#site-header").addClass("nav-fixed");
-            } else {
-                $("#site-header").removeClass("nav-fixed");
-            }
-        });
+			function scrollFunction() {
+				if (
+					document.body.scrollTop > 20 ||
+					document.documentElement.scrollTop > 20
+				) {
+					document.getElementById("movetop").style.display = "block";
+				} else {
+					document.getElementById("movetop").style.display = "none";
+				}
+			}
 
-        //Main navigation Active Class Add Remove
-        $(".navbar-toggler").on("click", function() {
-            $("header").toggleClass("active");
-        });
-        $(document).on("ready", function() {
-            if ($(window).width() > 991) {
-                $("header").removeClass("active");
-            }
-            $(window).on("resize", function() {
-                if ($(window).width() > 991) {
-                    $("header").removeClass("active");
-                }
-            });
-        });
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!-- Template JavaScript -->
+		<script src="assets/js/script.js"></script>
+		<script src="assets/js/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/theme-change.js"></script>
+		<!--/search-->
+		<script src="assets/js/modernizr.custom.js"></script>
+		<script src="assets/js/classie.js"></script>
+		<script src="assets/js/demo1.js"></script>
+		<!--//search-->
+		<!-- MENU-JS -->
+		<script>
+			$(window).on("scroll", function () {
+				var scroll = $(window).scrollTop();
 
-    </script>
-    <!-- //MENU-JS -->
+				if (scroll >= 80) {
+					$("#site-header").addClass("nav-fixed");
+				} else {
+					$("#site-header").removeClass("nav-fixed");
+				}
+			});
 
-    <!-- disable body scroll which navbar is in active -->
-    <script>
-        $(function() {
-            $('.navbar-toggler').click(function() {
-                $('body').toggleClass('noscroll');
-            })
-        });
+			//Main navigation Active Class Add Remove
+			$(".navbar-toggler").on("click", function () {
+				$("header").toggleClass("active");
+			});
+			$(document).on("ready", function () {
+				if ($(window).width() > 991) {
+					$("header").removeClass("active");
+				}
+				$(window).on("resize", function () {
+					if ($(window).width() > 991) {
+						$("header").removeClass("active");
+					}
+				});
+			});
+		</script>
+		<!-- //MENU-JS -->
 
-    </script>
-    <!-- //disable body scroll which navbar is in active -->
-    <!-- //bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/gallery.js"></script>
-
-</body>
-
+		<!-- disable body scroll which navbar is in active -->
+		<script>
+			$(function () {
+				$(".navbar-toggler").click(function () {
+					$("body").toggleClass("noscroll");
+				});
+			});
+		</script>
+		<!-- //disable body scroll which navbar is in active -->
+		<!-- //bootstrap -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/gallery.js"></script>
+	</body>
 </html>

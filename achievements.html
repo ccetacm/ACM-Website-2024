@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achievements</title>
+    <link
+      href="http://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Template CSS -->
+    <link
+      href="http://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/caraousel.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="icon" type="image/png" href="ccet-photos/acm_plain_logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style-liberty.css" />
+    <link rel="stylesheet" href="assets/css/style-starter.css" />
+
+    <style>
+      .ach-container {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      .ach-wrapper img {
+        max-width: 400px;
+        border: 3px solid white;
+        border-radius: 10px;
+      }
+
+      .ach-wrapper {
+        margin: 20px;
+        width: 70%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .ach-text-box {
+        color: #fff;
+        padding: 20px;
+        width: 60%;
+        /* Adjust the width as needed */
+      }
+
+      .ach-text-box h2 {
+        font-size: 32px;
+        margin-bottom: 5px;
+      }
+
+      .ach-text-box p {
+        font-size: 18px;
+      }
+
+      .rs-theme-btn {
+        font-weight: normal;
+        background-color: #ff5a5f;
+        padding: 10px;
+        border-radius: 5px;
+        border: 0px;
+        background-image: linear-gradient(
+          to right,
+          #ff5a5f 0%,
+          var(--primary-color) 100%
+        );
+        background-size: 200% 100%;
+        transition: background-position 0.5s;
+      }
+
+      .rs-theme-btn a {
+        color: white !important;
+      }
+
+      .rs-theme-btn:hover {
+        background-position: -100% 0;
+      }
+
+      @media (max-width: 768px) {
+        .ach-wrapper {
+          flex-direction: column;
+          width: 90%;
+        }
+
+        .ach-text-box {
+          width: 100%;
+          margin-top: 20px;
+          order: 1;
+        }
+
+        .ach-wrapper img {
+          order: -1;
+        }
+
+        .ach-text-box h2 {
+          font-size: 24px;
+        }
+
+        .footer-widget {
+          text-align: center;
+        }
+
+        .footer-widget .logo {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--/Header-->
+    <header id="site-header" class="fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+          <h1>
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="ccet-photos/ccet-acm-logo-website-white (1).png"
+                alt=""
+              />
+            </a>
+          </h1>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+            <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="teams.html">Teams</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Achievements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resources.html">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="magazine.html">Magazines</a>
+              </li>
+            </ul>
+            <!--/search-->
+            <button
+              id="trigger-overlay"
+              class="searchw3-icon mx-xl-4 mx-lg-3"
+              type="button"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+            <!-- open/close -->
+            <div class="overlay overlay-slidedown">
+              <button type="button" class="overlay-close">
+                <i class="fas fa-times"></i>
+              </button>
+              <nav class="w3l-formhny">
+                <h5 class="mb-3">Search here</h5>
+                <form action="#" method="GET" class="d-sm-flex search-header">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search here..."
+                    aria-label="Search"
+                    required
+                  />
+                  <button class="btn btn-style btn-primary" type="submit">
+                    Search
+                  </button>
+                </form>
+              </nav>
+            </div>
+            <!--//search-->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="inner-banner py-5">
+      <section class="w3l-breadcrumb text-left py-sm-5">
+        <div class="container w-100 p-3">
+          <div class="w3breadcrumb-gids">
+            <div class="w3breadcrumb-left text-left">
+              <h2 class="inner-w3-title mt-lg-5 mt-4"></h2>
+            </div>
+            <div class="w3breadcrumb-right">
+              <ul class="breadcrumbs-custom-path">
+                <li><a href="../index.html">Home</a></li>
+                <li class="active">
+                  <span class="fas fa-angle-double-right mx-2"></span>
+                  Achievements
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--//Header-->
+
+    <section class="game-section">
+      <h2 class="line-title" style="left: 15%">
+        Checkout our recent Achievements
+      </h2>
+      <div class="ach-container">
+        <div class="ach-wrapper">
+          <img
+            src="assets/images/resources/achievements/Tarun_Achievement.png"
+            alt=""
+          />
+          <div class="ach-text-box">
+            <h2>Publication in Springer</h2>
+            <p>
+              The CCET ACM Student Chapter is thrilled to share the exciting
+              news that our former Vice Chairperson of ACM, Mr. Tarun Vats, has
+              achieved the remarkable feat of having his paper selected for
+              publication in Springer. Tarun Vats, a dedicated and accomplished
+              scholar, continues to excel in his academic journey. Paper Link:
+              <a
+                href="https://link.springer.com/article/10.1007/s11042-023-16922-5"
+                >https://link.springer.com/article/10.1007/s11042-023-16922-5</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="ach-wrapper">
+          <div class="ach-text-box">
+            <h2>Outstanding Website</h2>
+            <p>
+              It is a moment of great pride and even greater humility, the CCET
+              ACM Student Chapter (CASC), as it won the title of "Outstanding
+              Website" at the national level by ACM India at Bhopal during the
+              ACM Annual Summit.
+            </p>
+          </div>
+          <img
+            src="assets/images/resources/achievements/outstanding_website.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="ach-wrapper">
+          <img
+            src="assets/images/resources/achievements/WORKSHOP-ON-TECHNOLOLGY-USE-AND-INTEGRATION.jpg"
+            alt=""
+          />
+          <div class="ach-text-box">
+            <h2>Technology Use and Integration</h2>
+            <p>
+              One Day Online Workshop on National Education Policy (NEP-2020) on
+              the Topic "Technology Use and Integration".
+            </p>
+          </div>
+        </div>
+        <div class="ach-wrapper">
+          <div class="ach-text-box">
+            <h2>Feature Editor for the ACM XRDS Magazine</h2>
+            <p>
+              The CCET ACM Student Chapter is proud to announce that our
+              Chairperson, Ms.Muskaan Chopra has been selected as the Feature
+              Editor for the ACM XRDS magazine. XRDS is the flagship academic
+              magazine for student members of the Association for Computing
+              Machinery (ACM). Muskaan Chopra is a very enthusiastic researcher
+              and technical writer currently working in the field of Data
+              Science and Machine Learning.
+            </p>
+          </div>
+          <img src="assets/images/resources/achievements/xerds.jpeg" alt="" />
+        </div>
+        <div class="ach-wrapper">
+          <img src="assets/images/resources/achievements/feature.jpeg" alt="" />
+          <div class="ach-text-box">
+            <h2>CCET ACM Student Chapter featured on ACM India Website</h2>
+            <p>
+              CCET ACM Student Chapter was featured on the official website of
+              ACM India as the “Chapter of the Month” for reporting the highest
+              amount of activities in the month of December and was highlighted
+              the best among the 195 student chapters all over India. This was a
+              great acknowledgement for the chapter members as it motivates the
+              students to participate more. This was all done by the student
+              members with the guidance of our Faculty Mentor Dr. Sunil K. Singh
+              (HoD,CSE, CCET) and Faculty Sponsor Sudhakar Kumar and we hope to
+              rise more and perform better.
+            </p>
+          </div>
+        </div>
+        <div class="ach-wrapper">
+          <div class="ach-text-box">
+            <h2>
+              Launch of Book, Linux Yourself: Concept and Programming authored
+              by Dr.Sunil K. Singh
+            </h2>
+            <p>
+              This book is published by Chapman and Hall/CRC (Taylor & Francies
+              Group) at Boca Raton, Florida USA. Numerous people still believe
+              that learning and acquiring expertise in Linux is not easy, and
+              only a professional can understand that how a Linux system works.
+            </p>
+            <br />
+            <button class="theme-btn rs-theme-btn">
+              <a href="linux-launch.html" target="_blank">Read More</a>
+            </button>
+          </div>
+          <img src="assets/images/resources/achievements/linux.jpeg" alt="" />
+        </div>
+        <div class="ach-wrapper">
+          <img src="assets/images/resources/achievements/syscom.jpg" alt="" />
+          <div class="ach-text-box">
+            <h2>
+              Best paper award at International Conference on Smart Systems and
+              Advanced Computing (SysCom 2021)
+            </h2>
+            <p>
+              <b>Sudhakar Kumar</b>, Faculty Sponsor CCET ACM Student Chapter,
+              won the BEST PAPER AWARD for his paper entitled "Efficient
+              Speculative Parallelization Architecture for Overcoming
+              Speculation Overheads" ...
+            </p>
+          </div>
+        </div>
+        <div class="ach-wrapper">
+          <div class="ach-text-box">
+            <h2>
+              Industry Partner of the International Conference on CyberSecurity
+            </h2>
+            <p>
+              We are proud to be an IndustryPartner of the International
+              Conference on CyberSecurity, Privacy and Networking (ICSPN-2022)
+              September 09-11, 2022, Thailand For more Information. <br />
+              Link:
+              <a href="https://cyber-conf.com/icspn2022/"
+                >https://cyber-conf.com/icspn2022/</a
+              >
+            </p>
+          </div>
+          <img src="assets/images/resources/achievements/partner.jpg" alt="" />
+        </div>
+        <div class="ach-wrapper">
+          <img
+            src="assets/images/resources/achievements/certificate-sudhakar.jpg"
+            alt=""
+          />
+          <div class="ach-text-box">
+            <h2>CTiS 2021 Conference</h2>
+            <p>
+              CTis (Computational Thinking in Schools) is an Annual Computa-
+              tional Thinking Conference organised by ACM India (Association of
+              Computing Machinery) and the CSpathshala community. It aims to
+              bring together teachers, educators and researchers tod iscuss
+              issues of curriculum, pedagogy, policy and implementation, related
+              to bringing computational thinking to schools. Faculty Sponsor
+              CCET ACM student chapter Sudhakar Kumar participated in this
+              conference and was awarded with the Certificate of participation.
+            </p>
+          </div>
+        </div>
+        <div class="ach-wrapper">
+          <div class="ach-text-box">
+            <h2>Blockchain for Data Science</h2>
+            <p>
+              CCET ACM student chapter is very proud to announce the successful
+              publication of a short research article on “Blockchain for Data
+              Science” By Dipesh Singla and Sudhakar Kumar under the guidance of
+              Dr. Sunil K. Singh . The Article was published on web platform
+              Insights2Techinfo (A platform for Researchers and Technology
+              Enthusiasts) Date of Publication:16 October 2021
+              <br />
+              Link:
+              <a
+                href="https://insights2techinfo.com/blockchain-for-data-science/"
+                >https://insights2techinfo.com/blockchain-for-data-science/</a
+              >
+            </p>
+          </div>
+          <img
+            src="assets/images/resources/achievements/blockchaindata.jpg"
+            alt=""
+          />
+        </div>
+        <div class="ach-wrapper">
+          <img
+            src="assets/images/resources/achievements/greenhpcs.jpg"
+            alt=""
+          />
+          <div class="ach-text-box">
+            <h2>
+              Green HPC’s : New-Generation Solution For Decreasing Energy
+              Consumption Of HPC Systems
+            </h2>
+            <p>
+              CCET ACM student chapter is very proud to announce the successful
+              publication of article “Green HPC’s : New-Generation Solution For
+              Decreasing Energy Consumption Of HPC Systems” By Kriti Aggarwal,
+              Sudhakar Kumar(@sudhakkr) The Article was published on
+              insight2techinfo (A platform for Researchers and Technology
+              Enthusiasts) <br />
+              Link :
+              <a
+                href="https://insights2techinfo.com/green-hpcs-new-generation-solution-for-decreasing-energy-consumption-of-hpc-systems/"
+                >https://insights2techinfo.com/green-hpcs-new-generation-solution-for-decreasing-energy-consumption-of-hpc-systems/</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="ach-wrapper">
+          <div class="ach-text-box">
+            <h2>“MLOps: A New Era of DevOps</h2>
+            <p>
+              CCET ACM student chapter is very proud to announce the successful
+              publication of the article “MLOps: A New Era of DevOps, Powered by
+              Machine Learning” By Muskaan Chopra (@aan_ra_7_) , Sunil K. Singh.
+              The Article was published on insight2techinfo (A platform for
+              Researchers and Technology Enthusiasts)
+              <br />
+              Link:
+              <a
+                href="https://insights2techinfo.com/mlops-a-new-era-of-devops-powered-by-machine-learning/"
+                >https://insights2techinfo.com/mlops-a-new-era-of-devops-powered-by-machine-learning/</a
+              >
+            </p>
+          </div>
+          <img src="assets/images/resources/achievements/mlops.jpg" alt="" />
+        </div>
+        <div class="ach-wrapper">
+          <img
+            src="assets/images/resources/achievements/acm-summer-sudhakar.jpg"
+            alt=""
+          />
+          <div class="ach-text-box">
+            <h2>ACM Summer School 2021</h2>
+            <p>
+              Compilers are pervasive and critical for any software application
+              to execute on any Computer System. Sudhakar Kumar was one of the
+              top 50 students selected for summer school. This summer school
+              aims at provid- ing you a foundation in the theory and practice of
+              optimizing compilers. Dr. Sunil K. Singh, Professor and HOD,...
+            </p>
+          </div>
+        </div>
+        <div class="ach-wrapper">
+          <div class="ach-text-box">
+            <h2>ACM SIGKDD India Chapter (IKDD) Student Ninja</h2>
+            <p>
+              To help the community grow among next-generation AI/ML/DS
+              enthusiasts, ACM SIGKDD India Chapter (IKDD) selected Ninjas from
+              the country to build a team of passionate students to take
+              leadership roles in organizing activities for the interest of the
+              community, as well as creating and running new periodic programs
+              such as webinars, (virtual) meet-ups, Annual ML/Data Science
+              Schools, etc. Muskaan Chopra, UG Scholar (CSE 2019-23), Membership
+              Chair (2020-2021) was among the top 6 students selected from UG,
+              PG, and Ph.D. courses in India as a part of the Inaugural Student
+              Ninja Board. IKDD, the professional chapter of SIGKDD in India,
+              was established as a part of ACM India in 2011 to build and
+              strengthen interest and expertise in the theory and applications
+              of artificial intelligence, machine learning, data science,
+              databases, data mining, and their related areas.
+            </p>
+          </div>
+          <img
+            src="assets/images/resources/achievements/IKDDNinja-muskaan-01.png"
+            alt=""
+          />
+        </div>
+        <div class="ach-wrapper">
+          <img
+            src="assets/images/resources/achievements/anshul-summerschool-01.png"
+            alt=""
+          />
+          <div class="ach-text-box">
+            <h2>ACM Summer School 2021</h2>
+            <p>
+              Anshul Gupta, Chair, CCET ACM Student Chapter 2021 was among the
+              top50 students who were selected for the ACM Summer School 2021.
+              The school lasted for 12 days in virtual mode and focused on the
+              broader aspect of Natural Language Processing. Different Industry
+              Persons from Microsoft Research, IIIT Hyderabad, IIT Gandhinagar,
+              and IIT Bombay showered their knowledge on different aspects
+              including Introduction to NLP, Python for NLP, ML for NLP, NLP
+              tools, Language modeling, Shallow parsing, Advanced NLP, DL for
+              NLP, Meaning representation, Global vectors, Contextual vectors,
+              BERT and associated models, Application, Machine translation,
+              Information extraction and question answering, Information
+              retrieval,and Text summarization.
+            </p>
+          </div>
+        </div>
+        <div class="ach-wrapper">
+          <div class="ach-text-box">
+            <h2>ACM India Winter School 2020-21 on NLP</h2>
+            <p>
+              The proposed school aims to create awareness among the
+              undergraduate and postgraduate students in the area of Natural
+              Language Processing (NLP). The school will focus on foundational
+              knowledge in natural language processing, the current state-of
+              the-art research challenges and opportunities and future trends. A
+              salient aspect of this school is to emphasize hands-on sessions
+              with suitable case studies.
+            </p>
+          </div>
+          <img
+            src="assets/images/resources/achievements/Hybrid_cloud.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="ach-wrapper">
+          <img
+            src="assets/images/resources/achievements/Hopper2020.png"
+            alt=""
+          />
+          <div class="ach-text-box">
+            <h2>Hopper India 2020</h2>
+            <p>
+              Hopper India 2020 is a two-day virtual event modeled after the
+              popular Grace Hopper Celebration India (GHCI) conference for women
+              in technology. This immersive event brings together women
+              technologists at all levels from industry, academia, research and
+              startups – to build connects, learn and advance their careers.
+            </p>
+          </div>
+        </div>
+        <div class="ach-wrapper">
+          <div class="ach-text-box">
+            <h2>ACM India Student Chapter Summit</h2>
+            <p>
+              The ACM India chapters’ Summit-2019, hosted by Manipal University
+              Jaipur's ACM Student Chapter on the 10th of August 2019 was a
+              stunning success. The event witnessed participation of about 100
+              students from 48 institutions from all over India along with their
+              faculty mentors. The event started off with the lighting of the
+              symbolic lamp, followed by cultural performances from the
+              University's clubs. The president of ACM India, Prof. Abhiram
+              Ranade, professor at IIT Bombay started the presentation by
+              highlighting the goal of ACM, the advancement of computing as a
+              science and profession.
+            </p>
+          </div>
+
+          <img
+            src="assets/images/resources/achievements/Summit_Jaipur.jpg"
+            alt=""
+          />
+        </div>
+        <div class="ach-wrapper">
+          <img
+            src="assets/images/resources/achievements/GHCI_2019.jpg"
+            alt=""
+          />
+          <div class="ach-text-box">
+            <h2>Grace Hopper Celebration India 2019</h2>
+            <p>
+              Technical conference for women in computing and technology. Its
+              the largest gathering of women technologist in India which is
+              organized by Anita Borg Organization
+              <a href="https://anitab.org/">https://anitab.org/</a>. Each year
+              similar events are organized across the globe by Anita Borg
+              Organization with name of GHC. This conference is dedicatedly for
+              women employees and students in technical and engineering field.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //main-slider -->
+
+    <!--/w3-grids-->
+
+    <!--//w3-grids-->
+    <!-- features section -->
+    <footer class="main-footer">
+      <div class="container">
+        <!--Widgets Section-->
+        <div class="widgets-section">
+          <div class="row clearfix">
+            <!--Column-->
+            <div class="big-column col-lg-6 col-md-12 col-sm-12">
+              <div class="row clearfix">
+                <!--Footer Column-->
+                <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                  <div class="footer-widget about-widget">
+                    <div class="logo">
+                      <a href="#"
+                        ><img
+                          src="ccet-photos/ccet-acm-logo-website-white (1).png"
+                          alt=""
+                      /></a>
+                    </div>
+                    <div class="text">
+                      <p>
+                        ACM boosts up the potential and talent, supporting the
+                        overall development needs of our students to facilitate
+                        a structured path from education to employment by
+                        providing a safe and supported space where creative
+                        talent and imagination can flourish in a caring
+                        environment.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Footer Column-->
+                <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h2 style="color: white">Explore</h2>
+                    <ul class="footer-list">
+                      <li><a href="#">ACM-W</a></li>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Achievements</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Column-->
+            <div class="big-column col-lg-6 col-md-12 col-sm-12">
+              <div class="row clearfix">
+                <!--Footer Column-->
+                <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                  <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                    <div class="footer-widget links-widget">
+                      <h2 style="color: white">Quick Links</h2>
+                      <ul class="footer-list">
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Magazine</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Footer Column-->
+                <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                  <div class="footer-widget info-widget">
+                    <h2 style="color: white">Contact Info</h2>
+                    <ul class="info-list">
+                      <li>
+                        Chandigarh College of Engineering and Technology Degree
+                        Wing Sector - 26, Chandigarh
+                      </li>
+                      <li>Website: www.ccet.ac.in</li>
+                    </ul>
+                    <!-- Social Links -->
+                    <ul class="social-links">
+                      <a href="https://twitter.com/acmccet"
+                        ><img
+                          class="social-logo"
+                          src="ccet-photos/socials/X.svg"
+                          alt=""
+                      /></a>
+                      <img
+                        class="social-logo"
+                        src="ccet-photos/socials/facebook.svg"
+                        alt=""
+                      />
+                      <img
+                        class="social-logo"
+                        src="ccet-photos/socials/linkedin.svg"
+                        alt=""
+                      />
+                      <img
+                        class="social-logo"
+                        src="ccet-photos/socials/instagram.svg"
+                        alt=""
+                      />
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row clearfix">
+            <div class="column col-lg-9 col-md-12 col-sm-12">
+              <div class="copyright">
+                <span class="theme_color"
+                  >Copyright © 2023 All rights reserved | Designed and Developed
+                  by CCET ACM Website Team</span
+                >
+              </div>
+            </div>
+            <div class="column col-lg-3 col-md-12 col-sm-12">
+              <ul class="footer-nav">
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--//footer-9 -->
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- Template JavaScript -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/theme-change.js"></script>
+    <!--/search-->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/demo1.js"></script>
+    <!--//search-->
+    <!-- MENU-JS -->
+    <script>
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          $("#site-header").addClass("nav-fixed");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+        }
+      });
+
+      //Main navigation Active Class Add Remove
+      $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+      });
+      $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
+        });
+      });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+      $(function () {
+        $(".navbar-toggler").click(function () {
+          $("body").toggleClass("noscroll");
+        });
+      });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+    <!-- //bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
