@@ -7200,7 +7200,7 @@ fieldset:disabled .btn {
 }
 
 .d-block {
-    display: block !important
+    display: block !important;
 }
 
 .d-grid {
@@ -18836,7 +18836,7 @@ a.dropdown-item.active {
 }
 
 .w3l-main-slider .banner-top3 {
-    background: url(../images/banner3.jpg) no-repeat center;
+    background: url(../images/old-newspaper-350376_1280.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -20272,7 +20272,6 @@ p.para-counter {
         margin-right: 2px;
     }
 }
-
 /*--//team--*/
 /*--//about--*/
 /*--/services--*/
@@ -20626,7 +20625,7 @@ color: var(--primary-color);
 /*--//contact--*/
 /*--/w3l-newsletter--*/
 .uphny-w3l-newsletter-inf {
-    background: url(../images/banner3.jpg) no-repeat center;
+    background: url(../images/old-newspaper-350376_1280.jpg) no-repeat center;
     -ms-background-size: cover;
     background-size: cover;
     z-index: 0;

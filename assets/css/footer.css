@@ -80,7 +80,7 @@ section {
 
 .main-footer .about-widget .logo {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   width: 210px;
 }
 .main-footer .about-widget .text {
@@ -124,7 +124,7 @@ section {
 
 .main-footer .footer-list li a:hover {
   text-decoration: underline;
-  color: #ff6666;
+  color:  #f52029;
 }
 
 .main-footer .footer-list li a:before {

@@ -1,0 +1,103 @@
+.team {
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    padding-bottom: 60px;
+    padding-top: 50px;
+    margin-bottom: 0px;
+    margin-top: 3rem;
+}
+body{
+    overflow-x: hidden;
+}
+
+.team p{
+    color: #000000;
+}
+.w3l-team-main .team-title {
+    display: inline-block;
+}
+
+
+.about_ACM p{
+    font-size: 1rem;
+    color: black;
+}
+
+.about_ACM img{
+    filter: grayscale(10%);
+    
+}
+#acm_logo12{
+    display: block;
+    max-width: 130%;
+    opacity: 100%;
+    margin-left: -17%;
+    transition: 1s;
+    cursor: pointer;
+    /* padding-bottom: 0%; */
+}
+
+#acm_logo12:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.about1{
+    overflow: hidden;
+    padding: 0%;
+}
+
+
+
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 40.3333333333%;
+}
+/* .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+    justify-content: center;
+} */
+
+.counter_grid{
+margin: 0;
+text-align: center;
+}
+
+.py-5 {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.py-lg-5 {
+    margin-top: 1rem;
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+
+.faqw3content p{
+    font-size: 1rem;
+    color: #000000;
+}
+
+.inner-banner{
+    background-image: url(../../ccet-photos/ACMW\ Group\ home.jpg);
+    background-position: 80% 38%;
+}
+
+.inner-w3-title{
+    height: 120px;
+}
+
+.socials a *{
+
+border: 2px solid #103273;
+
+}

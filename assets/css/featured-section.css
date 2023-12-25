@@ -59,6 +59,6 @@
 @media (max-width: 900px) {
     .container-sec {    
         flex-direction: column;
-        max-width: 60%;
+        max-width: 85%;
     }
 }
