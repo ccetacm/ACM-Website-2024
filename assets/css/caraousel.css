@@ -123,6 +123,7 @@
     }
     .game-section .item.active {
       width: 400px;
+      height: 400px;
     }
     .game-section .item-desc {
       transform: translateY(calc(100% - 46px));
@@ -154,6 +155,7 @@
     }
     .game-section .item.active {
       width: 360px;
+      height: 370px;
     }
     .game-section .item-desc {
       transform: translateY(calc(100% - 42px));
@@ -192,6 +194,7 @@
       width: 270px;
       box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
       -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+      height: 330px;
     }
     .game-section .item-desc {
       padding: 0 14px 5px;

@@ -1,6 +1,7 @@
 /***************************
     CUSTOM SCROLL BAR
 ****************************/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 *, html{
     scroll-behavior: smooth;
 }
@@ -48,7 +49,6 @@
 body{
     margin:0;
     overflow-x:hidden !important;
-    font-family: var(--default_font);
 }
 
 a{
@@ -64,7 +64,12 @@ a, button{
 }
 
 em{
+    font-family: "Rubik", sans-serif;
+    font-size: 67px;
+    margin-bottom: 32px;
+    line-height: 1.05;
     font-style:normal;
+    font-weight: 400;
     color:var(--primary_lite);
 }
 
@@ -176,9 +181,24 @@ h1, h2, h3, h5, h6{
     width:100%;
 }
 
+.small-x{
+    font-size: 22px;
+    line-height: 1.6; 
+    margin-bottom: 48px;
+}
+
 @media (max-width:920px){
     .flex{
         flex-wrap:wrap;
+    }
+
+    em {
+        font-size: 32px;
+        width: 50%;
+    }
+
+    .small-x{
+        font-size: 16px;
     }
     
     .padding_1x, .padding_2x, .padding_3x, .padding_4x{
@@ -368,7 +388,7 @@ a.current_dot {
     }
 
     .slider{
-        height:70vh;
+        height:100vh;
     }
     
     .slider article{
