@@ -153,31 +153,31 @@
 
 .swiper-slide--one {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/ACM-Website-2023/assets/img/magazine/magazine-thumbnails/vol\ 3\ issue\ 4.png")
+    url("assets/img/magazine/magazine-thumbnails/vol\ 3\ issue\ 4.png")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--two {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/ACM-Website-2023/assets/img/magazine/magazine-thumbnails/vol\ 3\ issue\ 3.png")
+    url("assets/img/magazine/magazine-thumbnails/vol\ 3\ issue\ 3.png")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--three {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/ACM-Website-2023/assets/img/magazine/magazine-thumbnails/vol\ 3\ issue\ 2.png")
+    url("assets/img/magazine/magazine-thumbnails/vol\ 3\ issue\ 2.png")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--four {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/ACM-Website-2023/assets/img/magazine/magazine-thumbnails/vol3issue1.png")
+    url("assets/img/magazine/magazine-thumbnails/vol3issue1.png")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--five {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/ACM-Website-2023/assets/img/magazine/magazine-thumbnails/vol2issue4.jpg")
+    url("assets/img/magazine/magazine-thumbnails/vol2issue4.jpg")
       no-repeat 50% 50% / cover;
 }
 
