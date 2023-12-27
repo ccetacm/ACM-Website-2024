@@ -1,0 +1,271 @@
+/* Slider container */
+#rs-slider {
+    position: relative;
+    width: 70%;
+    height: 23vw;
+    margin: 50px auto;
+    perspective: 1401px;
+    transform-style: preserve-3d;
+    border-radius: 12px;
+    /* Rounded corners */
+  }
+
+  /* Radio buttons for slide control */
+  #rs-slider input[type="radio"] {
+    position: relative;
+    top: 130%;
+    left: 60%;
+    width: 20px;
+    /* Slightly larger */
+    height: 20px;
+    /* Slightly larger */
+    margin: 0 15px 0 0;
+    background: #ccc;
+    /* Light gray */
+    border: 2px solid #ccc;
+    /* Light gray */
+    border-radius: 50%;
+    /* Rounded corners */
+    cursor: pointer;
+    transform: translateX(-83px);
+    transition: background 300ms ease, border 300ms ease;
+    /* Smooth transition */
+  }
+
+  #rs-slider input[type="radio"]:checked {
+    background: #ff5a5f;
+    /* Airbnb's coral red */
+    border: 2px solid #ff5a5f;
+    /* Airbnb's coral red */
+  }
+
+  /* Labels and images */
+  #rs-slider label,
+  #rs-slider label img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    /* Rounded corners */
+    transition: transform 400ms ease, opacity 400ms ease;
+    /* Added opacity transition */
+  }
+
+  /* New addition for Zoom Effect */
+  .rs-zoom-container {
+    overflow: hidden;
+    /* Hide the part of the image that extends outside the div */
+  }
+
+  /* Zoom effect */
+  .rs-zoom-container:hover {
+    cursor: pointer;
+    /* Change cursor to zoom-in icon */
+  }
+
+  .rs-zoom-container:hover img {
+    transform: scale(1.1);
+    /* Zoom level */
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* Existing transition rules */
+  #rs-s1:checked ~ #rs-slide1,
+  #rs-s2:checked ~ #rs-slide2,
+  #rs-s3:checked ~ #rs-slide3 {
+    box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+    transform: translate3d(0%, 0, 0px);
+  }
+
+  #rs-s1:checked ~ #rs-slide2,
+  #rs-s2:checked ~ #rs-slide3,
+  #rs-s3:checked ~ #rs-slide1 {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translate3d(15%, 0, -100px);
+  }
+
+  #rs-s1:checked ~ #rs-slide3,
+  #rs-s2:checked ~ #rs-slide1,
+  #rs-s3:checked ~ #rs-slide2 {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    transform: translate3d(-15%, 0, -100px);
+  }
+
+  .tile {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: fit-content;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+  }
+
+  .tile_details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-size: 10px;
+    opacity: 0;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    transition: 450ms opacity;
+  }
+
+  .tile_details:after,
+  .tile_details:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  .tile:hover .tile_details {
+    opacity: 1;
+  }
+
+  .tile_title {
+    position: absolute;
+    bottom: 12px;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+  }
+
+  .row_inner:hover {
+    transform: translate3d(-62.5px, 0, 0);
+    animation-play-state: paused;
+  }
+
+  .row_inner:hover .tile {
+    opacity: 0.3;
+  }
+
+  .row_inner:hover .tile:hover {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+
+  .tile:hover ~ .tile {
+    transform: translate3d(125px, 0, 0);
+  }
+
+  .rs-blog-item {
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 4%);
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+  }
+
+  .rs-blog-item:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1) translateY(-0.5rem);
+  }
+
+  .rs-blog-title {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+  }
+
+  .rs-blog-item-info a {
+    color: var(--font-color);
+  }
+
+  .rs-blog-item-info a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .rs-blog-item-author {
+    font-size: 0.785rem;
+    margin-bottom: 10px;
+  }
+
+  .rs-blog-item-info {
+    padding: 15px 13px;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .rs-blog-item-img {
+    height: 11rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .rs-blog-item img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  #rs_topics_container {
+    position: sticky;
+    float: left;
+    top: 10%;
+    z-index: 1;
+    height: fit-content;
+  }
+
+  .rs-theme-btn {
+    font-weight: normal;
+    background-color: #ff5a5f;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    background-image: linear-gradient(
+      to right,
+      #ff5a5f 0%,
+      var(--primary-color) 100%
+    );
+    background-size: 200% 100%;
+    transition: background-position 0.5s;
+  }
+
+  .rs-theme-btn a {
+    color: white !important;
+  }
+
+  .rs-theme-btn:hover {
+    background-position: -100% 0;
+  }
+
+  .rs-author-img {
+    width: 155px;
+    height: 60px;
+    border-radius: 100%;
+    padding: 2px;
+    margin-right: 10px;
+  }
+
+  .rs-author-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+
+  .rs-topics:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1) translateX(0.5rem);
+    text-decoration: none;
+  }
