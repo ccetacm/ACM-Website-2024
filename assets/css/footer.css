@@ -300,3 +300,27 @@ section {
   flex-direction: row;
   gap: 30px;
 }
+
+/* Button CSS */
+.rs-theme-btn {
+  font-weight: normal;
+  background-color: #ff5a5f;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0px;
+  background-image: linear-gradient(
+    to right,
+    #ff5a5f 0%,
+    var(--primary-color) 100%
+  );
+  background-size: 200% 100%;
+  transition: background-position 0.5s;
+}
+
+.rs-theme-btn a {
+  color: white !important;
+}
+
+.rs-theme-btn:hover {
+  background-position: -100% 0;
+}
