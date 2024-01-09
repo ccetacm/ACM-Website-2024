@@ -55,7 +55,6 @@
 
   /* TESTIMONAILS CSS */
 
-  
 .testim {
 	width: 100%;
 	position: relative;
@@ -72,7 +71,7 @@ margin: auto;
 .testim .arrow {
 display: block;
 position: absolute;
-color: #333;
+color: rgb(167, 167, 167);
 cursor: pointer;
 font-size: 2em;
 top: 50%;
@@ -100,11 +99,11 @@ color: rgb(128, 0, 0);
 
 
 .testim .arrow.left {
-left: 70px;
+left: 10px;
 }
 
 .testim .arrow.right {
-right: 70px;
+right: 10px;
 }
 
 .testim .dots {
