@@ -71,6 +71,16 @@ img {
     scale: 1.3;
 }
 
+@media screen and (max-width: 500px) {
+    .sec-title .team-headings {
+        scale: 0.8;
+    }
+    .team-headings .divider,
+    .team-headings .active-title {
+        scale: 1;
+    }
+  }
+
 .sec-title .show-menu {
     margin-top: 10px    ;
     position: relative;
@@ -238,7 +248,7 @@ img {
     justify-content: center;
 }
 
-.show {
+.shows {
     display: flex;
 }
 

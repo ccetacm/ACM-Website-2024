@@ -1098,9 +1098,9 @@
         let memberCards, menuBtns, i;
         memberCards = document.getElementsByClassName("team-block");
         for (i = 0; i < memberCards.length; i++) {
-          memberCards[i].classList.remove("show");
+          memberCards[i].classList.remove("shows");
           if (memberCards[i].className.indexOf(c) > -1)
-            memberCards[i].classList.add("show");
+            memberCards[i].classList.add("shows");
         }
 
         menuBtns = document.getElementsByClassName("menu-btn");
