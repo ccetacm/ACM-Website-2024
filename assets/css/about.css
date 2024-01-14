@@ -47,16 +47,6 @@ body{
     flex: 0 0 auto;
     width: 40.3333333333%;
 }
-/* .row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x)/ -2);
-    margin-left: calc(var(--bs-gutter-x)/ -2);
-    justify-content: center;
-} */
 
 .counter_grid{
 margin: 0;
@@ -81,11 +71,20 @@ text-align: center;
 }
 
 .inner-banner{
-    background-image: url(../../ccet-photos/team_banner.jpg)
+    background-image: url(../../assets/images/gallery/orientation/orientation\ 3-min.JPG);
+    height: 300px;
+    background-position: 0 -170px;
+    background-size: cover;
 }
 
+@media screen and (max-width: 720px) {
+    .inner-banner {
+        background-position: 0px 0px;
+    }
+  }
+  
 .inner-w3-title{
-    height: 120px;
+    height: 50px;
 }
 
 .socials a *{
