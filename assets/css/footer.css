@@ -257,6 +257,12 @@ section {
 .main-footer .footer-bottom .footer__link {
   text-decoration: underline !important;
   text-underline-offset: 4px;
+  color: #8a8d91;
+}
+
+.main-footer .footer-bottom .footer__link:hover
+{
+  color: #F5202B;
 }
 
 .main-footer .footer-bottom .footer-nav {
@@ -323,4 +329,12 @@ section {
 
 .rs-theme-btn:hover {
   background-position: -100% 0;
+}
+
+.hover-1 {
+  color: #8a8d91;
+}
+
+.hover-1:hover {
+  color: #F5202B;
 }
