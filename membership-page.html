@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACM-Membership</title>
+    <link rel="stylesheet" href="assets/css/membership.css">
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="grid-layout">
+        <div class="graphic-1">
+            <img class="graphic-x" src="assets/graphics/Group.png" alt="">
+        </div>
+        <div class="left-content">
+            <div class="align-1">                
+                <div class="container-x-1">
+                    <a href="acm-w.html"><div title="Back to Menu" class="backArrow1">
+                      &#10140;
+                    </div></a>
+                </div>
+
+                <p class="heading-x">CCET ACM Membership Form</p>
+                <p class="sub-heading">Join a vast network of nearly 100,000 highly dedicated student and professional peers</p>
+
+                <div class="appear-animation">
+                    <form method="POST" action="https://formspree.io/f/mayaznpj" id="theForm">
+                        <div class="flex-grid">
+                            <div class="form-style">
+                                <label>Full Name *</label>
+                                <div class="pom-agile">
+                                    <input type="text" name="name" pattern="^[a-zA-Z ]{4,50}$"
+                                        title="Name can only contain alphabets" required="">
+                                </div>
+                            </div>
+                            <div class="form-style">
+                                <label>Year *</label>
+                                <div class="pom-agile">
+                                    <input name="year" type="number" min="1" max="4" required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-grid">
+                            <div class="form-style">
+                                <label>Contact Number *</label>
+                                <div class="pom-agile">
+                                    <input name="pnum" type="text" pattern="^[+0-9]{10}$"
+                                    maxlength="10" title="Number should be of 10 digits" required="">
+                                </div>
+                            </div>
+                            <div class="form-style">
+                                <label>Email *</label>
+                                <div class="pom-agile">
+                                    <input name="email" type="email"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                    title="Email should be similar to ccetacm@gmail.com" required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-grid">
+                            <div class="form-style">
+                                <label>Roll Number *</label>
+                                <div class="pom-agile">
+                                    <input name="rollno" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="form-style">
+                                <label>Area of Interest *</label>
+                                <div class="pom-agile">
+                                    <select id="area-of-interset" name="area-of-interset" value="area-of-interset" required="">
+                                        <option disabled="" selected="">Select Your Interset </option>
+                                        <option value="website">Website</option>
+                                        <option value="coding">Coding</option>
+                                        <option value="designing">Designing</option>
+                                        <option value="designing">Research Paper</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px;" class="form-style">
+                            <label>Why do you want to join ACM?</label>
+                            <div class="pom-agile">
+                                <textarea name="whyacm" id="whyacm" cols="100" rows="5"
+                                    style="border: none; font-family: 'Poppins', sans-serif;"></textarea>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="Submit" id="quickstart-sign-in" class="theme-btn rs-theme-btn"></input>
+                    </form>
+
+                    <p class="copyright">By clicking submit you agree to the terms and conditions set by CCET & ACM</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-content">
+            <div class="logo-center">
+                <a href="index.html"><img class="logo-cen" src="ccet-photos/ccet-acm-logo-website-white (1).png" alt=""></a>
+            </div>
+            <div class="main-text">
+                 <p class="desc-text">Get a FULL year subscription to ACM magazines and news letters.</p>
+                 <p class="sub-desc-text">(Communications of the ACM, XRDS: Crossroads, MemberNet etc.)</p>
+            </div>
+
+            <hr style="color: white; width: 80%; text-align: center; align-self: center; margin: 0 auto; margin-top: 40px; margin-bottom: 50px;">
+
+            <div class="float-x">
+                <div class="image">
+                    <img class="image-section" src="assets/graphics/library.png" alt="">
+                </div>
+                <div class="text-section">
+                    <p class="heading-1">ACM Digital Library</p>
+                    <p class="sub-heading-1">The option to subscribe to the full ACM Digital Library, which includes over 2 million pages of text</p>
+                </div>
+            </div>
+
+            <div class="float-x-1">
+                <div class="image">
+                    <img class="image-section-2" src="assets/graphics/icon-5963629_1920.png" alt="">
+                </div>
+                <div class="text-section">
+                    <p class="heading-1">Professional and Student Chapters</p>
+                    <p class="sub-heading-1">Become a member of computing community through one of hundreds of Professional and Student Chapters worldwide</p>
+                </div>
+            </div>
+
+            <div class="float-x-2">
+                <div class="image">
+                    <img class="image-section-3" src="assets/graphics/mic.png" alt="">
+                </div>
+                <div class="text-section">
+                    <p class="heading-1">ACM Distinguished Speakers Program (DSP)</p>
+                    <p class="sub-heading-1">Participation in ACM Distinguished Speakers Program (DSP).</p>
+                </div>
+            </div>
+
+            <div class="float-x-3">
+                <div class="image">
+                    <img class="image-section-4" src="assets/graphics/raised.png" alt="">
+                </div>
+                <div class="text-section">
+                    <p class="heading-1">Hands-On Experience</p>
+                    <p class="sub-heading-1">Unique volunteering opportunities to gain hands-on experience and knowledge of the marketplace</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).on('ready', function () {
+          // initialization of aos
+          AOS.init({
+            duration: 650,
+            once: true
+          });
+        });
+      </script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
