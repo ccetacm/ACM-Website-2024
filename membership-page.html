@@ -46,15 +46,16 @@
                             <div class="form-style">
                                 <label>Contact Number *</label>
                                 <div class="pom-agile">
-                                    <input type="text" name="name" pattern="^[a-zA-Z ]{4,50}$"
-                                        title="Name can only contain alphabets" required="">
+                                    <input name="pnum" type="text" pattern="^[+0-9]{10}$"
+                                    maxlength="10" title="Number should be of 10 digits" required="">
                                 </div>
                             </div>
                             <div class="form-style">
                                 <label>Email *</label>
                                 <div class="pom-agile">
-                                    <input type="text" name="name" pattern="^[a-zA-Z ]{4,50}$"
-                                        title="Name can only contain alphabets" required="">
+                                    <input name="email" type="email"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                    title="Email should be similar to ccetacm@gmail.com" required="">
                                 </div>
                             </div>
                         </div>
@@ -62,8 +63,7 @@
                             <div class="form-style">
                                 <label>Roll Number *</label>
                                 <div class="pom-agile">
-                                    <input type="text" name="name" pattern="^[a-zA-Z ]{4,50}$"
-                                        title="Name can only contain alphabets" required="">
+                                    <input name="rollno" type="text" required="">
                                 </div>
                             </div>
                             <div class="form-style">
@@ -86,9 +86,9 @@
                                     style="border: none; font-family: 'Poppins', sans-serif;"></textarea>
                             </div>
                         </div>
-                    </form>
 
-                    <button class="theme-btn rs-theme-btn">Submit</button>
+                        <input type="submit" value="Submit" id="quickstart-sign-in" class="theme-btn rs-theme-btn"></input>
+                    </form>
 
                     <p class="copyright">By clicking submit you agree to the terms and conditions set by CCET & ACM</p>
                 </div>
