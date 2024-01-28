@@ -301,7 +301,7 @@
   .volume {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     margin-bottom: 15px;
     justify-content: left;
     text-align: start;

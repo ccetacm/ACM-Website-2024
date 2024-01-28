@@ -153,31 +153,31 @@
 
 .swiper-slide--one {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-  url("/assets/img/magazine/magazine-thumbnails/1-01\ \(1\).png")
+  url("/assets/img/magazine/magazine-thumbnails/vol4issue2.png")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--two {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/assets/img/magazine/magazine-thumbnails/1-01.png")
+    url("/assets/img/magazine/magazine-thumbnails/vol4issue1.png")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--three {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://i.postimg.cc/j2fqyKCd/vol-3-issue-2.png")
+    url("/assets/img/magazine/magazine-thumbnails/vol3issue4.png")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--four {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://i.postimg.cc/3JMxYyby/vol3issue1.png")
+    url("/assets/img/magazine/magazine-thumbnails/vol3issue3.png")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--five {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://i.postimg.cc/NG2j38bq/vol2issue4.jpg")
+    url("/assets/img/magazine/magazine-thumbnails/vol3issue2.png")
       no-repeat 50% 50% / cover;
 }
 
