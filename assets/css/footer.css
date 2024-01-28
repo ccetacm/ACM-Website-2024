@@ -41,7 +41,7 @@ img {
   height: auto;
 }
 section {
-  padding: 60px 0;
+  padding: 0px 0px 60px 0px ;
   /* min-height: 100vh;*/
 }
 
@@ -339,6 +339,6 @@ section {
   color: #F5202B;
 }
 
-a,p,div{
+a,p{
   text-align: justify;
 }
