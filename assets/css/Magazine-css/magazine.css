@@ -169,8 +169,8 @@
     /* background: red; */
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     min-width: 40%;
     margin: auto;
     /* background-color: blue; */
@@ -313,7 +313,7 @@
     justify-content: left;
     padding: 0px;
     overflow: hidden;
-    gap: 20px;
+    gap: 7px;
   }
   
   .recents-wrapper {
