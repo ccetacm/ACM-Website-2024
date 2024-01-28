@@ -97,3 +97,22 @@ text-align: center;
 border: 2px solid #103273;
 
 }
+
+#testimonials:before {
+    content: "";
+    background: var(--layer1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;    
+}
+#testimonials{
+    background: url(../images/ACMW_Group_home.jpg) no-repeat center;
+    position: relative;
+    background-size: cover;
+    margin-top: 50px;
+    background-position: 50% 0%;
+    z-index: 0;
+}

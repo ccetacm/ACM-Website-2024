@@ -2,19 +2,6 @@
   --textshadow-1: 3px 3px 1px rgb(37, 15, 131);
 }
 
-.inner-banner{
-  background-image: url(../../assets/images/gallery/orientation/orientation\ 3-min.JPG);
-  height: 300px;
-  background-position: 0 -170px;
-  background-size: cover;
-}
-
-@media screen and (max-width: 720px) {
-  .inner-banner {
-      background-position: 0px 0px;
-  }
-}
-
 .animate {
   animation-duration: 0.5s;
   animation-name: animate-fade;
@@ -45,8 +32,8 @@
 
 .events_cards {
   padding: 0;
+  margin: 0 auto;
   margin-top: 80px;
-  margin-left: 10px;
   list-style-type: none;
   --curve: 40;
   width: 100%;

@@ -153,31 +153,30 @@
 
 .swiper-slide--one {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-  url("https://i.postimg.cc/FzsXSJHL/vol4issue2.png")
+  url("https://i.postimg.cc/0y6S5Ymt/vol4issue3.png")
       no-repeat 50% 50% / cover;
 }
-
 .swiper-slide--two {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://i.postimg.cc/wMf8QT1b/vol4issue1.png")
+  url("https://i.postimg.cc/FzsXSJHL/vol4issue2.png")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--three {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://i.postimg.cc/pr14nGSw/vol3issue4.png")
+    url("https://i.postimg.cc/wMf8QT1b/vol4issue1.png")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--four {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://i.postimg.cc/J0hS0Vp3/vol3issue3.png")
+    url("https://i.postimg.cc/pr14nGSw/vol3issue4.png")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--five {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://i.postimg.cc/rpSBY9d4/vol3issue2.png")
+    url("https://i.postimg.cc/J0hS0Vp3/vol3issue3.png")
       no-repeat 50% 50% / cover;
 }
 

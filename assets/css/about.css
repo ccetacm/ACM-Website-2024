@@ -30,9 +30,8 @@ body{
 }
 #acm_logo12{
     display: block;
-    max-width: 130%;
+    max-width: 100%;
     opacity: 100%;
-    margin-left: -17%;
     /* padding-bottom: 0%; */
 }
 
@@ -69,20 +68,27 @@ text-align: center;
     font-size: 1rem;
     color: #000000;
 }
-
-.inner-banner{
-    background-image: url(../../assets/images/gallery/orientation/orientation\ 3-min.JPG);
-    height: 300px;
-    background-position: 0 -170px;
-    background-size: cover;
+.team-img img{
+    margin: 115px 0px;
 }
 
-@media screen and (max-width: 720px) {
-    .inner-banner {
-        background-position: 0px 0px;
+@media screen and (max-width: 1200px){
+    .team-img img{
+        margin: 90px 0px;
     }
-  }
-  
+}
+@media screen and (max-width: 992px){
+    .team-img img{
+        margin: 50px 0px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .col-lg-4 {
+      width: 100%;
+      margin-bottom: 10px; 
+    }
+}
 .inner-w3-title{
     height: 50px;
 }
