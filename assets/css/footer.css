@@ -338,3 +338,7 @@ section {
 .hover-1:hover {
   color: #F5202B;
 }
+
+a,p,div{
+  text-align: justify;
+}
