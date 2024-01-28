@@ -153,13 +153,13 @@
 
 .swiper-slide--one {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://i.postimg.cc/RZdS7gCf/vol-3-issue-4.png")
+  url("/assets/img/magazine/magazine-thumbnails/1-01\ \(1\).png")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--two {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://i.postimg.cc/RZ4CJkm4/vol-3-issue-3.png")
+    url("/assets/img/magazine/magazine-thumbnails/1-01.png")
       no-repeat 50% 50% / cover;
 }
 
