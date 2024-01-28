@@ -87,18 +87,6 @@ text-align: center;
     color: #000000;
 }
 
-.inner-banner{
-    background-image: url(/assets/images/gallery/orientation/orientation\ 3-min.JPG);
-    height: 300px;
-    background-position: 0 -170px;
-    background-size: cover;
-  }
-  
-  @media screen and (max-width: 720px) {
-    .inner-banner {
-        background-position: 0px 0px;
-    }
-  }
   
 .inner-w3-title{
     height: 50px;
