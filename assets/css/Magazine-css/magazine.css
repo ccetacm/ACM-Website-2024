@@ -182,17 +182,12 @@
     /* background: red; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     min-width: 40%;
     margin: auto;
     /* background-color: blue; */
     min-height: 50vh;
-  }
-  
-  .issue-btn {
-    color: whitesmoke;
-    font-family: "Roboto";
   }
   
   .magazine-recent {
@@ -210,10 +205,10 @@
   .mag-section-header {
     /* background-color: #5f3bff; */
     min-width: 100%;
-    text-align: center;
     font-family: "Barlow";
     /* position: absolute; */
     top: 450px;
+    text-align: left;
   }
   
   .image-stack {
@@ -287,51 +282,51 @@
     left: 40%;
     transform: rotate(2deg);
   }
-  
-  .header-btn {
-    display: flex;
-    align-items: center;
-    margin: 0px;
-    padding: 5px;
-    background-color: #f74d54;
-    color: white;
-    border-radius: 6px;
+
+  .volume-header {
     margin-bottom: 10px;
-    padding: 13px;
+    text-align: left;
   }
   
   .volume-wrapper {
-    min-height: 50vh;
+    min-height: 30vh;
     padding: 0px;
     margin: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 32px 0px;
+    padding: 0px 0px;
   }
   
   .volume {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     margin-bottom: 15px;
-    justify-content: center;
+    justify-content: left;
+    text-align: start;
   }
   
   .volume h4 {
-    text-align: center;
-    min-width: 96%;
+    text-align: start;
     margin-bottom: 3px;
+    color: #575757;
+    transition: 0.05s ease-in-out;
+  }
+
+  .volume h4:hover {
+    border-bottom: 2px solid black;
+    transition: 0.05s ease-in-out;
   }
   
   .issues {
-    border-bottom: dotted 3px #f74d54;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row;;
+    align-items: start;
+    justify-content: left;
     padding: 0px;
     overflow: hidden;
+    gap: 20px;
   }
   
   .recents-wrapper {
@@ -340,7 +335,7 @@
     justify-content: space-between;
     align-items: center;
     min-width: 60%;
-    min-height: 50vh;
+    min-height: 40vh;
   
     /* background-color: red; */
   }
@@ -437,6 +432,10 @@
     display: none;
     text-shadow: var(--textshadow-1);
     font-family: "Barlow";
+  }
+
+  .mag-section-header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
   .mag-card .read-btn {
@@ -786,5 +785,16 @@
     .mag-header {
       margin-top: 80px;
     }
+
+    .issues {
+      gap: 5px;
+    }
   }
   
+  .header-btn {
+    color: white;
+  }
+
+  .theme-btn {
+    color: white;
+  }
