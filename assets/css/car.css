@@ -256,7 +256,8 @@ ul{
 }
 
 .slider li:nth-child(1){
-    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("https://axerosolutions.com/wp-content/uploads/2014/05/online-collab-tools-benefits-blog.png");
+    /* background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("https://axerosolutions.com/wp-content/uploads/2014/05/online-collab-tools-benefits-blog.png"); */
+    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url(../images/ACM-M.jpg);
     background-size: cover;
     background-position:top left;
 }
@@ -291,13 +292,14 @@ ul{
 }
 
 .slider li:nth-child(2){
-    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("https://www.ungender.in/wp-content/uploads/2023/03/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg");
+    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url(../images/ACMW_Group_home.jpg);
+    /* background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("https://www.ungender.in/wp-content/uploads/2023/03/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg"); */
     background-size: cover;
     background-position:top left;
 }
 
 .slider li:nth-child(3){
-    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("../images/ACMW\ Group\ home.jpg");
+    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("../images/ACMW\ Group  \ home.jpg");
     background-size: cover;
     background-position:top left;
 }
