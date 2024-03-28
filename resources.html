@@ -1,881 +1,722 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ACM | Resources</title>
-    <link
-      href="http://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,600&amp;display=swap"
-      rel="stylesheet"
-    />
-    <!-- Template CSS -->
-    <link
-      href="http://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,600&amp;display=swap"
-      rel="stylesheet"
-    />
-    <!-- Template CSS -->
-    <link rel="stylesheet" href="assets/css/resources.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
 
-    <link rel="icon" type="image/png" href="ccet-photos/acm_plain_logo.png" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style-liberty.css" />
-    <link rel="stylesheet" href="assets/css/style-starter.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACM | Resources</title>
+  <link href="http://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,600&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Template CSS -->
+  <link href="http://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,600&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/resources.css" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
 
-  <body>
-    <header id="site-header" class="fixed-top">
+  <link rel="icon" type="image/png" href="ccet-photos/acm_plain_logo.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/css/style-liberty.css" />
+  <link rel="stylesheet" href="assets/css/style-starter.css" />
+
+  <style>
+
+    @media screen and (max-width: 990px) {
+      #rs-slider label img {
+        width: 100%;
+        height: 300%;
+      }
+
+      #rs-slider {
+        margin-bottom: 16rem;
+      }
+
+      #rs-slider input[type="radio"] {
+        visibility: hidden;
+      }
+    }
+    @media screen and (max-width: 445px) {
+      #rs-slider label img {
+        width: 100%;
+        height: 300%;
+      }
+
+      #rs-slider {
+        margin-bottom: 6rem;
+      }
+
+      #rs-slider input[type="radio"] {
+        visibility: hidden;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="site-header" class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+        <h1>
+          <a class="navbar-brand" href="index.html">
+            <img src="ccet-photos/ccet-acm-logo-website-white (1).png" alt="" />
+          </a>
+        </h1>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="teams.html">Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="achievements.html">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="magazine.html">Magazines</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="acm-w.html">ACM-W</a> -->
+              <button class="theme-btn rs-theme-btn">
+                <a href="acm-w.html">ACM-W</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="inner-banner py-5">
+    <section class="w3l-breadcrumb text-left py-sm-5">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
-          <h1>
-            <a class="navbar-brand" href="index.html">
-              <img
-                src="ccet-photos/ccet-acm-logo-website-white (1).png"
-                alt=""
-              />
-            </a>
-          </h1>
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-            <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="teams.html">Teams</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="achievements.html">Achievements</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="resources.html">Resources</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="magazine.html">Magazines</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <!-- <a class="nav-link" href="acm-w.html">ACM-W</a> -->
-                <button class="theme-btn rs-theme-btn">
-                  <a
-                    href="acm-w.html">ACM-W</a
-                  >
-                </button>
+        <div class="w3breadcrumb-gids">
+          <div class="w3breadcrumb-left text-left">
+            <h2 class="inner-w3-title mt-lg-5 mt-4"></h2>
+          </div>
+          <div class="w3breadcrumb-right">
+            <ul class="breadcrumbs-custom-path">
+              <li><a href="index.html">Home</a></li>
+              <li class="active">
+                <span class="fas fa-angle-double-right mx-2"></span> Resources
               </li>
             </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    
-    <div class="inner-banner py-5">
-      <section class="w3l-breadcrumb text-left py-sm-5">
-        <div class="container">
-          <div class="w3breadcrumb-gids">
-            <div class="w3breadcrumb-left text-left">
-              <h2 class="inner-w3-title mt-lg-5 mt-4"></h2>
-            </div>
-            <div class="w3breadcrumb-right">
-              <ul class="breadcrumbs-custom-path">
-                <li><a href="index.html">Home</a></li>
-                <li class="active">
-                  <span class="fas fa-angle-double-right mx-2"></span> Resources
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <section class="w3l-blog blog-single-post">
-      <div class="blog py-5">
-        <div class="container" style="max-width: 80%">
-          <div class="row justify-content-center bloghny-page">
-            <div class="col-lg-8 blopagew3-left">
-              <div class="blog-area">
-                <div class="container">
-                  <div class="row">
-                    <h2 class="line-title" style="width: 100%">Publications</h2>
-                    <div class="col-md-4">
-                      <div class="blog-item rs-blog-item">
-                        <div class="rs-blog-item-img">
-                          <img
-                            loading="lazy"
-                            src="assets/images/resources/publications/BCI_copy.jpg"
-                            alt="Thumb"
-                          />
-                        </div>
-                        <div class="blog-item-info rs-blog-item-info">
-                          <h4 class="rs-blog-title" >
-                            <p>
-                            Brain Computer Interaction (BCI): A Way to
-                              Interact with Brain Waves</p
-                            >
-                          </h4>
-                          <div class="blog-item-meta rs-blog-item-meta">
-                            <ul class="pb-2">
-                              <li class="rs-blog-item-author">
-                                <p>
-                                  <i class="fas fa-user-alt"></i>
-                                  Sudhakar Kumar, Sunil K. Singh
-                              </p>
-                              </li>
-                            </ul>
-
-                            <button class="theme-btn rs-theme-btn">
-                              <a
-                                href="https://insights2techinfo.com/brain-computer-interaction-bci-a-way-to-interact-with-brain-waves/"
-                                target="_blan"
-                                target="_blank"
-                                >Read More</a
-                              >
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="blog-item rs-blog-item">
-                        <div class="rs-blog-item-img">
-                          <img
-                            loading="lazy"
-                            src="assets/images/resources/publications/dlt1.png"
-                            alt="Thumb"
-                          />
-                        </div>
-                        <div class="blog-item-info rs-blog-item-info">
-                          <h4 class="rs-blog-title">
-                            <p>Distributed Ledger Technology</p>
-                          </h4>
-                          <div class="blog-item-meta rs-blog-item-meta">
-                            <ul class="pb-2">
-                              <li class="rs-blog-item-author">
-                                <p>
-                                  <i class="fas fa-user-alt"></i>
-                                  Manraj Singh, Sudhakar Kumar
-                                </p>
-                              </li>
-                            </ul>
-
-                            <button class="theme-btn rs-theme-btn">
-                              <a
-                                href="https://insights2techinfo.com/distributed-ledger-technology/"
-                                target="_blank"
-                                >Read More</a
-                              >
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="blog-item rs-blog-item">
-                        <div class="rs-blog-item-img">
-                          <img
-                            loading="lazy"
-                            src="assets/images/resources/publications/digital-twin.png"
-                            alt="Thumb"
-                          />
-                        </div>
-                        <div class="blog-item-info rs-blog-item-info">
-                          <h4 class="rs-blog-title">
-                            <p>Digital Twins</p>
-                          </h4>
-                          <div class="blog-item-meta rs-blog-item-meta">
-                            <ul class="pb-2">
-                              <li class="rs-blog-item-author">
-                                <p>
-                                  <i class="fas fa-user-alt"></i>
-                                  Tarun Vats, Sudhakar Kumar
-                                </p>
-                              </li>
-                            </ul>
-
-                            <button class="theme-btn rs-theme-btn">
-                              <a
-                                href="https://insights2techinfo.com/digital-twins/"
-                                target="_blank"
-                                >Read More</a
-                              >
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="blog-item rs-blog-item">
-                        <div class="rs-blog-item-img">
-                          <img
-                            loading="lazy"
-                            src="assets/images/resources/publications/MLOP_copy.png"
-                            alt="Thumb"
-                          />
-                        </div>
-                        <div class="blog-item-info rs-blog-item-info">
-                          <h4 class="rs-blog-title">
-                            <p
-                              >MLOps: A New Era of DevOps, Powered by Machine
-                              Learning</
-                            >
-                          </h4>
-                          <div class="blog-item-meta rs-blog-item-meta">
-                            <ul class="pb-2">
-                              <li class="rs-blog-item-author">
-                                <p>
-                                  <i class="fas fa-user-alt"></i>
-                                  Muskaan Chopra, Sunil K. Singh
-                                </p>
-                              </li>
-                            </ul>
-
-                            <button class="theme-btn rs-theme-btn">
-                              <a
-                                href="https://insights2techinfo.com/mlops-a-new-era-of-devops-powered-by-machine-learning/"
-                                target="_blank"
-                                >Read More</a
-                              >
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="blog-item rs-blog-item">
-                        <div class="rs-blog-item-img">
-                          <img
-                            loading="lazy"
-                            src="assets/images/resources/publications/metaverse-technology.png"
-                            alt="Thumb"
-                          />
-                        </div>
-                        <div class="blog-item-info rs-blog-item-info">
-                          <h4 class="rs-blog-title">
-                            <p
-                              >Metaverse Technologies and Its Applications</
-                            >
-                          </h4>
-                          <div class="blog-item-meta rs-blog-item-meta">
-                            <ul class="pb-2">
-                              <li class="rs-blog-item-author">
-                                <p>
-                                  <i class="fas fa-user-alt"></i>
-                                  Mavneet Kaur, B. Gupta
-                                </p>
-                              </li>
-                            </ul>
-
-                            <button class="theme-btn rs-theme-btn">
-                              <a
-                                href="https://insights2techinfo.com/metaverse-technologies-and-their-applications/"
-                                target="_blank"
-                                >Read More</a
-                              >
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="blog-item rs-blog-item">
-                        <div class="rs-blog-item-img">
-                          <img
-                            loading="lazy"
-                            src="assets/images/resources/publications/edge-intelligence.jpg"
-                            alt="Thumb"
-                          />
-                        </div>
-                        <div class="blog-item-info rs-blog-item-info">
-                          <h4 class="rs-blog-title">
-                            <p
-                              >Edge Intelligence: A New Emerging Era</
-                            >
-                          </h4>
-                          <div class="blog-item-meta rs-blog-item-meta">
-                            <ul class="pb-2">
-                              <li class="rs-blog-item-author">
-                                <p>
-                                  <i class="fas fa-user-alt"></i>
-                                  A Dahiya, B. Gupta
-                                </p>
-                              </li>
-                            </ul>
-
-                            <button class="theme-btn rs-theme-btn">
-                              <a
-                                href="https://insights2techinfo.com/edge-intelligence-a-new-emerging-era/"
-                                target="_blank"
-                                >Read More</a
-                              >
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="blog-item rs-blog-item">
-                        <div class="rs-blog-item-img">
-                          <img
-                            loading="lazy"
-                            src="assets/images/resources/publications/Blockchain copy.png"
-                            alt="Thumb"
-                          />
-                        </div>
-                        <div class="blog-item-info rs-blog-item-info">
-                          <h4 class="rs-blog-title">
-                            <p>Blockchain for Data Science</p>
-                          </h4>
-                          <div class="blog-item-meta rs-blog-item-meta">
-                            <ul class="pb-2">
-                              <li class="rs-blog-item-author">
-                                <p>
-                                  <i class="fas fa-user-alt"></i>
-                                  Dipesh Singla, Sudhakar Kumar
-                                </p>
-                              </li>
-                            </ul>
-
-                            <button class="theme-btn rs-theme-btn">
-                              <a
-                                href="https://insights2techinfo.com/blockchain-for-data-science/"
-                                target="_blank"
-                                >Read More</a
-                              >
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="blog-item rs-blog-item">
-                        <div class="rs-blog-item-img">
-                          <img
-                            loading="lazy"
-                            src="assets/images/resources/publications/Virtual-Personal-Assistant.png"
-                            alt="Thumb"
-                          />
-                        </div>
-                        <div class="blog-item-info rs-blog-item-info">
-                          <h4 class="rs-blog-title">
-                            <p>Virtual Personal Assistant</p>
-                          </h4>
-                          <div class="blog-item-meta rs-blog-item-meta">
-                            <ul class="pb-2">
-                              <li class="rs-blog-item-author">
-                                <p>
-                                  <i class="fas fa-user-alt"></i>
-                                  Deepak Mahto
-                                </p>
-                              </li>
-                            </ul>
-
-                            <button class="theme-btn rs-theme-btn">
-                              <a
-                                href="https://insights2techinfo.com/virtual-personal-assistant/"
-                                target="_blank"
-                                >Read More</a
-                              >
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="sidebar-side col-lg-4 col-md-12 col-sm-12 mt-lg-0 mt-5 order-lg-first order-last"
-            >
-              <aside class="sidebar pe-lg-4">
-                <div class="sidebar-blog-category">
-                  <div class="sidebar-widget sidebar-blog-category">
-                    <div class="sidebar-title">
-                      <h4>Topics</h4>
-                    </div>
-                    <ul class="blog-cat">
-                      <li>
-                        <a
-                          href="https://insights2techinfo.com/category/artificial-intelligence/"
-                          target="_blank"
-                          class="rs-topics"
-                          ><i class="fas fa-angle-double-right me-2"></i>
-                          Artificial Intelligence
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://insights2techinfo.com/category/blockchain/"
-                          target="_blank"
-                          class="rs-topics"
-                          ><i class="fas fa-angle-double-right me-2"></i>
-                          BlockChain
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://insights2techinfo.com/category/books/"
-                          target="_blank"
-                          class="rs-topics"
-                          ><i class="fas fa-angle-double-right me-2"></i> Books
-                          & Quiz
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://insights2techinfo.com/category/cyber-security-network-forensics/"
-                          target="_blank"
-                          class="rs-topics"
-                          ><i class="fas fa-angle-double-right me-2"></i>Cyber
-                          Security & Network Forensics
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://insights2techinfo.com/category/artificial-intelligence/deep-learning/"
-                          target="_blank"
-                          class="rs-topics"
-                          ><i class="fas fa-angle-double-right me-2"></i> Deep
-                          Learning</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://insights2techinfo.com/category/artificial-intelligence/federated-learning/"
-                          target="_blank"
-                          class="rs-topics"
-                          ><i class="fas fa-angle-double-right me-2"></i>
-                          Federated Learning</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://insights2techinfo.com/category/healthcare/"
-                          target="_blank"
-                          class="rs-topics"
-                          ><i class="fas fa-angle-double-right me-2"></i>
-                          Healthcare</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://insights2techinfo.com/category/it-management/"
-                          target="_blank"
-                          class="rs-topics"
-                          ><i class="fas fa-angle-double-right me-2"></i> IT &
-                          Management
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://insights2techinfo.com/category/artificial-intelligence/machine-learning/"
-                          target="_blank"
-                          class="rs-topics"
-                          ><i class="fas fa-angle-double-right me-2"></i>Machine
-                          Learning
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://insights2techinfo.com/category/research/"
-                          target="_blank"
-                          class="rs-topics"
-                          ><i class="fas fa-angle-double-right me-2"></i>
-                          Research</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://insights2techinfo.com/category/smart-vehicles/"
-                          target="_blank"
-                          class="rs-topics"
-                          ><i class="fas fa-angle-double-right me-2"></i> Smart
-                          Vehicles</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <h2 class="line-title" style="width: 100%">
-                    Industry Partners
-                  </h2>
-
-                  <section id="rs-slider">
-                    <input
-                      type="radio"
-                      name="slider"
-                      id="rs-s1"
-                      data-slide="1"
-                      checked
-                    />
-                    <input
-                      type="radio"
-                      name="slider"
-                      id="rs-s2"
-                      data-slide="2"
-                    />
-                    <input
-                      type="radio"
-                      name="slider"
-                      id="rs-s3"
-                      data-slide="3"
-                    />
-                    <label for="rs-s1" id="rs-slide1">
-                      <div class="rs-zoom-container" data-slide="1">
-                        <a
-                          href="https://cyber-conf.com/icspn2022/"
-                          target="_blank"
-                          ><img
-                            loading="lazy"
-                            src="assets/images/resources/industry-partners/conf_ccet.jpeg"
-                            alt="Image 1"
-                        /></a>
-                      </div>
-                    </label>
-                    <label for="rs-s2" id="rs-slide2">
-                      <div class="rs-zoom-container" data-slide="2">
-                        <a
-                          href="https://insights2techinfo.com/2021-technical-paper-writing-contest/"
-                          target="_blank"
-                          ><img
-                            loading="lazy"
-                            src="assets/images/resources/industry-partners/technical_writing.jpeg"
-                            alt="Image 2"
-                        /></a>
-                      </div>
-                    </label>
-                    <label for="rs-s3" id="rs-slide3">
-                      <div class="rs-zoom-container" data-slide="3">
-                        <a
-                          href="https://insights2techinfo.com/international-video-contest/"
-                          target="_blank"
-                          ><img
-                            loading="lazy"
-                            src="assets/images/resources/industry-partners/video_con.jpeg"
-                            alt="Image 3"
-                        /></a>
-                      </div>
-                    </label>
-                  </section>
-                </div>
-              </aside>
-            </div>
           </div>
         </div>
       </div>
     </section>
+  </div>
 
-    <div style="margin: 8px auto; display: block; text-align: center">
-      <!---728x90--->
-    </div>
+  <section class="w3l-blog blog-single-post">
+    <div class="blog py-5">
+      <div class="container" style="max-width: 80%">
+        <div class="row justify-content-center bloghny-page">
+          <div class="col-lg-8 blopagew3-left">
+            <div class="blog-area">
+              <div class="container">
+                <div class="row">
+                  <h2 class="line-title" style="width: 100%">Publications</h2>
+                  <div class="col-md-4">
+                    <div class="blog-item rs-blog-item">
+                      <div class="rs-blog-item-img">
+                        <img loading="lazy" src="assets/images/resources/publications/BCI_copy.jpg" alt="Thumb" />
+                      </div>
+                      <div class="blog-item-info rs-blog-item-info">
+                        <h4 class="rs-blog-title">
+                          <p>
+                            Brain Computer Interaction (BCI): A Way to
+                            Interact with Brain Waves</p>
+                        </h4>
+                        <div class="blog-item-meta rs-blog-item-meta">
+                          <ul class="pb-2">
+                            <li class="rs-blog-item-author">
+                              <p>
+                                <i class="fas fa-user-alt"></i>
+                                Sudhakar Kumar, Sunil K. Singh
+                              </p>
+                            </li>
+                          </ul>
 
-    <footer class="main-footer">
-      <div class="container">
-        <!--Widgets Section-->
-        <div class="widgets-section">
-          <div class="row clearfix">
-            <!--Column-->
-            <div class="big-column col-lg-6 col-md-12 col-sm-12">
-              <div class="row clearfix">
-                <!--Footer Column-->
-                <div class="footer-column col-lg-7 col-md-6 col-sm-12">
-                  <div class="footer-widget about-widget">
-                    <div class="logo">
-                      <a href="index.html"
-                        ><img
-                          src="ccet-photos/ccet-acm-logo-website-white (1).png"
-                          alt=""
-                      /></a>
+                          <button class="theme-btn rs-theme-btn">
+                            <a href="https://insights2techinfo.com/brain-computer-interaction-bci-a-way-to-interact-with-brain-waves/"
+                              target="_blan" target="_blank">Read More</a>
+                          </button>
+                        </div>
+                      </div>
                     </div>
-                    <div class="text">
-                      <p>
-                        ACM boosts up the potential and talent, supporting the
-                        overall development needs of our students to facilitate
-                        a structured path from education to employment by
-                        providing a safe and supported space where creative
-                        talent and imagination can flourish in a caring
-                        environment.
-                      </p>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="blog-item rs-blog-item">
+                      <div class="rs-blog-item-img">
+                        <img loading="lazy" src="assets/images/resources/publications/dlt1.png" alt="Thumb" />
+                      </div>
+                      <div class="blog-item-info rs-blog-item-info">
+                        <h4 class="rs-blog-title">
+                          <p>Distributed Ledger Technology</p>
+                        </h4>
+                        <div class="blog-item-meta rs-blog-item-meta">
+                          <ul class="pb-2">
+                            <li class="rs-blog-item-author">
+                              <p>
+                                <i class="fas fa-user-alt"></i>
+                                Manraj Singh, Sudhakar Kumar
+                              </p>
+                            </li>
+                          </ul>
+
+                          <button class="theme-btn rs-theme-btn">
+                            <a href="https://insights2techinfo.com/distributed-ledger-technology/" target="_blank">Read
+                              More</a>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="blog-item rs-blog-item">
+                      <div class="rs-blog-item-img">
+                        <img loading="lazy" src="assets/images/resources/publications/digital-twin.png" alt="Thumb" />
+                      </div>
+                      <div class="blog-item-info rs-blog-item-info">
+                        <h4 class="rs-blog-title">
+                          <p>Digital Twins</p>
+                        </h4>
+                        <div class="blog-item-meta rs-blog-item-meta">
+                          <ul class="pb-2">
+                            <li class="rs-blog-item-author">
+                              <p>
+                                <i class="fas fa-user-alt"></i>
+                                Tarun Vats, Sudhakar Kumar
+                              </p>
+                            </li>
+                          </ul>
+
+                          <button class="theme-btn rs-theme-btn">
+                            <a href="https://insights2techinfo.com/digital-twins/" target="_blank">Read More</a>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="blog-item rs-blog-item">
+                      <div class="rs-blog-item-img">
+                        <img loading="lazy" src="assets/images/resources/publications/MLOP_copy.png" alt="Thumb" />
+                      </div>
+                      <div class="blog-item-info rs-blog-item-info">
+                        <h4 class="rs-blog-title">
+                          <p>MLOps: A New Era of DevOps, Powered by Machine
+                            Learning</>
+                        </h4>
+                        <div class="blog-item-meta rs-blog-item-meta">
+                          <ul class="pb-2">
+                            <li class="rs-blog-item-author">
+                              <p>
+                                <i class="fas fa-user-alt"></i>
+                                Muskaan Chopra, Sunil K. Singh
+                              </p>
+                            </li>
+                          </ul>
+
+                          <button class="theme-btn rs-theme-btn">
+                            <a href="https://insights2techinfo.com/mlops-a-new-era-of-devops-powered-by-machine-learning/"
+                              target="_blank">Read More</a>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="blog-item rs-blog-item">
+                      <div class="rs-blog-item-img">
+                        <img loading="lazy" src="assets/images/resources/publications/metaverse-technology.png"
+                          alt="Thumb" />
+                      </div>
+                      <div class="blog-item-info rs-blog-item-info">
+                        <h4 class="rs-blog-title">
+                          <p>Metaverse Technologies and Its Applications</>
+                        </h4>
+                        <div class="blog-item-meta rs-blog-item-meta">
+                          <ul class="pb-2">
+                            <li class="rs-blog-item-author">
+                              <p>
+                                <i class="fas fa-user-alt"></i>
+                                Mavneet Kaur, B. Gupta
+                              </p>
+                            </li>
+                          </ul>
+
+                          <button class="theme-btn rs-theme-btn">
+                            <a href="https://insights2techinfo.com/metaverse-technologies-and-their-applications/"
+                              target="_blank">Read More</a>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="blog-item rs-blog-item">
+                      <div class="rs-blog-item-img">
+                        <img loading="lazy" src="assets/images/resources/publications/edge-intelligence.jpg"
+                          alt="Thumb" />
+                      </div>
+                      <div class="blog-item-info rs-blog-item-info">
+                        <h4 class="rs-blog-title">
+                          <p>Edge Intelligence: A New Emerging Era</>
+                        </h4>
+                        <div class="blog-item-meta rs-blog-item-meta">
+                          <ul class="pb-2">
+                            <li class="rs-blog-item-author">
+                              <p>
+                                <i class="fas fa-user-alt"></i>
+                                A Dahiya, B. Gupta
+                              </p>
+                            </li>
+                          </ul>
+
+                          <button class="theme-btn rs-theme-btn">
+                            <a href="https://insights2techinfo.com/edge-intelligence-a-new-emerging-era/"
+                              target="_blank">Read More</a>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="blog-item rs-blog-item">
+                      <div class="rs-blog-item-img">
+                        <img loading="lazy" src="assets/images/resources/publications/Blockchain copy.png"
+                          alt="Thumb" />
+                      </div>
+                      <div class="blog-item-info rs-blog-item-info">
+                        <h4 class="rs-blog-title">
+                          <p>Blockchain for Data Science</p>
+                        </h4>
+                        <div class="blog-item-meta rs-blog-item-meta">
+                          <ul class="pb-2">
+                            <li class="rs-blog-item-author">
+                              <p>
+                                <i class="fas fa-user-alt"></i>
+                                Dipesh Singla, Sudhakar Kumar
+                              </p>
+                            </li>
+                          </ul>
+
+                          <button class="theme-btn rs-theme-btn">
+                            <a href="https://insights2techinfo.com/blockchain-for-data-science/" target="_blank">Read
+                              More</a>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="blog-item rs-blog-item">
+                      <div class="rs-blog-item-img">
+                        <img loading="lazy" src="assets/images/resources/publications/Virtual-Personal-Assistant.png"
+                          alt="Thumb" />
+                      </div>
+                      <div class="blog-item-info rs-blog-item-info">
+                        <h4 class="rs-blog-title">
+                          <p>Virtual Personal Assistant</p>
+                        </h4>
+                        <div class="blog-item-meta rs-blog-item-meta">
+                          <ul class="pb-2">
+                            <li class="rs-blog-item-author">
+                              <p>
+                                <i class="fas fa-user-alt"></i>
+                                Deepak Mahto
+                              </p>
+                            </li>
+                          </ul>
+
+                          <button class="theme-btn rs-theme-btn">
+                            <a href="https://insights2techinfo.com/virtual-personal-assistant/" target="_blank">Read
+                              More</a>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-side col-lg-4 col-md-12 col-sm-12 mt-lg-0 mt-5 order-lg-first order-last">
+            <aside class="sidebar pe-lg-4">
+              <div class="sidebar-blog-category">
+                <div class="sidebar-widget sidebar-blog-category">
+                  <div class="sidebar-title">
+                    <h4>Topics</h4>
+                  </div>
+                  <ul class="blog-cat">
+                    <li>
+                      <a href="https://insights2techinfo.com/category/artificial-intelligence/" target="_blank"
+                        class="rs-topics"><i class="fas fa-angle-double-right me-2"></i>
+                        Artificial Intelligence
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://insights2techinfo.com/category/blockchain/" target="_blank" class="rs-topics"><i
+                          class="fas fa-angle-double-right me-2"></i>
+                        BlockChain
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://insights2techinfo.com/category/books/" target="_blank" class="rs-topics"><i
+                          class="fas fa-angle-double-right me-2"></i> Books
+                        & Quiz
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://insights2techinfo.com/category/cyber-security-network-forensics/" target="_blank"
+                        class="rs-topics"><i class="fas fa-angle-double-right me-2"></i>Cyber
+                        Security & Network Forensics
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://insights2techinfo.com/category/artificial-intelligence/deep-learning/"
+                        target="_blank" class="rs-topics"><i class="fas fa-angle-double-right me-2"></i> Deep
+                        Learning</a>
+                    </li>
+                    <li>
+                      <a href="https://insights2techinfo.com/category/artificial-intelligence/federated-learning/"
+                        target="_blank" class="rs-topics"><i class="fas fa-angle-double-right me-2"></i>
+                        Federated Learning</a>
+                    </li>
+                    <li>
+                      <a href="https://insights2techinfo.com/category/healthcare/" target="_blank" class="rs-topics"><i
+                          class="fas fa-angle-double-right me-2"></i>
+                        Healthcare</a>
+                    </li>
+                    <li>
+                      <a href="https://insights2techinfo.com/category/it-management/" target="_blank"
+                        class="rs-topics"><i class="fas fa-angle-double-right me-2"></i> IT &
+                        Management
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://insights2techinfo.com/category/artificial-intelligence/machine-learning/"
+                        target="_blank" class="rs-topics"><i class="fas fa-angle-double-right me-2"></i>Machine
+                        Learning
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://insights2techinfo.com/category/research/" target="_blank" class="rs-topics"><i
+                          class="fas fa-angle-double-right me-2"></i>
+                        Research</a>
+                    </li>
+                    <li>
+                      <a href="https://insights2techinfo.com/category/smart-vehicles/" target="_blank"
+                        class="rs-topics"><i class="fas fa-angle-double-right me-2"></i> Smart
+                        Vehicles</a>
+                    </li>
+                  </ul>
+                </div>
+                <h2 class="line-title" style="width: 100%">
+                  Industry Partners
+                </h2>
 
-                <!--Footer Column-->
+                <section id="rs-slider">
+                  <input type="radio" name="slider" id="rs-s1" data-slide="1" checked />
+                  <input type="radio" name="slider" id="rs-s2" data-slide="2" />
+                  <input type="radio" name="slider" id="rs-s3" data-slide="3" />
+                  <label for="rs-s1" id="rs-slide1">
+                    <div class="rs-zoom-container" data-slide="1">
+                      <a href="https://cyber-conf.com/icspn2022/" target="_blank"><img loading="lazy"
+                          src="assets/images/resources/industry-partners/conf_ccet.jpeg" alt="Image 1" /></a>
+                    </div>
+                  </label>
+                  <label for="rs-s2" id="rs-slide2">
+                    <div class="rs-zoom-container" data-slide="2">
+                      <a href="https://insights2techinfo.com/2021-technical-paper-writing-contest/" target="_blank"><img
+                          loading="lazy" src="assets/images/resources/industry-partners/technical_writing.jpeg"
+                          alt="Image 2" /></a>
+                    </div>
+                  </label>
+                  <label for="rs-s3" id="rs-slide3">
+                    <div class="rs-zoom-container" data-slide="3">
+                      <a href="https://insights2techinfo.com/international-video-contest/" target="_blank"><img
+                          loading="lazy" src="assets/images/resources/industry-partners/video_con.jpeg"
+                          alt="Image 3" /></a>
+                    </div>
+                  </label>
+                </section>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="margin: 8px auto; display: block; text-align: center">
+    <!---728x90--->
+  </div>
+
+  <footer class="main-footer">
+    <div class="container">
+      <!--Widgets Section-->
+      <div class="widgets-section">
+        <div class="row clearfix">
+          <!--Column-->
+          <div class="big-column col-lg-6 col-md-12 col-sm-12">
+            <div class="row clearfix">
+              <!--Footer Column-->
+              <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                <div class="footer-widget about-widget">
+                  <div class="logo">
+                    <a href="index.html"><img src="ccet-photos/ccet-acm-logo-website-white (1).png" alt="" /></a>
+                  </div>
+                  <div class="text">
+                    <p>
+                      ACM boosts up the potential and talent, supporting the
+                      overall development needs of our students to facilitate
+                      a structured path from education to employment by
+                      providing a safe and supported space where creative
+                      talent and imagination can flourish in a caring
+                      environment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Footer Column-->
+              <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                <div class="footer-widget links-widget">
+                  <h2 style="color: white">Explore</h2>
+                  <ul class="footer-list">
+                    <li><a href="acm-w.html">ACM-W</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="teams.html">Team</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Column-->
+          <div class="big-column col-lg-6 col-md-12 col-sm-12">
+            <div class="row clearfix">
+              <!--Footer Column-->
+              <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                 <div class="footer-column col-lg-5 col-md-6 col-sm-12">
                   <div class="footer-widget links-widget">
-                    <h2 style="color: white">Explore</h2>
+                    <h2 style="color: white">Quick Links</h2>
                     <ul class="footer-list">
-                      <li><a href="acm-w.html">ACM-W</a></li>
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="about.html">About</a></li>
-                      <li><a href="teams.html">Team</a></li>
-                      <li><a href="achievements.html">Achievements</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="events.html">Events</a></li>
+                      <li><a href="resources.html">Resources</a></li>
+                      <li><a href="magazine.html">Magazine</a></li>
                     </ul>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!--Column-->
-            <div class="big-column col-lg-6 col-md-12 col-sm-12">
-              <div class="row clearfix">
-                <!--Footer Column-->
-                <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                  <div class="footer-column col-lg-5 col-md-6 col-sm-12">
-                    <div class="footer-widget links-widget">
-                      <h2 style="color: white">Quick Links</h2>
-                      <ul class="footer-list">
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="magazine.html">Magazine</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <!--Footer Column-->
-                <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                  <div class="footer-widget info-widget">
-                    <h2 style="color: white">Contact Info</h2>
-                    <ul class="info-list">
-                      <li>
-                        Chandigarh College of Engineering and Technology Degree
-                        Wing Sector - 26, Chandigarh
-                      </li>
-                      <li>
-                        <a class="hover-1" href="https://www.ccet.ac.in" target="_blank"
-                          >www.ccet.ac.in</a
-                        >
-                      </li>
-                    </ul>
-                    <!-- Social Links -->
-                    <ul class="social-links">
-                      <a href="https://www.facebook.com/acmccet"
-                        ><img
-                          class="social-logo"
-                          src="ccet-photos/socials/facebook.svg"
-                          alt=""
-                      /></a>
-                      <a
-                        href="https://www.linkedin.com/in/ccet-acm-student-chapter"
-                        ><img
-                          class="social-logo"
-                          src="ccet-photos/socials/linkedin.svg"
-                          alt=""
-                      /></a>
-                      <a
-                        href="https://www.instagram.com/acmccet/?igshid=1f75geliybfix"
-                        ><img
-                          class="social-logo"
-                          src="ccet-photos/socials/instagram.svg"
-                          alt=""
-                      /></a>
-                      <a href="https://www.twitter.com/acmccet"
-                        ><img
-                          class="social-logo"
-                          src="ccet-photos/socials/X.svg"
-                          alt=""
-                      /></a>
-                      <a href="https://www.youtube.com/@ccetacmstudentchapter3122"
-                      ><img
-                        class="social-logo"
-                        src="ccet-photos/socials/youtube.svg"
-                        alt=""
-                    /></a>
-                    </ul>
-                  </div>
+              <!--Footer Column-->
+              <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget info-widget">
+                  <h2 style="color: white">Contact Info</h2>
+                  <ul class="info-list">
+                    <li>
+                      Chandigarh College of Engineering and Technology Degree
+                      Wing Sector - 26, Chandigarh
+                    </li>
+                    <li>
+                      <a class="hover-1" href="https://www.ccet.ac.in" target="_blank">www.ccet.ac.in</a>
+                    </li>
+                  </ul>
+                  <!-- Social Links -->
+                  <ul class="social-links">
+                    <a href="https://www.facebook.com/acmccet"><img class="social-logo"
+                        src="ccet-photos/socials/facebook.svg" alt="" /></a>
+                    <a href="https://www.linkedin.com/in/ccet-acm-student-chapter"><img class="social-logo"
+                        src="ccet-photos/socials/linkedin.svg" alt="" /></a>
+                    <a href="https://www.instagram.com/acmccet/?igshid=1f75geliybfix"><img class="social-logo"
+                        src="ccet-photos/socials/instagram.svg" alt="" /></a>
+                    <a href="https://www.twitter.com/acmccet"><img class="social-logo" src="ccet-photos/socials/X.svg"
+                        alt="" /></a>
+                    <a href="https://www.youtube.com/@ccetacmstudentchapter3122"><img class="social-logo"
+                        src="ccet-photos/socials/youtube.svg" alt="" /></a>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Footer Bottom -->
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row clearfix">
-            <div class="column col-lg-9 col-md-12 col-sm-12">
-              <div class="copyright">
-                <span class="theme_color"
-                  >Copyright © 2024 All rights reserved | Designed and Developed
-                  by
-                  <a
-                    class="footer__link"
-                    href="teams-webmasters.html"
-                    target="webmaster"
-                    >CCET ACM Website Team</a
-                  >
-                </span>
-              </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row clearfix">
+          <div class="column col-lg-9 col-md-12 col-sm-12">
+            <div class="copyright">
+              <span class="theme_color">Copyright © 2024 All rights reserved | Designed and Developed
+                by
+                <a class="footer__link" href="teams-webmasters.html" target="webmaster">CCET ACM Website Team</a>
+              </span>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <button onclick="topFunction()" id="movetop" title="Go to top">
-      <span class="fas fa-level-up-alt" aria-hidden="true"></span>
-    </button>
-    <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+  </button>
+  <!-- move top -->
 
-    <script>
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction();
-      };
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
 
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          document.getElementById("movetop").style.display = "block";
-        } else {
-          document.getElementById("movetop").style.display = "none";
-        }
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
       }
+    }
 
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <!-- Template JavaScript -->
+  <script src="assets/js/monetization.js" type="text/javascript"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-98H8KRKT85"></script>
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/theme-change.js"></script>
+  <!--/search-->
+  <script src="assets/js/modernizr.custom.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/demo1.js"></script>
+  <!--//search-->
+
+  <!-- MENU-JS -->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
       }
-    </script>
+    });
 
-    <!-- Template JavaScript -->
-    <script src="assets/js/monetization.js" type="text/javascript"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-98H8KRKT85"
-    ></script>
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/theme-change.js"></script>
-    <!--/search-->
-    <script src="assets/js/modernizr.custom.js"></script>
-    <script src="assets/js/classie.js"></script>
-    <script src="assets/js/demo1.js"></script>
-    <!--//search-->
-
-    <!-- MENU-JS -->
-    <script>
-      $(window).on("scroll", function () {
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 80) {
-          $("#site-header").addClass("nav-fixed");
-        } else {
-          $("#site-header").removeClass("nav-fixed");
-        }
-      });
-
-      //Main navigation Active Class Add Remove
-      $(".navbar-toggler").on("click", function () {
-        $("header").toggleClass("active");
-      });
-      $(document).on("ready", function () {
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
         if ($(window).width() > 991) {
           $("header").removeClass("active");
         }
-        $(window).on("resize", function () {
-          if ($(window).width() > 991) {
-            $("header").removeClass("active");
-          }
-        });
       });
-    </script>
-    <!-- //MENU-JS -->
+    });
+  </script>
+  <!-- //MENU-JS -->
 
-    <!-- start-smoth-scrolling -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- start-smoth-scrolling -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <!-- Carousal  -->
-    <script>
-      let currentSlide = 1;
-      let isPaused = false;
+  <!-- Carousal  -->
+  <script>
+    let currentSlide = 1;
+    let isPaused = false;
 
-      const changeSlide = () => {
-        if (!isPaused) {
-          document
-            .querySelectorAll(".rs-zoom-container")
-            .forEach((container) => {
-              container.classList.remove("can-zoom");
-            });
+    const changeSlide = () => {
+      if (!isPaused) {
+        document
+          .querySelectorAll(".rs-zoom-container")
+          .forEach((container) => {
+            container.classList.remove("can-zoom");
+          });
 
-          const activeSlide = document.getElementById(`rs-s${currentSlide}`);
-          activeSlide.checked = true;
+        const activeSlide = document.getElementById(`rs-s${currentSlide}`);
+        activeSlide.checked = true;
 
-          const activeContainer = document.querySelector(
-            `.rs-zoom-container[data-slide="${currentSlide}"]`
-          );
-          if (activeContainer) {
-            activeContainer.classList.add("can-zoom");
-          }
-
-          currentSlide++;
-          if (currentSlide > 3) {
-            currentSlide = 1;
-          }
+        const activeContainer = document.querySelector(
+          `.rs-zoom-container[data-slide="${currentSlide}"]`
+        );
+        if (activeContainer) {
+          activeContainer.classList.add("can-zoom");
         }
-      };
 
-      let slideInterval = setInterval(changeSlide, 3000);
+        currentSlide++;
+        if (currentSlide > 3) {
+          currentSlide = 1;
+        }
+      }
+    };
 
-      const pauseSlide = () => {
-        isPaused = true;
-      };
+    let slideInterval = setInterval(changeSlide, 3000);
 
-      const resumeSlide = () => {
-        isPaused = false;
-      };
+    const pauseSlide = () => {
+      isPaused = true;
+    };
 
-      document.querySelectorAll(".rs-zoom-container").forEach((container) => {
-        container.addEventListener("mouseover", () => {
-          if (!container.classList.contains("can-zoom")) {
-            return;
-          }
-          pauseSlide();
-        });
-        container.addEventListener("mouseout", () => {
-          resumeSlide();
-        });
+    const resumeSlide = () => {
+      isPaused = false;
+    };
+
+    document.querySelectorAll(".rs-zoom-container").forEach((container) => {
+      container.addEventListener("mouseover", () => {
+        if (!container.classList.contains("can-zoom")) {
+          return;
+        }
+        pauseSlide();
       });
-    </script>
-    <!-- //Carousal  -->
-  </body>
+      container.addEventListener("mouseout", () => {
+        resumeSlide();
+      });
+    });
+  </script>
+  <!-- //Carousal  -->
+</body>
+
 </html>

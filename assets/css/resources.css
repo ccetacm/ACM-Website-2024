@@ -258,6 +258,8 @@
       font-size: 0.7rem;
       padding: 0;
     }
+    #rs-slider input[type="radio"] {
+      top: 150%;}
   }
 
   .inner-banner{
